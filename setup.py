@@ -1,33 +1,42 @@
-# Module Imports
 from distutils.core import setup
-import pathlib
-import re
+from Cython.Build import cythonize
 
-# Configure Package Names
+import re
+import pathlib
+
+# Configure Packages
 packages = [
     "wulfila",
-    "wulfila.config"
 ]
-
 package_dirs = {}
-
+exts = []
 for package in packages:
-    package_dirs[package] = re.sub("\.", "/", package)
+    src = re.sub("\.", "/", package)
+    package_dirs[package] = src
+
+    # Find Cython Extensions
+    path = pathlib.Path(src)
+    for i in path.rglob("*.pyx"):
+        exts.append(str(i))
+
+    for i in path.rglob("*.pxd"):
+        exts.append(str(i))
 
 # Configure Scripts
-scripts_dir = pathlib.Path("scripts")
+scripts_path = pathlib.Path("scripts")
 scripts = []
+for i in scripts_path.glob('*'):
+    if i.is_file():
+        scripts.append(str(i))
 
-for path in scripts_dir.glob("*"):
-    if path.is_file():
-        scripts.append(str(path))
 
-# Set up Library
 setup(
     name="wulfila",
-    version="2020.01",
-    packages=packages,
-    package_dir=package_dirs,
+    version="0.1",
     scripts=scripts,
-    package_data={'wulfila':[]}
-)
+    package_dir=package_dirs,
+    packages=packages,
+    #package_data={"wulfila": ['avocet/data/*.sql']},
+    ext_modules=cythonize(exts, language_level=3))
+
+

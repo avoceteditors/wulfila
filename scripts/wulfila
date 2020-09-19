@@ -28,68 +28,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 ##################################################################################
 
-# Module Imports
-import argparse
-import pathlib
-import sys
-
 # Local Imports
 import wulfila
-import wulfila.config
-import wulfila.log
-
-if __name__ == '__main__':
-
-    # Initialize Parser
-    parser = argparse.ArgumentParser(
-            prog="wulfila")
-
-    ################## Options #################
-    opts = parser.add_argument_group("Options")
-
-    # Alternate Alphabet
-    opts.add_argument("-a", "--alphabet", action="store_true",
-        help="Displays terms using alternate alphabet," 
-        + "(in cases where the language supports an alternate alphabet, such as Gothic).")
-
-    # Debug
-    opts.add_argument("-d", "--debug", action="store_true",
-        help="Enables debugging messages to log output")
-
-    # Force
-    opts.add_argument("-f", "--force", action="store_true",
-        help="Forces operations, (may overwrite existing data)")
-
-    # Verbose
-    opts.add_argument("-v", "--verbose", action="store_true",
-        help="Enables verbosity in log output") 
-
-    # Language Commnad
-    parser.add_argument("--lang", default=None,
-        help="Set language to reference")
-
-    ################## COMMNADS #############################
-    cmds = parser.add_subparsers(title="Commands")
-
-    # Configuration Command
-    conf_cmd = cmds.add_parser("config", help="Configures system to use Wulfila")
-    conf_cmd.set_defaults(func=wulfila.config.run)
-
-    # Version Command
-    vers_cmd = cmds.add_parser("version", help="Reports version information")
-    parser.set_defaults(func=wulfila.report_version)
-
-    ###################  PARSE ARGS ##########################
-    args = parser.parse_args()
-
-    # Configure Logger
-    wulfila.log.set_logger(args.verbose, args.debug)
-
-    #################### RUN PROCESS #########################
-    args.func(args)
-
-    # Close
-    sys.exit(0)
-
-
+wulfila.run()
 
