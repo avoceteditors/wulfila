@@ -66,4 +66,10 @@ The Gothic name stuck in spite of this because it sounds cool.
 Dictionaries
 ******************
 
-* Old Norse (``wulfila --lang on``) uses a public domain release of the Cleasby-Vigfuson Icelandic-English Ditionary, as provided by the `Germanic Lexicon Project <http://www.germanic-lexicon-project.org/texts/oi_cleasbyvigfusson_about.html>`_.
+Wulfila uses SQLite databases to store dictionary data for quick reference.  These dictionaries receive limited processing to render them into a useful state for the tool.
+
+Current dictionaries and their sources:
+
+* **Old Norse** (``wulfila --lang on``) uses a public domain release of the Cleasby-Vigfuson Icelandic-English Ditionary, as provided by the `Germanic Lexicon Project <http://www.germanic-lexicon-project.org/texts/oi_cleasbyvigfusson_about.html>`_.
+
+
