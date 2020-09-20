@@ -2,30 +2,46 @@
 Wulfila
 ###################
 
-Tool for philologist to quickly reference paradigms in synthetic languages.
+Tool for philologist to quickly reference paradigms in synthetic languages and search from available dictionaries.  It is written in Python 3.8 and Cython and uses SQLite for storage.
 
 **********************
 Installation
 **********************
 
-TBD
+To install, run the setup script:
+
+.. code-block:: console
+
+   $ python3 setup.py install
 
 **********************
 Usage
 **********************
 
-TBD
+search
+=======
+
+Search functionality currently old supports Old Norse (``--lang on``), which is set as the default dictionary.
+
+.. code-block:: console
+
+   $ wulfila search "thorpkarl'"
+   þorp-karl
+     m. = þorpari, a churl, Fms. x. 372, Þiðr. 231. þorpkarl-ligr, 
+     adj. churlish, Hkr. iii. 129.
+
+Wulfila supports a limited set of substitution patterns, intended to facilitate searching from the command-line, where the standard American keyboard may not support the full range of Germanic chacaracters.
 
 **********************
 Languages
 **********************
 
-``wulfila`` is polyglottal.  It will provide reference for several languages and possibly some conlangs, but currently it does not support any.
+Language support in Wulfila is meant to be polyglottal.  Currently, it only supports an Old Icelandic dictionary.
 
 Planned Languages
 ===================
 
-This is the probable order in which languages will be introduced, based on the author's current priorities:
+Planned Language Support:
 
 * Old Saxon
 * Old High German
@@ -42,10 +58,12 @@ Meaning in the Name
 
 𐍅𐌿𐌻𐍆𐌹𐌻𐌰 was a fourth century bishop and missionary who produced a translation of the Bible from Greek into the now extinct East Germanic language of Gothic.  The Wulfila Bible today represents the overwhelming majority of surviving Gothic text, so it's a frequent subject of study for anyone interested in Germanic philology.
 
-Much of the tool was planned out while the author was translating Gothic texts for a course in Germanic philology.  It's current lower position is due to the class moving on to Old Saxon before the tool was usable.  The Gothic name stuck in spite of this because it sounds cool.
+Much of the tool was planned out while the author was translating Gothic texts for a course in Germanic philology.  It's current lower position is due to the class moving on before the tool was usable.  
 
-***************
-Lexicon?
-***************
+The Gothic name stuck in spite of this because it sounds cool.
 
-In the future, this tool may include a lexicon.  Such implementation would depend on the availability of public domain source material and the time to re-encode the source into XML.
+******************
+Dictionaries
+******************
+
+* Old Norse (``wulfila --lang on``) uses a public domain release of the Cleasby-Vigfuson Icelandic-English Ditionary, as provided by the `Germanic Lexicon Project <http://www.germanic-lexicon-project.org/texts/oi_cleasbyvigfusson_about.html>`_.
