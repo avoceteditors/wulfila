@@ -1,6 +1,6 @@
 CALL=python3 setup.py 
 
-all: dev-install download
+all: dev-install run 
 
 dev-install:
 	@$(CALL) build_ext 
@@ -21,4 +21,5 @@ cython-clean:
 download:
 	./utils/update-on -D
 
-
+run:
+	wulfila -vD search thor%

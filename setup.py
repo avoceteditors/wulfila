@@ -36,7 +36,7 @@ setup(
     scripts=scripts,
     package_dir=package_dirs,
     packages=packages,
-    #package_data={"wulfila": ['avocet/data/*.sql']},
+    package_data={"wulfila": ['data/*.db']},
     ext_modules=cythonize(exts, language_level=3))
 
 

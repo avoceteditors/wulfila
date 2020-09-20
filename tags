@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+get_logger	wulfila/log.py	/^def get_logger(name):$/;"	f
+init_config	wulfila/config/__init__.py	/^def init_config(path, force):$/;"	f
+init_dirs	wulfila/config/__init__.py	/^def init_dirs(dirs):$/;"	f
+languages	wulfila/data/conf.d/wulfila.conf	/^languages = $/;"	k	section:wulfila
+logger	wulfila/config/__init__.py	/^logger = wulfila.log.get_logger("wulfila.config")$/;"	v
+report_version	wulfila/__init__.py	/^def report_version(args):$/;"	f
+root_dirs	wulfila/config/__init__.py	/^root_dirs = {$/;"	v
+run	wulfila/config/__init__.py	/^def run(args):$/;"	f
+set_logger	wulfila/log.py	/^def set_logger(verbose, debug):$/;"	f
+user_dirs	wulfila/config/__init__.py	/^user_dirs = {$/;"	v
+wulfila	wulfila/data/conf.d/wulfila.conf	/^[wulfila]$/;"	s

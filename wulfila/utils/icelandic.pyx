@@ -29,10 +29,12 @@
 
 # Module Imports
 import argparse
+import copy
 import json
 import logging
 import pathlib
 import re
+import sqlite3 as sql
 import textwrap
 import wget
 
@@ -40,6 +42,7 @@ datafile = pathlib.Path("data/cleasby-vigfuson-dictionary.txt")
 cdef str datafile_url = "http://www.germanic-lexicon-project.org/txt/oi_cleasbyvigfusson.txt"
 
 jsonfile = pathlib.Path("data/cleasby-vigfuson-dictionary.json")
+dbfile = pathlib.Path("wulfila/data/old-icelandic.db")
 
 pagenum= re.compile('<PAGE NUM="')
 num = re.compile("^b[0-9]+")
@@ -98,6 +101,7 @@ cdef list subs = [
     ("þ", re.compile("&thorn;")),
     ("Þ", re.compile("&THORN;")),
 ]
+
 
 cdef str clean(str text):
 
@@ -159,9 +163,11 @@ cdef class Word(object):
         yield 'def', self.definition
 
 
+header = re.compile("<HEADER>.*?</HEADER>")
 cdef list preprocess_data(str base_data):
 
     base_data = clean(base_data)
+    base_data = re.sub(header, "", base_data)
 
     cdef list pages, data
     pages = re.split(pagenum, base_data)
@@ -199,6 +205,74 @@ cdef list preprocess_data(str base_data):
 cdef void update_datafile():
     wget.download(datafile_url, str(datafile))
 
+
+cdef void set_schema(cur):
+
+    cur.execute("CREATE TABLE entries (id INT PRIMARY KEY, term TEXT, definition BLOB);")
+
+    # Initialize Pattern Table
+    cur.execute("CREATE TABLE patterns (id INT PRIMARY KEY, pattern TEXT, entry_id INT);")
+
+cdef list pattern_sub = [
+    ("", re.compile("-")),
+    ("", re.compile("‑")),
+
+    ("a'", re.compile("á")),
+    ("e'", re.compile("é")),
+    ("i'", re.compile("í")),
+    ("o'", re.compile("ó")),
+    ("u'", re.compile("ú")),
+    ("y'", re.compile("ý")),
+
+    ("ae", re.compile("æ")),
+    ("oe", re.compile("œ")),
+    ("o:", re.compile("ö")),
+
+    ("a:", re.compile("ä")),
+    ("o/", re.compile("ø")),
+
+    ("dh", re.compile("ð")),
+    ("th", re.compile("þ")),
+]
+
+cdef void add_data(cur, list data):
+     
+    cdef str term, definition
+    cdef int id = 0
+    cdef int pattern_id = 0
+    cdef str insert_entry = "INSERT INTO entries VALUES (?, ?, ?)"
+    cdef str insert_pattern = "INSERT INTO patterns VALUES (?, ?, ?)" 
+    cdef list entries 
+    cdef str c
+    cdef str new_term
+
+    for entry in data:
+
+        # Pull Metadata
+        id += 1
+        term = entry['term'].lower()
+        definition = entry['def']
+
+        # INSERT
+        cur.execute(insert_entry, (id, term, definition))
+
+        pattern_id += 1
+        entries = [(pattern_id, term)]
+
+
+        # Prepare List of Substitute Terms
+        new_term = term
+        for (c, pattern) in pattern_sub:
+            new_term = re.sub(pattern, c, new_term)
+
+        pattern_id += 1
+        entries.append((pattern_id, new_term))
+
+        # Add Content
+        for (pattern_id, new_term) in entries:
+            cur.execute(insert_pattern, (pattern_id, new_term, id))
+
+
 cdef void run():
 
     # Arugment Parser
@@ -231,6 +305,25 @@ cdef void run():
     logging.debug("Saving data to JSON file")
     with open(jsonfile, 'w') as f:
         json.dump(data, f, ensure_ascii=False, indent=3)
+
+    if dbfile.exists():
+        logging.debug("Removing Database File for Old Icelandic")
+        dbfile.unlink()
+
+    # Establish SQLite Connection
+    logging.debug("Opening SQLite Connection")
+    conn = sql.connect(dbfile)
+    cur = conn.cursor()
+
+    set_schema(cur)
+    conn.commit()
+
+    add_data(cur, data)
+    conn.commit()
+
+    logging.debug("Closing SQLite Connection")
+    cur.close()
+
 
 
 

@@ -37,6 +37,8 @@ import sys
 
 from pkg_resources import get_distribution
 
+from wulfila cimport search
+
 
 #################### APPLICATION METADATA ######################
 cdef str prog = "Wulfila"
@@ -88,6 +90,16 @@ cpdef void run():
 
     ################# COMMANDS #######################
     cmds = parser.add_subparsers(title="Commands", help="Command you want to execute")
+
+    # Search
+    cmd_search = cmds.add_parser(
+        "search",
+        help="Searches dictionary for terms")
+    cmd_search.set_defaults(func=search.run)
+
+    cmd_search.add_argument(
+        "term", nargs="+",
+        help="Specifies the terms to search")
 
     # Version Command
     cmd_ver = cmds.add_parser(
