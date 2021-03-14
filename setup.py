@@ -7,6 +7,7 @@ import pathlib
 # Configure Packages
 packages = [
     "wulfila",
+    "wulfila.lang"
 ]
 package_dirs = {}
 exts = []
@@ -32,11 +33,10 @@ for i in scripts_path.glob('*'):
 
 setup(
     name="wulfila",
-    version="0.1",
+    version="2021.1",
     scripts=scripts,
     package_dir=package_dirs,
     packages=packages,
-    package_data={"wulfila": ['data/*.db']},
-    ext_modules=cythonize(exts, language_level=3))
-
+    #package_data={"wulfila": ['data/*.db']},
+)
 
