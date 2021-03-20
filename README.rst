@@ -2,7 +2,7 @@
 Wulfila
 ###################
 
-Tool for philologist to quickly reference paradigms in synthetic languages and search from available dictionaries.  It is written in Python 3.8 and Cython and uses SQLite for storage.
+Tool for philologist and conlangers to quickly reference paradigms in synthetic languages and search from available dictionaries.  It is written in Python 3.
 
 **********************
 Installation
@@ -14,43 +14,30 @@ To install, run the setup script:
 
    $ python3 setup.py install
 
+Requires `Avocet Tools <https://github.com/avoceteditors/avocet-tools>`_ and `Dion <https://github.com/avoceteditors/dion>`_.
+
 **********************
 Usage
 **********************
 
-search
-=======
+``generate``
+==============
 
-Search functionality currently old supports Old Norse (``--lang on``), which is set as the default dictionary.
+Reads the current configuration and generates a list of random words based on the available phonological specification for the language:
 
 .. code-block:: console
 
-   $ wulfila search "thorpkarl'"
-   þorp-karl
-     m. = þorpari, a churl, Fms. x. 372, Þiðr. 231. þorpkarl-ligr, 
-     adj. churlish, Hkr. iii. 129.
-
-Wulfila supports a limited set of substitution patterns, intended to facilitate searching from the command-line, where the standard American keyboard may not support the full range of Germanic chacaracters.
-
-**********************
-Languages
-**********************
-
-Language support in Wulfila is meant to be polyglottal.  Currently, it only supports an Old Icelandic dictionary.
-
-Planned Languages
-===================
-
-Planned Language Support:
-
-* Old Saxon
-* Old High German
-* Old Norse
-* Old English
-* Gothic
-* Latin
-* Classical Greek
-
+   $ wulfila generate 10
+   /ʟi.dar/
+   /di.ru.d-hu.i/
+   /zu.fa.mir/
+   /ðim.ðu.ba.ða.far/
+   /xum.ʎuʟ/
+   /a.fi.ʟa.ʟar/
+   /ʟu.u/
+   /bir.bʷa.dwa.a/
+   /ʒa.gi.ʒa.dwu.a/
+   /ra.mi.du.ga.rur/
 
 ***********************
 Meaning in the Name

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 ##################################################################################
-# Copyright (c) 2020, Kenneth P. J. Dyer <kenneth@avoceteditors.com>
+# Copyright (c) 2020-2021, Kenneth P. J. Dyer <kenneth@avoceteditors.com>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -30,11 +30,14 @@
 
 # Module Imports
 import argparse
+import avocet.config
 import logging
 import pathlib
 from pkg_resources import get_distribution
 
-
+# Local Imports
+import wulfila.commands.info
+import wulfila.commands.generate
 
 ############################ VERSION REPORT ##################################
 prog = "wulfila"
@@ -88,6 +91,11 @@ opts.add_argument(
     "-D", "--debug", action="store_true",
     help="Enables debugging information in logging messages")
 
+# Lang
+opts.add_argument(
+    "-l", "--lang",
+    help="Specifies the language to read, (returns all by default)")
+
 # Verbosity
 opts.add_argument(
     "-v", "--verbose", action="store_true",
@@ -96,6 +104,30 @@ opts.add_argument(
 
 #################### COMMANDS #################
 cmds = parser.add_subparsers(title="Commands", help="Commands you want to execute")
+
+# Info Command
+cmd_info = cmds.add_parser(
+    "info", 
+    help="Reports generic information on the configured languages")
+cmd_info.set_defaults(func=wulfila.commands.info.run)
+
+# Generate Command
+cmd_gen = cmds.add_parser(
+    "generate",
+    help="Generate words from phonological register")
+cmd_gen.set_defaults(func=wulfila.commands.generate.run)
+
+cmd_gen.add_argument(
+    "--max", default=5,
+    help="Maximum number of syllables to use in word generation.")
+
+cmd_gen.add_argument(
+    "--min", default=2,
+    help="Minimum number of syllables to use in word generation.")
+
+cmd_gen.add_argument(
+    "words", default=10, nargs="?",
+    help="Number of words to generate")
 
 # Version Command
 cmd_ver = cmds.add_parser(
@@ -110,7 +142,7 @@ log_level = logging.WARN
 
 if args.debug:
     log_level = logging.DEBUG
-    log_format = "[%(levelname)s]: %(message)s (%funcName)s in %(filename)s:%(lineno)d"
+    log_format = "[%(levelname)s]: %(message)s (%(funcName)s in %(filename)s:%(lineno)d)"
 elif args.verbose:
     log_level = logging.INFO
 
@@ -118,6 +150,9 @@ logging.basicConfig(format=log_format, level=log_level)
 
 # Configure Pathlib
 args.working_dir = pathlib.Path(args.working_dir).resolve()
+
+# Configure Avocet Data
+args.config = avocet.config.find_root(args.working_dir)
 
 # Run Application
 args.func(args)

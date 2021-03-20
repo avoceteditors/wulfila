@@ -1,25 +1,15 @@
 CALL=python3 setup.py 
 
-all: dev-install run 
-
-dev-install:
-	@$(CALL) build_ext 
-	@$(CALL) install --user --force
+all: install ctags
 
 install:
 	@$(CALL) build_ext 
-	@sudo $(CALL) install
+	@$(CALL) install --user --force
 
-clean: cython-clean python-clean
-
-python-clean:
+clean: 
 	@$(CALL) clean 
 
-cython-clean:
-	@rm wulfila/*.c
 
-download:
-	./utils/update-on -D
+ctags:
+	ctags -R wulfila 
 
-run:
-	wulfila -vD search thor%

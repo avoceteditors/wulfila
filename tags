@@ -1,18 +1,1892 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
-!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
-!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
-!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	0.0.0	//
-get_logger	wulfila/log.py	/^def get_logger(name):$/;"	f
-init_config	wulfila/config/__init__.py	/^def init_config(path, force):$/;"	f
-init_dirs	wulfila/config/__init__.py	/^def init_dirs(dirs):$/;"	f
-languages	wulfila/data/conf.d/wulfila.conf	/^languages = $/;"	k	section:wulfila
-logger	wulfila/config/__init__.py	/^logger = wulfila.log.get_logger("wulfila.config")$/;"	v
-report_version	wulfila/__init__.py	/^def report_version(args):$/;"	f
-root_dirs	wulfila/config/__init__.py	/^root_dirs = {$/;"	v
-run	wulfila/config/__init__.py	/^def run(args):$/;"	f
-set_logger	wulfila/log.py	/^def set_logger(verbose, debug):$/;"	f
-user_dirs	wulfila/config/__init__.py	/^user_dirs = {$/;"	v
-wulfila	wulfila/data/conf.d/wulfila.conf	/^[wulfila]$/;"	s
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BASE	wulfila/utils/__init__.c	210;"	d	file:
+BASE	wulfila/utils/icelandic.c	210;"	d	file:
+CYTHON_ABI	wulfila/utils/__init__.c	22;"	d	file:
+CYTHON_ABI	wulfila/utils/icelandic.c	22;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	wulfila/utils/__init__.c	122;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	wulfila/utils/__init__.c	180;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	wulfila/utils/__init__.c	82;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	wulfila/utils/__init__.c	83;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	wulfila/utils/icelandic.c	122;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	wulfila/utils/icelandic.c	180;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	wulfila/utils/icelandic.c	82;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	wulfila/utils/icelandic.c	83;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	wulfila/utils/__init__.c	119;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	wulfila/utils/__init__.c	177;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	wulfila/utils/__init__.c	80;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	wulfila/utils/__init__.c	81;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	wulfila/utils/icelandic.c	119;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	wulfila/utils/icelandic.c	177;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	wulfila/utils/icelandic.c	80;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	wulfila/utils/icelandic.c	81;"	d	file:
+CYTHON_COMPILING_IN_CPYTHON	wulfila/utils/__init__.c	101;"	d	file:
+CYTHON_COMPILING_IN_CPYTHON	wulfila/utils/__init__.c	142;"	d	file:
+CYTHON_COMPILING_IN_CPYTHON	wulfila/utils/__init__.c	61;"	d	file:
+CYTHON_COMPILING_IN_CPYTHON	wulfila/utils/icelandic.c	101;"	d	file:
+CYTHON_COMPILING_IN_CPYTHON	wulfila/utils/icelandic.c	142;"	d	file:
+CYTHON_COMPILING_IN_CPYTHON	wulfila/utils/icelandic.c	61;"	d	file:
+CYTHON_COMPILING_IN_PYPY	wulfila/utils/__init__.c	140;"	d	file:
+CYTHON_COMPILING_IN_PYPY	wulfila/utils/__init__.c	59;"	d	file:
+CYTHON_COMPILING_IN_PYPY	wulfila/utils/__init__.c	99;"	d	file:
+CYTHON_COMPILING_IN_PYPY	wulfila/utils/icelandic.c	140;"	d	file:
+CYTHON_COMPILING_IN_PYPY	wulfila/utils/icelandic.c	59;"	d	file:
+CYTHON_COMPILING_IN_PYPY	wulfila/utils/icelandic.c	99;"	d	file:
+CYTHON_COMPILING_IN_PYSTON	wulfila/utils/__init__.c	100;"	d	file:
+CYTHON_COMPILING_IN_PYSTON	wulfila/utils/__init__.c	141;"	d	file:
+CYTHON_COMPILING_IN_PYSTON	wulfila/utils/__init__.c	60;"	d	file:
+CYTHON_COMPILING_IN_PYSTON	wulfila/utils/icelandic.c	100;"	d	file:
+CYTHON_COMPILING_IN_PYSTON	wulfila/utils/icelandic.c	141;"	d	file:
+CYTHON_COMPILING_IN_PYSTON	wulfila/utils/icelandic.c	60;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/__init__.c	277;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/__init__.c	279;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/__init__.c	281;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/__init__.c	286;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/__init__.c	288;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/__init__.c	293;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/__init__.c	294;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/icelandic.c	277;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/icelandic.c	279;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/icelandic.c	281;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/icelandic.c	286;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/icelandic.c	288;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/icelandic.c	293;"	d	file:
+CYTHON_FALLTHROUGH	wulfila/utils/icelandic.c	294;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/__init__.c	129;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/__init__.c	130;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/__init__.c	189;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/__init__.c	88;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/__init__.c	89;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/icelandic.c	129;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/icelandic.c	130;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/icelandic.c	189;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/icelandic.c	88;"	d	file:
+CYTHON_FAST_PYCALL	wulfila/utils/icelandic.c	89;"	d	file:
+CYTHON_FAST_PYCCALL	wulfila/utils/__init__.c	205;"	d	file:
+CYTHON_FAST_PYCCALL	wulfila/utils/icelandic.c	205;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/__init__.c	127;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/__init__.c	128;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/__init__.c	186;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/__init__.c	86;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/__init__.c	87;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/icelandic.c	127;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/icelandic.c	128;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/icelandic.c	186;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/icelandic.c	86;"	d	file:
+CYTHON_FAST_THREAD_STATE	wulfila/utils/icelandic.c	87;"	d	file:
+CYTHON_FORMAT_SSIZE_T	wulfila/utils/__init__.c	317;"	d	file:
+CYTHON_FORMAT_SSIZE_T	wulfila/utils/icelandic.c	317;"	d	file:
+CYTHON_FUTURE_DIVISION	wulfila/utils/__init__.c	24;"	d	file:
+CYTHON_FUTURE_DIVISION	wulfila/utils/icelandic.c	24;"	d	file:
+CYTHON_HEX_VERSION	wulfila/utils/__init__.c	23;"	d	file:
+CYTHON_HEX_VERSION	wulfila/utils/icelandic.c	23;"	d	file:
+CYTHON_INLINE	wulfila/utils/__init__.c	301;"	d	file:
+CYTHON_INLINE	wulfila/utils/__init__.c	303;"	d	file:
+CYTHON_INLINE	wulfila/utils/__init__.c	305;"	d	file:
+CYTHON_INLINE	wulfila/utils/__init__.c	307;"	d	file:
+CYTHON_INLINE	wulfila/utils/__init__.c	309;"	d	file:
+CYTHON_INLINE	wulfila/utils/icelandic.c	301;"	d	file:
+CYTHON_INLINE	wulfila/utils/icelandic.c	303;"	d	file:
+CYTHON_INLINE	wulfila/utils/icelandic.c	305;"	d	file:
+CYTHON_INLINE	wulfila/utils/icelandic.c	307;"	d	file:
+CYTHON_INLINE	wulfila/utils/icelandic.c	309;"	d	file:
+CYTHON_MAYBE_UNUSED_VAR	wulfila/utils/__init__.c	/^     template<class T> void CYTHON_MAYBE_UNUSED_VAR( const T& ) { }$/;"	f
+CYTHON_MAYBE_UNUSED_VAR	wulfila/utils/__init__.c	250;"	d	file:
+CYTHON_MAYBE_UNUSED_VAR	wulfila/utils/icelandic.c	/^     template<class T> void CYTHON_MAYBE_UNUSED_VAR( const T& ) { }$/;"	f
+CYTHON_MAYBE_UNUSED_VAR	wulfila/utils/icelandic.c	250;"	d	file:
+CYTHON_NCP_UNUSED	wulfila/utils/__init__.c	255;"	d	file:
+CYTHON_NCP_UNUSED	wulfila/utils/__init__.c	257;"	d	file:
+CYTHON_NCP_UNUSED	wulfila/utils/icelandic.c	255;"	d	file:
+CYTHON_NCP_UNUSED	wulfila/utils/icelandic.c	257;"	d	file:
+CYTHON_PEP393_ENABLED	wulfila/utils/__init__.c	440;"	d	file:
+CYTHON_PEP393_ENABLED	wulfila/utils/__init__.c	456;"	d	file:
+CYTHON_PEP393_ENABLED	wulfila/utils/icelandic.c	440;"	d	file:
+CYTHON_PEP393_ENABLED	wulfila/utils/icelandic.c	456;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/__init__.c	131;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/__init__.c	132;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/__init__.c	192;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/__init__.c	90;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/__init__.c	91;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/icelandic.c	131;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/icelandic.c	132;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/icelandic.c	192;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/icelandic.c	90;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	wulfila/utils/icelandic.c	91;"	d	file:
+CYTHON_REFNANNY	wulfila/utils/__init__.c	836;"	d	file:
+CYTHON_REFNANNY	wulfila/utils/icelandic.c	883;"	d	file:
+CYTHON_REGISTER_ABCS	wulfila/utils/icelandic.c	14693;"	d	file:
+CYTHON_RESTRICT	wulfila/utils/__init__.c	224;"	d	file:
+CYTHON_RESTRICT	wulfila/utils/__init__.c	226;"	d	file:
+CYTHON_RESTRICT	wulfila/utils/__init__.c	228;"	d	file:
+CYTHON_RESTRICT	wulfila/utils/__init__.c	230;"	d	file:
+CYTHON_RESTRICT	wulfila/utils/icelandic.c	224;"	d	file:
+CYTHON_RESTRICT	wulfila/utils/icelandic.c	226;"	d	file:
+CYTHON_RESTRICT	wulfila/utils/icelandic.c	228;"	d	file:
+CYTHON_RESTRICT	wulfila/utils/icelandic.c	230;"	d	file:
+CYTHON_SMALL_CODE	wulfila/utils/__init__.c	1171;"	d	file:
+CYTHON_SMALL_CODE	wulfila/utils/__init__.c	1173;"	d	file:
+CYTHON_SMALL_CODE	wulfila/utils/__init__.c	1175;"	d	file:
+CYTHON_SMALL_CODE	wulfila/utils/icelandic.c	8231;"	d	file:
+CYTHON_SMALL_CODE	wulfila/utils/icelandic.c	8233;"	d	file:
+CYTHON_SMALL_CODE	wulfila/utils/icelandic.c	8235;"	d	file:
+CYTHON_UNPACK_METHODS	wulfila/utils/__init__.c	125;"	d	file:
+CYTHON_UNPACK_METHODS	wulfila/utils/__init__.c	183;"	d	file:
+CYTHON_UNPACK_METHODS	wulfila/utils/__init__.c	84;"	d	file:
+CYTHON_UNPACK_METHODS	wulfila/utils/__init__.c	85;"	d	file:
+CYTHON_UNPACK_METHODS	wulfila/utils/icelandic.c	125;"	d	file:
+CYTHON_UNPACK_METHODS	wulfila/utils/icelandic.c	183;"	d	file:
+CYTHON_UNPACK_METHODS	wulfila/utils/icelandic.c	84;"	d	file:
+CYTHON_UNPACK_METHODS	wulfila/utils/icelandic.c	85;"	d	file:
+CYTHON_UNUSED	wulfila/utils/__init__.c	236;"	d	file:
+CYTHON_UNUSED	wulfila/utils/__init__.c	238;"	d	file:
+CYTHON_UNUSED	wulfila/utils/__init__.c	241;"	d	file:
+CYTHON_UNUSED	wulfila/utils/__init__.c	243;"	d	file:
+CYTHON_UNUSED	wulfila/utils/icelandic.c	236;"	d	file:
+CYTHON_UNUSED	wulfila/utils/icelandic.c	238;"	d	file:
+CYTHON_UNUSED	wulfila/utils/icelandic.c	241;"	d	file:
+CYTHON_UNUSED	wulfila/utils/icelandic.c	243;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/__init__.c	107;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/__init__.c	108;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/__init__.c	153;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/__init__.c	154;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/__init__.c	156;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/__init__.c	67;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/__init__.c	68;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/__init__.c	70;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/icelandic.c	107;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/icelandic.c	108;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/icelandic.c	153;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/icelandic.c	154;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/icelandic.c	156;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/icelandic.c	67;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/icelandic.c	68;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	wulfila/utils/icelandic.c	70;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/__init__.c	135;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/__init__.c	136;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/__init__.c	198;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/__init__.c	94;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/__init__.c	95;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/icelandic.c	135;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/icelandic.c	136;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/icelandic.c	198;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/icelandic.c	94;"	d	file:
+CYTHON_USE_DICT_VERSIONS	wulfila/utils/icelandic.c	95;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/__init__.c	137;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/__init__.c	138;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/__init__.c	201;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/__init__.c	96;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/__init__.c	97;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/icelandic.c	137;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/icelandic.c	138;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/icelandic.c	201;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/icelandic.c	96;"	d	file:
+CYTHON_USE_EXC_INFO_STACK	wulfila/utils/icelandic.c	97;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/__init__.c	109;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/__init__.c	110;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/__init__.c	165;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/__init__.c	72;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/__init__.c	73;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/icelandic.c	109;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/icelandic.c	110;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/icelandic.c	165;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/icelandic.c	72;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	wulfila/utils/icelandic.c	73;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/__init__.c	116;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/__init__.c	117;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/__init__.c	159;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/__init__.c	160;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/__init__.c	162;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/__init__.c	78;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/__init__.c	79;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/icelandic.c	116;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/icelandic.c	117;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/icelandic.c	159;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/icelandic.c	160;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/icelandic.c	162;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/icelandic.c	78;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	wulfila/utils/icelandic.c	79;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/__init__.c	105;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/__init__.c	106;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/__init__.c	147;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/__init__.c	148;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/__init__.c	150;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/__init__.c	64;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/__init__.c	65;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/icelandic.c	105;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/icelandic.c	106;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/icelandic.c	147;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/icelandic.c	148;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/icelandic.c	150;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/icelandic.c	64;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	wulfila/utils/icelandic.c	65;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/__init__.c	133;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/__init__.c	134;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/__init__.c	195;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/__init__.c	92;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/__init__.c	93;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/icelandic.c	133;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/icelandic.c	134;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/icelandic.c	195;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/icelandic.c	92;"	d	file:
+CYTHON_USE_TP_FINALIZE	wulfila/utils/icelandic.c	93;"	d	file:
+CYTHON_USE_TYPE_SLOTS	wulfila/utils/__init__.c	103;"	d	file:
+CYTHON_USE_TYPE_SLOTS	wulfila/utils/__init__.c	144;"	d	file:
+CYTHON_USE_TYPE_SLOTS	wulfila/utils/__init__.c	62;"	d	file:
+CYTHON_USE_TYPE_SLOTS	wulfila/utils/__init__.c	63;"	d	file:
+CYTHON_USE_TYPE_SLOTS	wulfila/utils/icelandic.c	103;"	d	file:
+CYTHON_USE_TYPE_SLOTS	wulfila/utils/icelandic.c	144;"	d	file:
+CYTHON_USE_TYPE_SLOTS	wulfila/utils/icelandic.c	62;"	d	file:
+CYTHON_USE_TYPE_SLOTS	wulfila/utils/icelandic.c	63;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	wulfila/utils/__init__.c	112;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	wulfila/utils/__init__.c	168;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	wulfila/utils/__init__.c	74;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	wulfila/utils/__init__.c	75;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	wulfila/utils/icelandic.c	112;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	wulfila/utils/icelandic.c	168;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	wulfila/utils/icelandic.c	74;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	wulfila/utils/icelandic.c	75;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/__init__.c	114;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/__init__.c	115;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/__init__.c	171;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/__init__.c	172;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/__init__.c	174;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/__init__.c	76;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/__init__.c	77;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/icelandic.c	114;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/icelandic.c	115;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/icelandic.c	171;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/icelandic.c	172;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/icelandic.c	174;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/icelandic.c	76;"	d	file:
+CYTHON_USE_UNICODE_WRITER	wulfila/utils/icelandic.c	77;"	d	file:
+CYTHON_WITHOUT_ASSERTIONS	wulfila/utils/__init__.c	625;"	d	file:
+CYTHON_WITHOUT_ASSERTIONS	wulfila/utils/icelandic.c	625;"	d	file:
+Consonant	wulfila/lang/letter.py	/^class Consonant(Letter):$/;"	c
+DECREF	wulfila/utils/__init__.c	/^    void (*DECREF)(void*, PyObject*, int);$/;"	m	struct:__anon12	file:
+DECREF	wulfila/utils/icelandic.c	/^    void (*DECREF)(void*, PyObject*, int);$/;"	m	struct:__anon4	file:
+DIGITS_HEX	wulfila/utils/icelandic.c	/^static const char DIGITS_HEX[2*16+1] = {$/;"	v	file:
+DIGIT_PAIRS_10	wulfila/utils/icelandic.c	/^static const char DIGIT_PAIRS_10[2*10*10+1] = {$/;"	v	file:
+DIGIT_PAIRS_8	wulfila/utils/icelandic.c	/^static const char DIGIT_PAIRS_8[2*8*8+1] = {$/;"	v	file:
+DL_EXPORT	wulfila/utils/__init__.c	44;"	d	file:
+DL_EXPORT	wulfila/utils/icelandic.c	44;"	d	file:
+DL_IMPORT	wulfila/utils/__init__.c	41;"	d	file:
+DL_IMPORT	wulfila/utils/icelandic.c	41;"	d	file:
+FinishContext	wulfila/utils/__init__.c	/^    void (*FinishContext)(void**);$/;"	m	struct:__anon12	file:
+FinishContext	wulfila/utils/icelandic.c	/^    void (*FinishContext)(void**);$/;"	m	struct:__anon4	file:
+GCC_DIAGNOSTIC	wulfila/utils/icelandic.c	11676;"	d	file:
+GCC_DIAGNOSTIC	wulfila/utils/icelandic.c	12268;"	d	file:
+GIVEREF	wulfila/utils/__init__.c	/^    void (*GIVEREF)(void*, PyObject*, int);$/;"	m	struct:__anon12	file:
+GIVEREF	wulfila/utils/icelandic.c	/^    void (*GIVEREF)(void*, PyObject*, int);$/;"	m	struct:__anon4	file:
+GOTREF	wulfila/utils/__init__.c	/^    void (*GOTREF)(void*, PyObject*, int);$/;"	m	struct:__anon12	file:
+GOTREF	wulfila/utils/icelandic.c	/^    void (*GOTREF)(void*, PyObject*, int);$/;"	m	struct:__anon4	file:
+HAVE_LONG_LONG	wulfila/utils/__init__.c	49;"	d	file:
+HAVE_LONG_LONG	wulfila/utils/icelandic.c	49;"	d	file:
+INCREF	wulfila/utils/__init__.c	/^    void (*INCREF)(void*, PyObject*, int);$/;"	m	struct:__anon12	file:
+INCREF	wulfila/utils/icelandic.c	/^    void (*INCREF)(void*, PyObject*, int);$/;"	m	struct:__anon4	file:
+Language	wulfila/lang/lang.py	/^class Language:$/;"	c
+Letter	wulfila/lang/letter.py	/^class Letter:$/;"	c
+Lexicon	wulfila/lang/lex.py	/^class Lexicon:$/;"	c
+MASK	wulfila/utils/__init__.c	211;"	d	file:
+MASK	wulfila/utils/icelandic.c	211;"	d	file:
+METH_FASTCALL	wulfila/utils/__init__.c	351;"	d	file:
+METH_FASTCALL	wulfila/utils/icelandic.c	351;"	d	file:
+METH_STACKLESS	wulfila/utils/__init__.c	347;"	d	file:
+METH_STACKLESS	wulfila/utils/icelandic.c	347;"	d	file:
+PY_LONG_LONG	wulfila/utils/__init__.c	53;"	d	file:
+PY_LONG_LONG	wulfila/utils/icelandic.c	53;"	d	file:
+PY_SSIZE_T_CLEAN	wulfila/utils/__init__.c	15;"	d	file:
+PY_SSIZE_T_CLEAN	wulfila/utils/icelandic.c	15;"	d	file:
+Phonology	wulfila/lang/phono.py	/^class Phonology:$/;"	c
+PyBaseString_Type	wulfila/utils/__init__.c	498;"	d	file:
+PyBaseString_Type	wulfila/utils/icelandic.c	498;"	d	file:
+PyBoolObject	wulfila/utils/__init__.c	547;"	d	file:
+PyBoolObject	wulfila/utils/icelandic.c	547;"	d	file:
+PyByteArray_Check	wulfila/utils/__init__.c	482;"	d	file:
+PyByteArray_Check	wulfila/utils/icelandic.c	482;"	d	file:
+PyIntObject	wulfila/utils/__init__.c	530;"	d	file:
+PyIntObject	wulfila/utils/icelandic.c	530;"	d	file:
+PyInt_AS_LONG	wulfila/utils/__init__.c	540;"	d	file:
+PyInt_AS_LONG	wulfila/utils/icelandic.c	540;"	d	file:
+PyInt_AsLong	wulfila/utils/__init__.c	539;"	d	file:
+PyInt_AsLong	wulfila/utils/icelandic.c	539;"	d	file:
+PyInt_AsSsize_t	wulfila/utils/__init__.c	541;"	d	file:
+PyInt_AsSsize_t	wulfila/utils/icelandic.c	541;"	d	file:
+PyInt_AsUnsignedLongLongMask	wulfila/utils/__init__.c	543;"	d	file:
+PyInt_AsUnsignedLongLongMask	wulfila/utils/icelandic.c	543;"	d	file:
+PyInt_AsUnsignedLongMask	wulfila/utils/__init__.c	542;"	d	file:
+PyInt_AsUnsignedLongMask	wulfila/utils/icelandic.c	542;"	d	file:
+PyInt_Check	wulfila/utils/__init__.c	532;"	d	file:
+PyInt_Check	wulfila/utils/icelandic.c	532;"	d	file:
+PyInt_CheckExact	wulfila/utils/__init__.c	533;"	d	file:
+PyInt_CheckExact	wulfila/utils/icelandic.c	533;"	d	file:
+PyInt_FromLong	wulfila/utils/__init__.c	536;"	d	file:
+PyInt_FromLong	wulfila/utils/icelandic.c	536;"	d	file:
+PyInt_FromSize_t	wulfila/utils/__init__.c	537;"	d	file:
+PyInt_FromSize_t	wulfila/utils/icelandic.c	537;"	d	file:
+PyInt_FromSsize_t	wulfila/utils/__init__.c	538;"	d	file:
+PyInt_FromSsize_t	wulfila/utils/icelandic.c	538;"	d	file:
+PyInt_FromString	wulfila/utils/__init__.c	534;"	d	file:
+PyInt_FromString	wulfila/utils/icelandic.c	534;"	d	file:
+PyInt_FromUnicode	wulfila/utils/__init__.c	535;"	d	file:
+PyInt_FromUnicode	wulfila/utils/icelandic.c	535;"	d	file:
+PyInt_Type	wulfila/utils/__init__.c	531;"	d	file:
+PyInt_Type	wulfila/utils/icelandic.c	531;"	d	file:
+PyMem_RawFree	wulfila/utils/__init__.c	374;"	d	file:
+PyMem_RawFree	wulfila/utils/icelandic.c	374;"	d	file:
+PyMem_RawMalloc	wulfila/utils/__init__.c	372;"	d	file:
+PyMem_RawMalloc	wulfila/utils/icelandic.c	372;"	d	file:
+PyMem_RawRealloc	wulfila/utils/__init__.c	373;"	d	file:
+PyMem_RawRealloc	wulfila/utils/icelandic.c	373;"	d	file:
+PyNumber_Int	wulfila/utils/__init__.c	544;"	d	file:
+PyNumber_Int	wulfila/utils/icelandic.c	544;"	d	file:
+PyObject_ASCII	wulfila/utils/__init__.c	495;"	d	file:
+PyObject_ASCII	wulfila/utils/icelandic.c	495;"	d	file:
+PyObject_Format	wulfila/utils/__init__.c	485;"	d	file:
+PyObject_Format	wulfila/utils/icelandic.c	485;"	d	file:
+PyObject_Free	wulfila/utils/__init__.c	368;"	d	file:
+PyObject_Free	wulfila/utils/icelandic.c	368;"	d	file:
+PyObject_Malloc	wulfila/utils/__init__.c	367;"	d	file:
+PyObject_Malloc	wulfila/utils/icelandic.c	367;"	d	file:
+PyObject_Realloc	wulfila/utils/__init__.c	369;"	d	file:
+PyObject_Realloc	wulfila/utils/icelandic.c	369;"	d	file:
+PyObject_Unicode	wulfila/utils/__init__.c	504;"	d	file:
+PyObject_Unicode	wulfila/utils/icelandic.c	504;"	d	file:
+PySet_CheckExact	wulfila/utils/__init__.c	515;"	d	file:
+PySet_CheckExact	wulfila/utils/icelandic.c	515;"	d	file:
+PyStringObject	wulfila/utils/__init__.c	499;"	d	file:
+PyStringObject	wulfila/utils/icelandic.c	499;"	d	file:
+PyString_Check	wulfila/utils/__init__.c	501;"	d	file:
+PyString_Check	wulfila/utils/icelandic.c	501;"	d	file:
+PyString_CheckExact	wulfila/utils/__init__.c	502;"	d	file:
+PyString_CheckExact	wulfila/utils/icelandic.c	502;"	d	file:
+PyString_Type	wulfila/utils/__init__.c	500;"	d	file:
+PyString_Type	wulfila/utils/icelandic.c	500;"	d	file:
+PyThread_tss_alloc	wulfila/utils/__init__.c	/^static CYTHON_INLINE Py_tss_t * PyThread_tss_alloc(void) {$/;"	f	file:
+PyThread_tss_alloc	wulfila/utils/icelandic.c	/^static CYTHON_INLINE Py_tss_t * PyThread_tss_alloc(void) {$/;"	f	file:
+PyThread_tss_create	wulfila/utils/__init__.c	/^static CYTHON_INLINE int PyThread_tss_create(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_create	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int PyThread_tss_create(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_delete	wulfila/utils/__init__.c	/^static CYTHON_INLINE void PyThread_tss_delete(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_delete	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void PyThread_tss_delete(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_free	wulfila/utils/__init__.c	/^static CYTHON_INLINE void PyThread_tss_free(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_free	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void PyThread_tss_free(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_get	wulfila/utils/__init__.c	/^static CYTHON_INLINE void * PyThread_tss_get(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_get	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void * PyThread_tss_get(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_is_created	wulfila/utils/__init__.c	/^static CYTHON_INLINE int PyThread_tss_is_created(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_is_created	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int PyThread_tss_is_created(Py_tss_t *key) {$/;"	f	file:
+PyThread_tss_set	wulfila/utils/__init__.c	/^static CYTHON_INLINE int PyThread_tss_set(Py_tss_t *key, void *value) {$/;"	f	file:
+PyThread_tss_set	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int PyThread_tss_set(Py_tss_t *key, void *value) {$/;"	f	file:
+PyUnicode_1BYTE_KIND	wulfila/utils/__init__.c	457;"	d	file:
+PyUnicode_1BYTE_KIND	wulfila/utils/icelandic.c	457;"	d	file:
+PyUnicode_2BYTE_KIND	wulfila/utils/__init__.c	458;"	d	file:
+PyUnicode_2BYTE_KIND	wulfila/utils/icelandic.c	458;"	d	file:
+PyUnicode_4BYTE_KIND	wulfila/utils/__init__.c	459;"	d	file:
+PyUnicode_4BYTE_KIND	wulfila/utils/icelandic.c	459;"	d	file:
+PyUnicode_Contains	wulfila/utils/__init__.c	479;"	d	file:
+PyUnicode_Contains	wulfila/utils/icelandic.c	479;"	d	file:
+PyUnicode_InternFromString	wulfila/utils/__init__.c	551;"	d	file:
+PyUnicode_InternFromString	wulfila/utils/icelandic.c	551;"	d	file:
+Py_HUGE_VAL	wulfila/utils/__init__.c	56;"	d	file:
+Py_HUGE_VAL	wulfila/utils/icelandic.c	56;"	d	file:
+Py_MEMBER_SIZE	wulfila/utils/icelandic.c	1031;"	d	file:
+Py_OptimizeFlag	wulfila/utils/__init__.c	314;"	d	file:
+Py_OptimizeFlag	wulfila/utils/icelandic.c	314;"	d	file:
+Py_TPFLAGS_CHECKTYPES	wulfila/utils/__init__.c	335;"	d	file:
+Py_TPFLAGS_CHECKTYPES	wulfila/utils/icelandic.c	335;"	d	file:
+Py_TPFLAGS_HAVE_FINALIZE	wulfila/utils/__init__.c	344;"	d	file:
+Py_TPFLAGS_HAVE_FINALIZE	wulfila/utils/icelandic.c	344;"	d	file:
+Py_TPFLAGS_HAVE_INDEX	wulfila/utils/__init__.c	338;"	d	file:
+Py_TPFLAGS_HAVE_INDEX	wulfila/utils/icelandic.c	338;"	d	file:
+Py_TPFLAGS_HAVE_NEWBUFFER	wulfila/utils/__init__.c	341;"	d	file:
+Py_TPFLAGS_HAVE_NEWBUFFER	wulfila/utils/icelandic.c	341;"	d	file:
+Py_hash_t	wulfila/utils/__init__.c	/^  typedef long Py_hash_t;$/;"	t	file:
+Py_hash_t	wulfila/utils/icelandic.c	/^  typedef long Py_hash_t;$/;"	t	file:
+Py_tss_NEEDS_INIT	wulfila/utils/__init__.c	394;"	d	file:
+Py_tss_NEEDS_INIT	wulfila/utils/icelandic.c	394;"	d	file:
+Py_tss_t	wulfila/utils/__init__.c	/^typedef int Py_tss_t;$/;"	t	file:
+Py_tss_t	wulfila/utils/icelandic.c	/^typedef int Py_tss_t;$/;"	t	file:
+Registry	wulfila/lang/lang.py	/^class Registry:$/;"	c
+SHIFT	wulfila/utils/__init__.c	209;"	d	file:
+SHIFT	wulfila/utils/icelandic.c	209;"	d	file:
+SetupContext	wulfila/utils/__init__.c	/^    void* (*SetupContext)(const char*, int, const char*);$/;"	m	struct:__anon12	file:
+SetupContext	wulfila/utils/icelandic.c	/^    void* (*SetupContext)(const char*, int, const char*);$/;"	m	struct:__anon4	file:
+Term	wulfila/lang/lex.py	/^class Term:$/;"	c
+Vowel	wulfila/lang/letter.py	/^class Vowel(Letter):$/;"	c
+Word	wulfila/lang/word.py	/^class Word:$/;"	c
+_USE_MATH_DEFINES	wulfila/utils/__init__.c	586;"	d	file:
+_USE_MATH_DEFINES	wulfila/utils/icelandic.c	586;"	d	file:
+__PYX_BUILD_PY_SSIZE_T	wulfila/utils/__init__.c	316;"	d	file:
+__PYX_BUILD_PY_SSIZE_T	wulfila/utils/icelandic.c	316;"	d	file:
+__PYX_COMMA	wulfila/utils/__init__.c	46;"	d	file:
+__PYX_COMMA	wulfila/utils/icelandic.c	46;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING	wulfila/utils/__init__.c	/^static char* __PYX_DEFAULT_STRING_ENCODING;$/;"	v	file:
+__PYX_DEFAULT_STRING_ENCODING	wulfila/utils/__init__.c	634;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING	wulfila/utils/icelandic.c	/^static char* __PYX_DEFAULT_STRING_ENCODING;$/;"	v	file:
+__PYX_DEFAULT_STRING_ENCODING	wulfila/utils/icelandic.c	634;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_ASCII	wulfila/utils/__init__.c	631;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_ASCII	wulfila/utils/icelandic.c	631;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT	wulfila/utils/__init__.c	633;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT	wulfila/utils/icelandic.c	633;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_UTF8	wulfila/utils/__init__.c	632;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_UTF8	wulfila/utils/icelandic.c	632;"	d	file:
+__PYX_DICT_VERSION_INIT	wulfila/utils/__init__.c	913;"	d	file:
+__PYX_DICT_VERSION_INIT	wulfila/utils/icelandic.c	974;"	d	file:
+__PYX_ERR	wulfila/utils/__init__.c	606;"	d	file:
+__PYX_ERR	wulfila/utils/icelandic.c	606;"	d	file:
+__PYX_EXTERN_C	wulfila/utils/__init__.c	611;"	d	file:
+__PYX_EXTERN_C	wulfila/utils/__init__.c	613;"	d	file:
+__PYX_EXTERN_C	wulfila/utils/icelandic.c	611;"	d	file:
+__PYX_EXTERN_C	wulfila/utils/icelandic.c	613;"	d	file:
+__PYX_GET_DICT_VERSION	wulfila/utils/__init__.c	914;"	d	file:
+__PYX_GET_DICT_VERSION	wulfila/utils/__init__.c	932;"	d	file:
+__PYX_GET_DICT_VERSION	wulfila/utils/icelandic.c	975;"	d	file:
+__PYX_GET_DICT_VERSION	wulfila/utils/icelandic.c	993;"	d	file:
+__PYX_HAVE_API__wulfila__utils____init__	wulfila/utils/__init__.c	618;"	d	file:
+__PYX_HAVE_API__wulfila__utils__icelandic	wulfila/utils/icelandic.c	618;"	d	file:
+__PYX_HAVE_RT_ImportFunction	wulfila/utils/__init__.c	2465;"	d	file:
+__PYX_HAVE__wulfila__utils____init__	wulfila/utils/__init__.c	617;"	d	file:
+__PYX_HAVE__wulfila__utils__icelandic	wulfila/utils/icelandic.c	617;"	d	file:
+__PYX_MARK_ERR_POS	wulfila/utils/__init__.c	604;"	d	file:
+__PYX_MARK_ERR_POS	wulfila/utils/icelandic.c	604;"	d	file:
+__PYX_NAN	wulfila/utils/__init__.c	/^static CYTHON_INLINE float __PYX_NAN() {$/;"	f	file:
+__PYX_NAN	wulfila/utils/__init__.c	590;"	d	file:
+__PYX_NAN	wulfila/utils/icelandic.c	/^static CYTHON_INLINE float __PYX_NAN() {$/;"	f	file:
+__PYX_NAN	wulfila/utils/icelandic.c	590;"	d	file:
+__PYX_PY_DICT_LOOKUP_IF_MODIFIED	wulfila/utils/__init__.c	918;"	d	file:
+__PYX_PY_DICT_LOOKUP_IF_MODIFIED	wulfila/utils/__init__.c	934;"	d	file:
+__PYX_PY_DICT_LOOKUP_IF_MODIFIED	wulfila/utils/icelandic.c	979;"	d	file:
+__PYX_PY_DICT_LOOKUP_IF_MODIFIED	wulfila/utils/icelandic.c	995;"	d	file:
+__PYX_UPDATE_DICT_CACHE	wulfila/utils/__init__.c	915;"	d	file:
+__PYX_UPDATE_DICT_CACHE	wulfila/utils/__init__.c	933;"	d	file:
+__PYX_UPDATE_DICT_CACHE	wulfila/utils/icelandic.c	976;"	d	file:
+__PYX_UPDATE_DICT_CACHE	wulfila/utils/icelandic.c	994;"	d	file:
+__PYX_VERIFY_RETURN_INT	wulfila/utils/__init__.c	1911;"	d	file:
+__PYX_VERIFY_RETURN_INT	wulfila/utils/icelandic.c	13196;"	d	file:
+__PYX_VERIFY_RETURN_INT_EXC	wulfila/utils/__init__.c	1913;"	d	file:
+__PYX_VERIFY_RETURN_INT_EXC	wulfila/utils/icelandic.c	13198;"	d	file:
+__PYX__VERIFY_RETURN_INT	wulfila/utils/__init__.c	1915;"	d	file:
+__PYX__VERIFY_RETURN_INT	wulfila/utils/icelandic.c	13200;"	d	file:
+__Pxy_PyFrame_Initialize_Offsets	wulfila/utils/icelandic.c	1035;"	d	file:
+__Pyx_AddTraceback	wulfila/utils/__init__.c	/^static void __Pyx_AddTraceback(const char *funcname, int c_line,$/;"	f	file:
+__Pyx_AddTraceback	wulfila/utils/icelandic.c	/^static void __Pyx_AddTraceback(const char *funcname, int c_line,$/;"	f	file:
+__Pyx_ArgTypeTest	wulfila/utils/icelandic.c	967;"	d	file:
+__Pyx_BUILD_ASSERT_EXPR	wulfila/utils/icelandic.c	1028;"	d	file:
+__Pyx_BUILTIN_MODULE_NAME	wulfila/utils/__init__.c	319;"	d	file:
+__Pyx_BUILTIN_MODULE_NAME	wulfila/utils/__init__.c	324;"	d	file:
+__Pyx_BUILTIN_MODULE_NAME	wulfila/utils/icelandic.c	319;"	d	file:
+__Pyx_BUILTIN_MODULE_NAME	wulfila/utils/icelandic.c	324;"	d	file:
+__Pyx_CLEAR	wulfila/utils/__init__.c	894;"	d	file:
+__Pyx_CLEAR	wulfila/utils/icelandic.c	941;"	d	file:
+__Pyx_CLineForTraceback	wulfila/utils/__init__.c	/^static int __Pyx_CLineForTraceback(CYTHON_NCP_UNUSED PyThreadState *tstate, int c_line) {$/;"	f	file:
+__Pyx_CLineForTraceback	wulfila/utils/__init__.c	975;"	d	file:
+__Pyx_CLineForTraceback	wulfila/utils/icelandic.c	/^static int __Pyx_CLineForTraceback(CYTHON_NCP_UNUSED PyThreadState *tstate, int c_line) {$/;"	f	file:
+__Pyx_CLineForTraceback	wulfila/utils/icelandic.c	1339;"	d	file:
+__Pyx_CachedCFunction	wulfila/utils/icelandic.c	/^} __Pyx_CachedCFunction;$/;"	t	typeref:struct:__anon5	file:
+__Pyx_CallUnboundCMethod0	wulfila/utils/icelandic.c	1195;"	d	file:
+__Pyx_CallUnboundCMethod0	wulfila/utils/icelandic.c	1209;"	d	file:
+__Pyx_CheckKeywordStrings	wulfila/utils/icelandic.c	/^static int __Pyx_CheckKeywordStrings($/;"	f	file:
+__Pyx_CodeObjectCache	wulfila/utils/__init__.c	/^struct __Pyx_CodeObjectCache {$/;"	s	file:
+__Pyx_CodeObjectCache	wulfila/utils/icelandic.c	/^struct __Pyx_CodeObjectCache {$/;"	s	file:
+__Pyx_CodeObjectCacheEntry	wulfila/utils/__init__.c	/^} __Pyx_CodeObjectCacheEntry;$/;"	t	typeref:struct:__anon13	file:
+__Pyx_CodeObjectCacheEntry	wulfila/utils/icelandic.c	/^} __Pyx_CodeObjectCacheEntry;$/;"	t	typeref:struct:__anon6	file:
+__Pyx_Coroutine_AlreadyRunningError	wulfila/utils/icelandic.c	14010;"	d	file:
+__Pyx_Coroutine_AlreadyTerminatedError	wulfila/utils/icelandic.c	14044;"	d	file:
+__Pyx_Coroutine_Close	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_Coroutine_Close(PyObject *self) {$/;"	f	file:
+__Pyx_Coroutine_CloseIter	wulfila/utils/icelandic.c	/^static int __Pyx_Coroutine_CloseIter(__pyx_CoroutineObject *gen, PyObject *yf) {$/;"	f	file:
+__Pyx_Coroutine_Close_Method	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_Coroutine_Close_Method(PyObject *self, CYTHON_UNUSED PyObject *arg) {$/;"	f	file:
+__Pyx_Coroutine_ExceptionClear	wulfila/utils/icelandic.c	/^void __Pyx_Coroutine_ExceptionClear(__Pyx_ExcInfoStruct *exc_state) {$/;"	f	file:
+__Pyx_Coroutine_FinishDelegation	wulfila/utils/icelandic.c	/^PyObject *__Pyx_Coroutine_FinishDelegation(__pyx_CoroutineObject *gen) {$/;"	f	file:
+__Pyx_Coroutine_MethodReturn	wulfila/utils/icelandic.c	/^PyObject *__Pyx_Coroutine_MethodReturn(CYTHON_UNUSED PyObject* gen, PyObject *retval) {$/;"	f	file:
+__Pyx_Coroutine_NotStartedError	wulfila/utils/icelandic.c	14027;"	d	file:
+__Pyx_Coroutine_ResetAndClearException	wulfila/utils/icelandic.c	1444;"	d	file:
+__Pyx_Coroutine_ResetAndClearException	wulfila/utils/icelandic.c	1450;"	d	file:
+__Pyx_Coroutine_ResetFrameBackpointer	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx_Coroutine_ResetFrameBackpointer(__Pyx_ExcInfoStruct *exc_state) {$/;"	f	file:
+__Pyx_Coroutine_Send	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_Coroutine_Send(PyObject *self, PyObject *value) {$/;"	f	file:
+__Pyx_Coroutine_SendEx	wulfila/utils/icelandic.c	/^PyObject *__Pyx_Coroutine_SendEx(__pyx_CoroutineObject *self, PyObject *value, int closing) {$/;"	f	file:
+__Pyx_Coroutine_SwapException	wulfila/utils/icelandic.c	1443;"	d	file:
+__Pyx_Coroutine_SwapException	wulfila/utils/icelandic.c	1446;"	d	file:
+__Pyx_Coroutine_Throw	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_Coroutine_Throw(PyObject *self, PyObject *args) {$/;"	f	file:
+__Pyx_Coroutine_Undelegate	wulfila/utils/icelandic.c	13917;"	d	file:
+__Pyx_Coroutine_clear	wulfila/utils/icelandic.c	/^static int __Pyx_Coroutine_clear(PyObject *self) {$/;"	f	file:
+__Pyx_Coroutine_dealloc	wulfila/utils/icelandic.c	/^static void __Pyx_Coroutine_dealloc(PyObject *self) {$/;"	f	file:
+__Pyx_Coroutine_del	wulfila/utils/icelandic.c	/^static void __Pyx_Coroutine_del(PyObject *self) {$/;"	f	file:
+__Pyx_Coroutine_get_name	wulfila/utils/icelandic.c	/^__Pyx_Coroutine_get_name(__pyx_CoroutineObject *self, CYTHON_UNUSED void *context)$/;"	f	file:
+__Pyx_Coroutine_get_qualname	wulfila/utils/icelandic.c	/^__Pyx_Coroutine_get_qualname(__pyx_CoroutineObject *self, CYTHON_UNUSED void *context)$/;"	f	file:
+__Pyx_Coroutine_patch_module	wulfila/utils/icelandic.c	/^static PyObject* __Pyx_Coroutine_patch_module(PyObject* module, const char* py_code) {$/;"	f	file:
+__Pyx_Coroutine_set_name	wulfila/utils/icelandic.c	/^__Pyx_Coroutine_set_name(__pyx_CoroutineObject *self, PyObject *value, CYTHON_UNUSED void *context)$/;"	f	file:
+__Pyx_Coroutine_set_qualname	wulfila/utils/icelandic.c	/^__Pyx_Coroutine_set_qualname(__pyx_CoroutineObject *self, PyObject *value, CYTHON_UNUSED void *context)$/;"	f	file:
+__Pyx_Coroutine_traverse	wulfila/utils/icelandic.c	/^static int __Pyx_Coroutine_traverse(__pyx_CoroutineObject *gen, visitproc visit, void *arg) {$/;"	f	file:
+__Pyx_Coroutine_traverse_excstate	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_Coroutine_traverse_excstate(__Pyx_ExcInfoStruct *exc_state, visitproc visit, void *arg) {$/;"	f	file:
+__Pyx_CreateCodeObjectForTraceback	wulfila/utils/__init__.c	/^static PyCodeObject* __Pyx_CreateCodeObjectForTraceback($/;"	f	file:
+__Pyx_CreateCodeObjectForTraceback	wulfila/utils/icelandic.c	/^static PyCodeObject* __Pyx_CreateCodeObjectForTraceback($/;"	f	file:
+__Pyx_DECREF	wulfila/utils/__init__.c	866;"	d	file:
+__Pyx_DECREF	wulfila/utils/__init__.c	878;"	d	file:
+__Pyx_DECREF	wulfila/utils/icelandic.c	913;"	d	file:
+__Pyx_DECREF	wulfila/utils/icelandic.c	925;"	d	file:
+__Pyx_DECREF_SET	wulfila/utils/__init__.c	890;"	d	file:
+__Pyx_DECREF_SET	wulfila/utils/icelandic.c	937;"	d	file:
+__Pyx_DefaultClassType	wulfila/utils/__init__.c	322;"	d	file:
+__Pyx_DefaultClassType	wulfila/utils/__init__.c	332;"	d	file:
+__Pyx_DefaultClassType	wulfila/utils/icelandic.c	322;"	d	file:
+__Pyx_DefaultClassType	wulfila/utils/icelandic.c	332;"	d	file:
+__Pyx_ErrFetch	wulfila/utils/__init__.c	954;"	d	file:
+__Pyx_ErrFetch	wulfila/utils/__init__.c	970;"	d	file:
+__Pyx_ErrFetch	wulfila/utils/icelandic.c	1095;"	d	file:
+__Pyx_ErrFetch	wulfila/utils/icelandic.c	1111;"	d	file:
+__Pyx_ErrFetchInState	wulfila/utils/__init__.c	/^static CYTHON_INLINE void __Pyx_ErrFetchInState(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb) {$/;"	f	file:
+__Pyx_ErrFetchInState	wulfila/utils/__init__.c	968;"	d	file:
+__Pyx_ErrFetchInState	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx_ErrFetchInState(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb) {$/;"	f	file:
+__Pyx_ErrFetchInState	wulfila/utils/icelandic.c	1109;"	d	file:
+__Pyx_ErrFetchWithState	wulfila/utils/__init__.c	952;"	d	file:
+__Pyx_ErrFetchWithState	wulfila/utils/__init__.c	966;"	d	file:
+__Pyx_ErrFetchWithState	wulfila/utils/icelandic.c	1093;"	d	file:
+__Pyx_ErrFetchWithState	wulfila/utils/icelandic.c	1107;"	d	file:
+__Pyx_ErrRestore	wulfila/utils/__init__.c	953;"	d	file:
+__Pyx_ErrRestore	wulfila/utils/__init__.c	969;"	d	file:
+__Pyx_ErrRestore	wulfila/utils/icelandic.c	1094;"	d	file:
+__Pyx_ErrRestore	wulfila/utils/icelandic.c	1110;"	d	file:
+__Pyx_ErrRestoreInState	wulfila/utils/__init__.c	/^static CYTHON_INLINE void __Pyx_ErrRestoreInState(PyThreadState *tstate, PyObject *type, PyObject *value, PyObject *tb) {$/;"	f	file:
+__Pyx_ErrRestoreInState	wulfila/utils/__init__.c	967;"	d	file:
+__Pyx_ErrRestoreInState	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx_ErrRestoreInState(PyThreadState *tstate, PyObject *type, PyObject *value, PyObject *tb) {$/;"	f	file:
+__Pyx_ErrRestoreInState	wulfila/utils/icelandic.c	1108;"	d	file:
+__Pyx_ErrRestoreWithState	wulfila/utils/__init__.c	951;"	d	file:
+__Pyx_ErrRestoreWithState	wulfila/utils/__init__.c	965;"	d	file:
+__Pyx_ErrRestoreWithState	wulfila/utils/icelandic.c	1092;"	d	file:
+__Pyx_ErrRestoreWithState	wulfila/utils/icelandic.c	1106;"	d	file:
+__Pyx_ExcInfoStruct	wulfila/utils/icelandic.c	/^} __Pyx_ExcInfoStruct;$/;"	t	typeref:struct:__anon7	file:
+__Pyx_ExcInfoStruct	wulfila/utils/icelandic.c	1408;"	d	file:
+__Pyx_ExceptionReset	wulfila/utils/icelandic.c	1287;"	d	file:
+__Pyx_ExceptionReset	wulfila/utils/icelandic.c	1291;"	d	file:
+__Pyx_ExceptionSave	wulfila/utils/icelandic.c	1285;"	d	file:
+__Pyx_ExceptionSave	wulfila/utils/icelandic.c	1290;"	d	file:
+__Pyx_ExceptionSwap	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx_ExceptionSwap(PyObject **type, PyObject **value, PyObject **tb) {$/;"	f	file:
+__Pyx_ExceptionSwap	wulfila/utils/icelandic.c	1393;"	d	file:
+__Pyx_ExportFunction	wulfila/utils/__init__.c	/^static int __Pyx_ExportFunction(const char *name, void (*f)(void), const char *sig) {$/;"	f	file:
+__Pyx_ExportFunction	wulfila/utils/icelandic.c	/^static int __Pyx_ExportFunction(const char *name, void (*f)(void), const char *sig) {$/;"	f	file:
+__Pyx_FetchCommonType	wulfila/utils/icelandic.c	/^static PyTypeObject* __Pyx_FetchCommonType(PyTypeObject* type) {$/;"	f	file:
+__Pyx_GIVEREF	wulfila/utils/__init__.c	868;"	d	file:
+__Pyx_GIVEREF	wulfila/utils/__init__.c	880;"	d	file:
+__Pyx_GIVEREF	wulfila/utils/icelandic.c	915;"	d	file:
+__Pyx_GIVEREF	wulfila/utils/icelandic.c	927;"	d	file:
+__Pyx_GOTREF	wulfila/utils/__init__.c	867;"	d	file:
+__Pyx_GOTREF	wulfila/utils/__init__.c	879;"	d	file:
+__Pyx_GOTREF	wulfila/utils/icelandic.c	914;"	d	file:
+__Pyx_GOTREF	wulfila/utils/icelandic.c	926;"	d	file:
+__Pyx_Generator_CheckExact	wulfila/utils/icelandic.c	1474;"	d	file:
+__Pyx_Generator_New	wulfila/utils/icelandic.c	1475;"	d	file:
+__Pyx_Generator_Next	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_Generator_Next(PyObject *self) {$/;"	f	file:
+__Pyx_Generator_USED	wulfila/utils/icelandic.c	1472;"	d	file:
+__Pyx_GetAttr	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject *__Pyx_GetAttr(PyObject *o, PyObject *n) {$/;"	f	file:
+__Pyx_GetAttr3	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject *__Pyx_GetAttr3(PyObject *o, PyObject *n, PyObject *d) {$/;"	f	file:
+__Pyx_GetAttr3Default	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_GetAttr3Default(PyObject *d) {$/;"	f	file:
+__Pyx_GetBuiltinName	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_GetBuiltinName(PyObject *name) {$/;"	f	file:
+__Pyx_GetException	wulfila/utils/icelandic.c	1296;"	d	file:
+__Pyx_GetItemInt	wulfila/utils/icelandic.c	1153;"	d	file:
+__Pyx_GetItemInt_Fast	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Fast(PyObject *o, Py_ssize_t i, int is_list,$/;"	f	file:
+__Pyx_GetItemInt_Generic	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_GetItemInt_Generic(PyObject *o, PyObject* j) {$/;"	f	file:
+__Pyx_GetItemInt_List	wulfila/utils/icelandic.c	1158;"	d	file:
+__Pyx_GetItemInt_List_Fast	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_List_Fast(PyObject *o, Py_ssize_t i,$/;"	f	file:
+__Pyx_GetItemInt_Tuple	wulfila/utils/icelandic.c	1164;"	d	file:
+__Pyx_GetItemInt_Tuple_Fast	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Tuple_Fast(PyObject *o, Py_ssize_t i,$/;"	f	file:
+__Pyx_GetModuleGlobalName	wulfila/utils/icelandic.c	1000;"	d	file:
+__Pyx_GetModuleGlobalName	wulfila/utils/icelandic.c	1014;"	d	file:
+__Pyx_GetModuleGlobalNameUncached	wulfila/utils/icelandic.c	1007;"	d	file:
+__Pyx_GetModuleGlobalNameUncached	wulfila/utils/icelandic.c	1015;"	d	file:
+__Pyx_HasAttr	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_HasAttr(PyObject *o, PyObject *n) {$/;"	f	file:
+__Pyx_INCREF	wulfila/utils/__init__.c	865;"	d	file:
+__Pyx_INCREF	wulfila/utils/__init__.c	877;"	d	file:
+__Pyx_INCREF	wulfila/utils/icelandic.c	912;"	d	file:
+__Pyx_INCREF	wulfila/utils/icelandic.c	924;"	d	file:
+__Pyx_Import	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list, int level) {$/;"	f	file:
+__Pyx_ImportFrom	wulfila/utils/icelandic.c	/^static PyObject* __Pyx_ImportFrom(PyObject* module, PyObject* name) {$/;"	f	file:
+__Pyx_ImportFunction	wulfila/utils/__init__.c	/^static int __Pyx_ImportFunction(PyObject *module, const char *funcname, void (**f)(void), const char *sig) {$/;"	f	file:
+__Pyx_InBases	wulfila/utils/__init__.c	/^static int __Pyx_InBases(PyTypeObject *a, PyTypeObject *b) {$/;"	f	file:
+__Pyx_InBases	wulfila/utils/icelandic.c	/^static int __Pyx_InBases(PyTypeObject *a, PyTypeObject *b) {$/;"	f	file:
+__Pyx_InitCachedBuiltins	wulfila/utils/__init__.c	/^static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {$/;"	f	file:
+__Pyx_InitCachedBuiltins	wulfila/utils/icelandic.c	/^static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {$/;"	f	file:
+__Pyx_InitCachedConstants	wulfila/utils/__init__.c	/^static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {$/;"	f	file:
+__Pyx_InitCachedConstants	wulfila/utils/icelandic.c	/^static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {$/;"	f	file:
+__Pyx_InitGlobals	wulfila/utils/__init__.c	/^static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {$/;"	f	file:
+__Pyx_InitGlobals	wulfila/utils/icelandic.c	/^static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {$/;"	f	file:
+__Pyx_InitStrings	wulfila/utils/__init__.c	/^static int __Pyx_InitStrings(__Pyx_StringTabEntry *t) {$/;"	f	file:
+__Pyx_InitStrings	wulfila/utils/icelandic.c	/^static int __Pyx_InitStrings(__Pyx_StringTabEntry *t) {$/;"	f	file:
+__Pyx_IsSubtype	wulfila/utils/__init__.c	/^static CYTHON_INLINE int __Pyx_IsSubtype(PyTypeObject *a, PyTypeObject *b) {$/;"	f	file:
+__Pyx_IsSubtype	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_IsSubtype(PyTypeObject *a, PyTypeObject *b) {$/;"	f	file:
+__Pyx_IterFinish	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_IterFinish(void) {$/;"	f	file:
+__Pyx_IternextUnpackEndCheck	wulfila/utils/icelandic.c	/^static int __Pyx_IternextUnpackEndCheck(PyObject *retval, Py_ssize_t expected) {$/;"	f	file:
+__Pyx_MODULE_NAME	wulfila/utils/__init__.c	1041;"	d	file:
+__Pyx_MODULE_NAME	wulfila/utils/icelandic.c	1507;"	d	file:
+__Pyx_NewRef	wulfila/utils/__init__.c	706;"	d	file:
+__Pyx_NewRef	wulfila/utils/icelandic.c	706;"	d	file:
+__Pyx_Owned_Py_None	wulfila/utils/__init__.c	707;"	d	file:
+__Pyx_Owned_Py_None	wulfila/utils/icelandic.c	707;"	d	file:
+__Pyx_ParseOptionalKeywords	wulfila/utils/icelandic.c	/^static int __Pyx_ParseOptionalKeywords($/;"	f	file:
+__Pyx_PyAsyncMethodsStruct	wulfila/utils/__init__.c	/^    } __Pyx_PyAsyncMethodsStruct;$/;"	t	typeref:struct:__anon10	file:
+__Pyx_PyAsyncMethodsStruct	wulfila/utils/__init__.c	569;"	d	file:
+__Pyx_PyAsyncMethodsStruct	wulfila/utils/icelandic.c	/^    } __Pyx_PyAsyncMethodsStruct;$/;"	t	typeref:struct:__anon2	file:
+__Pyx_PyAsyncMethodsStruct	wulfila/utils/icelandic.c	569;"	d	file:
+__Pyx_PyBaseString_Check	wulfila/utils/__init__.c	508;"	d	file:
+__Pyx_PyBaseString_Check	wulfila/utils/__init__.c	511;"	d	file:
+__Pyx_PyBaseString_Check	wulfila/utils/icelandic.c	508;"	d	file:
+__Pyx_PyBaseString_Check	wulfila/utils/icelandic.c	511;"	d	file:
+__Pyx_PyBaseString_CheckExact	wulfila/utils/__init__.c	509;"	d	file:
+__Pyx_PyBaseString_CheckExact	wulfila/utils/__init__.c	512;"	d	file:
+__Pyx_PyBaseString_CheckExact	wulfila/utils/icelandic.c	509;"	d	file:
+__Pyx_PyBaseString_CheckExact	wulfila/utils/icelandic.c	512;"	d	file:
+__Pyx_PyBool_FromLong	wulfila/utils/__init__.c	/^static CYTHON_INLINE PyObject * __Pyx_PyBool_FromLong(long b) {$/;"	f	file:
+__Pyx_PyBool_FromLong	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject * __Pyx_PyBool_FromLong(long b) {$/;"	f	file:
+__Pyx_PyByteArray_FromCString	wulfila/utils/__init__.c	695;"	d	file:
+__Pyx_PyByteArray_FromCString	wulfila/utils/icelandic.c	695;"	d	file:
+__Pyx_PyByteArray_FromString	wulfila/utils/__init__.c	670;"	d	file:
+__Pyx_PyByteArray_FromString	wulfila/utils/icelandic.c	670;"	d	file:
+__Pyx_PyByteArray_FromStringAndSize	wulfila/utils/__init__.c	671;"	d	file:
+__Pyx_PyByteArray_FromStringAndSize	wulfila/utils/icelandic.c	671;"	d	file:
+__Pyx_PyBytes_AsSString	wulfila/utils/__init__.c	686;"	d	file:
+__Pyx_PyBytes_AsSString	wulfila/utils/icelandic.c	686;"	d	file:
+__Pyx_PyBytes_AsString	wulfila/utils/__init__.c	685;"	d	file:
+__Pyx_PyBytes_AsString	wulfila/utils/icelandic.c	685;"	d	file:
+__Pyx_PyBytes_AsUString	wulfila/utils/__init__.c	687;"	d	file:
+__Pyx_PyBytes_AsUString	wulfila/utils/icelandic.c	687;"	d	file:
+__Pyx_PyBytes_AsWritableSString	wulfila/utils/__init__.c	683;"	d	file:
+__Pyx_PyBytes_AsWritableSString	wulfila/utils/icelandic.c	683;"	d	file:
+__Pyx_PyBytes_AsWritableString	wulfila/utils/__init__.c	682;"	d	file:
+__Pyx_PyBytes_AsWritableString	wulfila/utils/icelandic.c	682;"	d	file:
+__Pyx_PyBytes_AsWritableUString	wulfila/utils/__init__.c	684;"	d	file:
+__Pyx_PyBytes_AsWritableUString	wulfila/utils/icelandic.c	684;"	d	file:
+__Pyx_PyBytes_FromCString	wulfila/utils/__init__.c	694;"	d	file:
+__Pyx_PyBytes_FromCString	wulfila/utils/icelandic.c	694;"	d	file:
+__Pyx_PyBytes_FromString	wulfila/utils/__init__.c	672;"	d	file:
+__Pyx_PyBytes_FromString	wulfila/utils/icelandic.c	672;"	d	file:
+__Pyx_PyBytes_FromStringAndSize	wulfila/utils/__init__.c	673;"	d	file:
+__Pyx_PyBytes_FromStringAndSize	wulfila/utils/icelandic.c	673;"	d	file:
+__Pyx_PyCFunctionFast	wulfila/utils/__init__.c	/^  typedef PyObject *(*__Pyx_PyCFunctionFast) (PyObject *self, PyObject *const *args, Py_ssize_t nargs);$/;"	t	file:
+__Pyx_PyCFunctionFast	wulfila/utils/__init__.c	357;"	d	file:
+__Pyx_PyCFunctionFast	wulfila/utils/icelandic.c	/^  typedef PyObject *(*__Pyx_PyCFunctionFast) (PyObject *self, PyObject *const *args, Py_ssize_t nargs);$/;"	t	file:
+__Pyx_PyCFunctionFast	wulfila/utils/icelandic.c	357;"	d	file:
+__Pyx_PyCFunctionFastWithKeywords	wulfila/utils/__init__.c	/^  typedef PyObject *(*__Pyx_PyCFunctionFastWithKeywords) (PyObject *self, PyObject *const *args,$/;"	t	file:
+__Pyx_PyCFunctionFastWithKeywords	wulfila/utils/__init__.c	358;"	d	file:
+__Pyx_PyCFunctionFastWithKeywords	wulfila/utils/icelandic.c	/^  typedef PyObject *(*__Pyx_PyCFunctionFastWithKeywords) (PyObject *self, PyObject *const *args,$/;"	t	file:
+__Pyx_PyCFunctionFastWithKeywords	wulfila/utils/icelandic.c	358;"	d	file:
+__Pyx_PyCFunction_FastCall	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject * __Pyx_PyCFunction_FastCall(PyObject *func_obj, PyObject **args, Py_ssize_t nargs) {$/;"	f	file:
+__Pyx_PyCFunction_FastCall	wulfila/utils/icelandic.c	1046;"	d	file:
+__Pyx_PyCode_HasFreeVars	wulfila/utils/__init__.c	377;"	d	file:
+__Pyx_PyCode_HasFreeVars	wulfila/utils/__init__.c	380;"	d	file:
+__Pyx_PyCode_HasFreeVars	wulfila/utils/icelandic.c	377;"	d	file:
+__Pyx_PyCode_HasFreeVars	wulfila/utils/icelandic.c	380;"	d	file:
+__Pyx_PyCode_New	wulfila/utils/__init__.c	320;"	d	file:
+__Pyx_PyCode_New	wulfila/utils/__init__.c	326;"	d	file:
+__Pyx_PyCode_New	wulfila/utils/__init__.c	329;"	d	file:
+__Pyx_PyCode_New	wulfila/utils/icelandic.c	320;"	d	file:
+__Pyx_PyCode_New	wulfila/utils/icelandic.c	326;"	d	file:
+__Pyx_PyCode_New	wulfila/utils/icelandic.c	329;"	d	file:
+__Pyx_PyDict_GetItem	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_PyDict_GetItem(PyObject *d, PyObject* key) {$/;"	f	file:
+__Pyx_PyDict_GetItem	wulfila/utils/icelandic.c	1248;"	d	file:
+__Pyx_PyDict_GetItemStr	wulfila/utils/__init__.c	435;"	d	file:
+__Pyx_PyDict_GetItemStr	wulfila/utils/__init__.c	437;"	d	file:
+__Pyx_PyDict_GetItemStr	wulfila/utils/icelandic.c	435;"	d	file:
+__Pyx_PyDict_GetItemStr	wulfila/utils/icelandic.c	437;"	d	file:
+__Pyx_PyDict_NewPresized	wulfila/utils/__init__.c	423;"	d	file:
+__Pyx_PyDict_NewPresized	wulfila/utils/__init__.c	425;"	d	file:
+__Pyx_PyDict_NewPresized	wulfila/utils/icelandic.c	423;"	d	file:
+__Pyx_PyDict_NewPresized	wulfila/utils/icelandic.c	425;"	d	file:
+__Pyx_PyErr_Clear	wulfila/utils/__init__.c	950;"	d	file:
+__Pyx_PyErr_Clear	wulfila/utils/__init__.c	963;"	d	file:
+__Pyx_PyErr_Clear	wulfila/utils/icelandic.c	1091;"	d	file:
+__Pyx_PyErr_Clear	wulfila/utils/icelandic.c	1104;"	d	file:
+__Pyx_PyErr_ExceptionMatches	wulfila/utils/icelandic.c	1072;"	d	file:
+__Pyx_PyErr_ExceptionMatches	wulfila/utils/icelandic.c	1075;"	d	file:
+__Pyx_PyErr_ExceptionMatchesInState	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_PyErr_ExceptionMatchesInState(PyThreadState* tstate, PyObject* err) {$/;"	f	file:
+__Pyx_PyErr_ExceptionMatchesTuple	wulfila/utils/icelandic.c	/^static int __Pyx_PyErr_ExceptionMatchesTuple(PyObject *exc_type, PyObject *tuple) {$/;"	f	file:
+__Pyx_PyErr_GetTopmostException	wulfila/utils/icelandic.c	/^__Pyx_PyErr_GetTopmostException(PyThreadState *tstate)$/;"	f	file:
+__Pyx_PyErr_GivenExceptionMatches	wulfila/utils/__init__.c	/^static CYTHON_INLINE int __Pyx_PyErr_GivenExceptionMatches(PyObject *err, PyObject* exc_type) {$/;"	f	file:
+__Pyx_PyErr_GivenExceptionMatches	wulfila/utils/__init__.c	1016;"	d	file:
+__Pyx_PyErr_GivenExceptionMatches	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_PyErr_GivenExceptionMatches(PyObject *err, PyObject* exc_type) {$/;"	f	file:
+__Pyx_PyErr_GivenExceptionMatches	wulfila/utils/icelandic.c	1383;"	d	file:
+__Pyx_PyErr_GivenExceptionMatches2	wulfila/utils/__init__.c	/^static CYTHON_INLINE int __Pyx_PyErr_GivenExceptionMatches2(PyObject *err, PyObject *exc_type1, PyObject *exc_type2) {$/;"	f	file:
+__Pyx_PyErr_GivenExceptionMatches2	wulfila/utils/__init__.c	1017;"	d	file:
+__Pyx_PyErr_GivenExceptionMatches2	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_PyErr_GivenExceptionMatches2(PyObject *err, PyObject *exc_type1, PyObject *exc_type2) {$/;"	f	file:
+__Pyx_PyErr_GivenExceptionMatches2	wulfila/utils/icelandic.c	1384;"	d	file:
+__Pyx_PyErr_GivenExceptionMatchesTuple	wulfila/utils/__init__.c	/^static int __Pyx_PyErr_GivenExceptionMatchesTuple(PyObject *exc_type, PyObject *tuple) {$/;"	f	file:
+__Pyx_PyErr_GivenExceptionMatchesTuple	wulfila/utils/icelandic.c	/^static int __Pyx_PyErr_GivenExceptionMatchesTuple(PyObject *exc_type, PyObject *tuple) {$/;"	f	file:
+__Pyx_PyErr_Occurred	wulfila/utils/__init__.c	941;"	d	file:
+__Pyx_PyErr_Occurred	wulfila/utils/__init__.c	945;"	d	file:
+__Pyx_PyErr_Occurred	wulfila/utils/icelandic.c	1082;"	d	file:
+__Pyx_PyErr_Occurred	wulfila/utils/icelandic.c	1086;"	d	file:
+__Pyx_PyErr_SetNone	wulfila/utils/__init__.c	958;"	d	file:
+__Pyx_PyErr_SetNone	wulfila/utils/__init__.c	960;"	d	file:
+__Pyx_PyErr_SetNone	wulfila/utils/__init__.c	964;"	d	file:
+__Pyx_PyErr_SetNone	wulfila/utils/icelandic.c	1099;"	d	file:
+__Pyx_PyErr_SetNone	wulfila/utils/icelandic.c	1101;"	d	file:
+__Pyx_PyErr_SetNone	wulfila/utils/icelandic.c	1105;"	d	file:
+__Pyx_PyException_Check	wulfila/utils/__init__.c	1019;"	d	file:
+__Pyx_PyException_Check	wulfila/utils/icelandic.c	1386;"	d	file:
+__Pyx_PyFastCFunction_Check	wulfila/utils/__init__.c	361;"	d	file:
+__Pyx_PyFastCFunction_Check	wulfila/utils/__init__.c	364;"	d	file:
+__Pyx_PyFastCFunction_Check	wulfila/utils/icelandic.c	361;"	d	file:
+__Pyx_PyFastCFunction_Check	wulfila/utils/icelandic.c	364;"	d	file:
+__Pyx_PyFrame_GetLocalsplus	wulfila/utils/icelandic.c	1038;"	d	file:
+__Pyx_PyFrame_SetLineNumber	wulfila/utils/__init__.c	378;"	d	file:
+__Pyx_PyFrame_SetLineNumber	wulfila/utils/__init__.c	381;"	d	file:
+__Pyx_PyFrame_SetLineNumber	wulfila/utils/icelandic.c	378;"	d	file:
+__Pyx_PyFrame_SetLineNumber	wulfila/utils/icelandic.c	381;"	d	file:
+__Pyx_PyFunction_FastCall	wulfila/utils/icelandic.c	1021;"	d	file:
+__Pyx_PyFunction_FastCallDict	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_PyFunction_FastCallDict(PyObject *func, PyObject **args, Py_ssize_t nargs, PyObject *kwargs) {$/;"	f	file:
+__Pyx_PyFunction_FastCallDict	wulfila/utils/icelandic.c	1026;"	d	file:
+__Pyx_PyFunction_FastCallNoKw	wulfila/utils/icelandic.c	/^static PyObject* __Pyx_PyFunction_FastCallNoKw(PyCodeObject *co, PyObject **args, Py_ssize_t na,$/;"	f	file:
+__Pyx_PyGen_FetchStopIterationValue	wulfila/utils/icelandic.c	1456;"	d	file:
+__Pyx_PyGen_FetchStopIterationValue	wulfila/utils/icelandic.c	1459;"	d	file:
+__Pyx_PyGen__FetchStopIterationValue	wulfila/utils/icelandic.c	/^static int __Pyx_PyGen__FetchStopIterationValue(CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject **pvalue) {$/;"	f	file:
+__Pyx_PyIndex_AsSsize_t	wulfila/utils/__init__.c	/^static CYTHON_INLINE Py_ssize_t __Pyx_PyIndex_AsSsize_t(PyObject* b) {$/;"	f	file:
+__Pyx_PyIndex_AsSsize_t	wulfila/utils/icelandic.c	/^static CYTHON_INLINE Py_ssize_t __Pyx_PyIndex_AsSsize_t(PyObject* b) {$/;"	f	file:
+__Pyx_PyInt_AsHash_t	wulfila/utils/__init__.c	557;"	d	file:
+__Pyx_PyInt_AsHash_t	wulfila/utils/__init__.c	560;"	d	file:
+__Pyx_PyInt_AsHash_t	wulfila/utils/icelandic.c	557;"	d	file:
+__Pyx_PyInt_AsHash_t	wulfila/utils/icelandic.c	560;"	d	file:
+__Pyx_PyInt_As_int	wulfila/utils/__init__.c	/^static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *x) {$/;"	f	file:
+__Pyx_PyInt_As_int	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *x) {$/;"	f	file:
+__Pyx_PyInt_As_long	wulfila/utils/__init__.c	/^static CYTHON_INLINE long __Pyx_PyInt_As_long(PyObject *x) {$/;"	f	file:
+__Pyx_PyInt_As_long	wulfila/utils/icelandic.c	/^static CYTHON_INLINE long __Pyx_PyInt_As_long(PyObject *x) {$/;"	f	file:
+__Pyx_PyInt_FromHash_t	wulfila/utils/__init__.c	556;"	d	file:
+__Pyx_PyInt_FromHash_t	wulfila/utils/__init__.c	559;"	d	file:
+__Pyx_PyInt_FromHash_t	wulfila/utils/icelandic.c	556;"	d	file:
+__Pyx_PyInt_FromHash_t	wulfila/utils/icelandic.c	559;"	d	file:
+__Pyx_PyInt_FromSize_t	wulfila/utils/__init__.c	/^static CYTHON_INLINE PyObject * __Pyx_PyInt_FromSize_t(size_t ival) {$/;"	f	file:
+__Pyx_PyInt_FromSize_t	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject * __Pyx_PyInt_FromSize_t(size_t ival) {$/;"	f	file:
+__Pyx_PyInt_From_int	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyInt_From_int(int value) {$/;"	f	file:
+__Pyx_PyInt_From_long	wulfila/utils/__init__.c	/^static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value) {$/;"	f	file:
+__Pyx_PyInt_From_long	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value) {$/;"	f	file:
+__Pyx_PyList_Append	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_PyList_Append(PyObject* list, PyObject* x) {$/;"	f	file:
+__Pyx_PyList_Append	wulfila/utils/icelandic.c	1149;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/__init__.c	1290;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/__init__.c	1293;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/__init__.c	1295;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/__init__.c	1299;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/__init__.c	1301;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/icelandic.c	9260;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/icelandic.c	9263;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/icelandic.c	9265;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/icelandic.c	9269;"	d	file:
+__Pyx_PyMODINIT_FUNC	wulfila/utils/icelandic.c	9271;"	d	file:
+__Pyx_PyMethod_New	wulfila/utils/__init__.c	563;"	d	file:
+__Pyx_PyMethod_New	wulfila/utils/__init__.c	565;"	d	file:
+__Pyx_PyMethod_New	wulfila/utils/icelandic.c	563;"	d	file:
+__Pyx_PyMethod_New	wulfila/utils/icelandic.c	565;"	d	file:
+__Pyx_PyNumber_Divide	wulfila/utils/__init__.c	428;"	d	file:
+__Pyx_PyNumber_Divide	wulfila/utils/__init__.c	431;"	d	file:
+__Pyx_PyNumber_Divide	wulfila/utils/icelandic.c	428;"	d	file:
+__Pyx_PyNumber_Divide	wulfila/utils/icelandic.c	431;"	d	file:
+__Pyx_PyNumber_Float	wulfila/utils/__init__.c	727;"	d	file:
+__Pyx_PyNumber_Float	wulfila/utils/icelandic.c	727;"	d	file:
+__Pyx_PyNumber_InPlaceDivide	wulfila/utils/__init__.c	429;"	d	file:
+__Pyx_PyNumber_InPlaceDivide	wulfila/utils/__init__.c	432;"	d	file:
+__Pyx_PyNumber_InPlaceDivide	wulfila/utils/icelandic.c	429;"	d	file:
+__Pyx_PyNumber_InPlaceDivide	wulfila/utils/icelandic.c	432;"	d	file:
+__Pyx_PyNumber_Int	wulfila/utils/__init__.c	723;"	d	file:
+__Pyx_PyNumber_Int	wulfila/utils/__init__.c	725;"	d	file:
+__Pyx_PyNumber_Int	wulfila/utils/icelandic.c	723;"	d	file:
+__Pyx_PyNumber_Int	wulfila/utils/icelandic.c	725;"	d	file:
+__Pyx_PyNumber_IntOrLong	wulfila/utils/__init__.c	/^static CYTHON_INLINE PyObject* __Pyx_PyNumber_IntOrLong(PyObject* x) {$/;"	f	file:
+__Pyx_PyNumber_IntOrLong	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyNumber_IntOrLong(PyObject* x) {$/;"	f	file:
+__Pyx_PyNumber_IntOrLongWrongResultType	wulfila/utils/__init__.c	/^static PyObject* __Pyx_PyNumber_IntOrLongWrongResultType(PyObject* result, const char* type_name) {$/;"	f	file:
+__Pyx_PyNumber_IntOrLongWrongResultType	wulfila/utils/icelandic.c	/^static PyObject* __Pyx_PyNumber_IntOrLongWrongResultType(PyObject* result, const char* type_name) {$/;"	f	file:
+__Pyx_PyObject_AsSString	wulfila/utils/__init__.c	691;"	d	file:
+__Pyx_PyObject_AsSString	wulfila/utils/icelandic.c	691;"	d	file:
+__Pyx_PyObject_AsString	wulfila/utils/__init__.c	/^static CYTHON_INLINE const char* __Pyx_PyObject_AsString(PyObject* o) {$/;"	f	file:
+__Pyx_PyObject_AsString	wulfila/utils/icelandic.c	/^static CYTHON_INLINE const char* __Pyx_PyObject_AsString(PyObject* o) {$/;"	f	file:
+__Pyx_PyObject_AsStringAndSize	wulfila/utils/__init__.c	/^static CYTHON_INLINE const char* __Pyx_PyObject_AsStringAndSize(PyObject* o, Py_ssize_t *length) {$/;"	f	file:
+__Pyx_PyObject_AsStringAndSize	wulfila/utils/icelandic.c	/^static CYTHON_INLINE const char* __Pyx_PyObject_AsStringAndSize(PyObject* o, Py_ssize_t *length) {$/;"	f	file:
+__Pyx_PyObject_AsUString	wulfila/utils/__init__.c	692;"	d	file:
+__Pyx_PyObject_AsUString	wulfila/utils/icelandic.c	692;"	d	file:
+__Pyx_PyObject_AsWritableSString	wulfila/utils/__init__.c	689;"	d	file:
+__Pyx_PyObject_AsWritableSString	wulfila/utils/icelandic.c	689;"	d	file:
+__Pyx_PyObject_AsWritableString	wulfila/utils/__init__.c	688;"	d	file:
+__Pyx_PyObject_AsWritableString	wulfila/utils/icelandic.c	688;"	d	file:
+__Pyx_PyObject_AsWritableUString	wulfila/utils/__init__.c	690;"	d	file:
+__Pyx_PyObject_AsWritableUString	wulfila/utils/icelandic.c	690;"	d	file:
+__Pyx_PyObject_Call	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_Call(PyObject *func, PyObject *arg, PyObject *kw) {$/;"	f	file:
+__Pyx_PyObject_Call	wulfila/utils/icelandic.c	1053;"	d	file:
+__Pyx_PyObject_Call2Args	wulfila/utils/icelandic.c	/^static CYTHON_UNUSED PyObject* __Pyx_PyObject_Call2Args(PyObject* function, PyObject* arg1, PyObject* arg2) {$/;"	f	file:
+__Pyx_PyObject_CallMethO	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_CallMethO(PyObject *func, PyObject *arg) {$/;"	f	file:
+__Pyx_PyObject_CallMethod1	wulfila/utils/icelandic.c	/^static PyObject* __Pyx_PyObject_CallMethod1(PyObject* obj, PyObject* method_name, PyObject* arg) {$/;"	f	file:
+__Pyx_PyObject_CallNoArg	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_CallNoArg(PyObject *func) {$/;"	f	file:
+__Pyx_PyObject_CallNoArg	wulfila/utils/icelandic.c	1221;"	d	file:
+__Pyx_PyObject_CallOneArg	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObject *arg) {$/;"	f	file:
+__Pyx_PyObject_DelAttrStr	wulfila/utils/icelandic.c	1176;"	d	file:
+__Pyx_PyObject_DelAttrStr	wulfila/utils/icelandic.c	1179;"	d	file:
+__Pyx_PyObject_Dict_GetItem	wulfila/utils/icelandic.c	1244;"	d	file:
+__Pyx_PyObject_Dict_GetItem	wulfila/utils/icelandic.c	1249;"	d	file:
+__Pyx_PyObject_FromCString	wulfila/utils/__init__.c	693;"	d	file:
+__Pyx_PyObject_FromCString	wulfila/utils/icelandic.c	693;"	d	file:
+__Pyx_PyObject_FromString	wulfila/utils/__init__.c	635;"	d	file:
+__Pyx_PyObject_FromString	wulfila/utils/icelandic.c	635;"	d	file:
+__Pyx_PyObject_FromStringAndSize	wulfila/utils/__init__.c	636;"	d	file:
+__Pyx_PyObject_FromStringAndSize	wulfila/utils/icelandic.c	636;"	d	file:
+__Pyx_PyObject_GenericGetAttr	wulfila/utils/icelandic.c	/^static PyObject* __Pyx_PyObject_GenericGetAttr(PyObject* obj, PyObject* attr_name) {$/;"	f	file:
+__Pyx_PyObject_GenericGetAttr	wulfila/utils/icelandic.c	1328;"	d	file:
+__Pyx_PyObject_GenericGetAttrNoDict	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_GenericGetAttrNoDict(PyObject* obj, PyObject* attr_name) {$/;"	f	file:
+__Pyx_PyObject_GenericGetAttrNoDict	wulfila/utils/icelandic.c	1321;"	d	file:
+__Pyx_PyObject_GetAttrStr	wulfila/utils/__init__.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_GetAttrStr(PyObject* obj, PyObject* attr_name) {$/;"	f	file:
+__Pyx_PyObject_GetAttrStr	wulfila/utils/__init__.c	901;"	d	file:
+__Pyx_PyObject_GetAttrStr	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_GetAttrStr(PyObject* obj, PyObject* attr_name) {$/;"	f	file:
+__Pyx_PyObject_GetAttrStr	wulfila/utils/icelandic.c	948;"	d	file:
+__Pyx_PyObject_GetAttrStrNoError	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_GetAttrStrNoError(PyObject* obj, PyObject* attr_name) {$/;"	f	file:
+__Pyx_PyObject_GetAttrStr_ClearAttributeError	wulfila/utils/icelandic.c	/^static void __Pyx_PyObject_GetAttrStr_ClearAttributeError(void) {$/;"	f	file:
+__Pyx_PyObject_GetMethod	wulfila/utils/icelandic.c	/^static int __Pyx_PyObject_GetMethod(PyObject *obj, PyObject *name, PyObject **method) {$/;"	f	file:
+__Pyx_PyObject_IsTrue	wulfila/utils/__init__.c	/^static CYTHON_INLINE int __Pyx_PyObject_IsTrue(PyObject* x) {$/;"	f	file:
+__Pyx_PyObject_IsTrue	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_PyObject_IsTrue(PyObject* x) {$/;"	f	file:
+__Pyx_PyObject_IsTrueAndDecref	wulfila/utils/__init__.c	/^static CYTHON_INLINE int __Pyx_PyObject_IsTrueAndDecref(PyObject* x) {$/;"	f	file:
+__Pyx_PyObject_IsTrueAndDecref	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_PyObject_IsTrueAndDecref(PyObject* x) {$/;"	f	file:
+__Pyx_PyObject_LookupSpecial	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_LookupSpecial(PyObject* obj, PyObject* attr_name) {$/;"	f	file:
+__Pyx_PyObject_LookupSpecial	wulfila/utils/icelandic.c	1275;"	d	file:
+__Pyx_PyObject_SetAttrStr	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_PyObject_SetAttrStr(PyObject* obj, PyObject* attr_name, PyObject* value) {$/;"	f	file:
+__Pyx_PyObject_SetAttrStr	wulfila/utils/icelandic.c	1180;"	d	file:
+__Pyx_PySequence_SIZE	wulfila/utils/__init__.c	525;"	d	file:
+__Pyx_PySequence_SIZE	wulfila/utils/__init__.c	527;"	d	file:
+__Pyx_PySequence_SIZE	wulfila/utils/icelandic.c	525;"	d	file:
+__Pyx_PySequence_SIZE	wulfila/utils/icelandic.c	527;"	d	file:
+__Pyx_PySequence_Tuple	wulfila/utils/__init__.c	712;"	d	file:
+__Pyx_PySequence_Tuple	wulfila/utils/icelandic.c	712;"	d	file:
+__Pyx_PyStr_FromCString	wulfila/utils/__init__.c	696;"	d	file:
+__Pyx_PyStr_FromCString	wulfila/utils/icelandic.c	696;"	d	file:
+__Pyx_PyStr_FromString	wulfila/utils/__init__.c	676;"	d	file:
+__Pyx_PyStr_FromString	wulfila/utils/__init__.c	679;"	d	file:
+__Pyx_PyStr_FromString	wulfila/utils/icelandic.c	676;"	d	file:
+__Pyx_PyStr_FromString	wulfila/utils/icelandic.c	679;"	d	file:
+__Pyx_PyStr_FromStringAndSize	wulfila/utils/__init__.c	677;"	d	file:
+__Pyx_PyStr_FromStringAndSize	wulfila/utils/__init__.c	680;"	d	file:
+__Pyx_PyStr_FromStringAndSize	wulfila/utils/icelandic.c	677;"	d	file:
+__Pyx_PyStr_FromStringAndSize	wulfila/utils/icelandic.c	680;"	d	file:
+__Pyx_PyString_Format	wulfila/utils/__init__.c	490;"	d	file:
+__Pyx_PyString_Format	wulfila/utils/__init__.c	492;"	d	file:
+__Pyx_PyString_Format	wulfila/utils/icelandic.c	490;"	d	file:
+__Pyx_PyString_Format	wulfila/utils/icelandic.c	492;"	d	file:
+__Pyx_PyString_FormatSafe	wulfila/utils/__init__.c	487;"	d	file:
+__Pyx_PyString_FormatSafe	wulfila/utils/icelandic.c	487;"	d	file:
+__Pyx_PyThreadState_Current	wulfila/utils/__init__.c	384;"	d	file:
+__Pyx_PyThreadState_Current	wulfila/utils/__init__.c	386;"	d	file:
+__Pyx_PyThreadState_Current	wulfila/utils/__init__.c	388;"	d	file:
+__Pyx_PyThreadState_Current	wulfila/utils/__init__.c	390;"	d	file:
+__Pyx_PyThreadState_Current	wulfila/utils/icelandic.c	384;"	d	file:
+__Pyx_PyThreadState_Current	wulfila/utils/icelandic.c	386;"	d	file:
+__Pyx_PyThreadState_Current	wulfila/utils/icelandic.c	388;"	d	file:
+__Pyx_PyThreadState_Current	wulfila/utils/icelandic.c	390;"	d	file:
+__Pyx_PyThreadState_assign	wulfila/utils/__init__.c	940;"	d	file:
+__Pyx_PyThreadState_assign	wulfila/utils/__init__.c	944;"	d	file:
+__Pyx_PyThreadState_assign	wulfila/utils/icelandic.c	1081;"	d	file:
+__Pyx_PyThreadState_assign	wulfila/utils/icelandic.c	1085;"	d	file:
+__Pyx_PyThreadState_declare	wulfila/utils/__init__.c	939;"	d	file:
+__Pyx_PyThreadState_declare	wulfila/utils/__init__.c	943;"	d	file:
+__Pyx_PyThreadState_declare	wulfila/utils/icelandic.c	1080;"	d	file:
+__Pyx_PyThreadState_declare	wulfila/utils/icelandic.c	1084;"	d	file:
+__Pyx_PyType_AsAsync	wulfila/utils/__init__.c	570;"	d	file:
+__Pyx_PyType_AsAsync	wulfila/utils/__init__.c	572;"	d	file:
+__Pyx_PyType_AsAsync	wulfila/utils/__init__.c	575;"	d	file:
+__Pyx_PyType_AsAsync	wulfila/utils/icelandic.c	570;"	d	file:
+__Pyx_PyType_AsAsync	wulfila/utils/icelandic.c	572;"	d	file:
+__Pyx_PyType_AsAsync	wulfila/utils/icelandic.c	575;"	d	file:
+__Pyx_PyUnicode_AsStringAndSize	wulfila/utils/__init__.c	/^static CYTHON_INLINE const char* __Pyx_PyUnicode_AsStringAndSize(PyObject* o, Py_ssize_t *length) {$/;"	f	file:
+__Pyx_PyUnicode_AsStringAndSize	wulfila/utils/__init__.c	/^static const char* __Pyx_PyUnicode_AsStringAndSize(PyObject* o, Py_ssize_t *length) {$/;"	f	file:
+__Pyx_PyUnicode_AsStringAndSize	wulfila/utils/icelandic.c	/^static CYTHON_INLINE const char* __Pyx_PyUnicode_AsStringAndSize(PyObject* o, Py_ssize_t *length) {$/;"	f	file:
+__Pyx_PyUnicode_AsStringAndSize	wulfila/utils/icelandic.c	/^static const char* __Pyx_PyUnicode_AsStringAndSize(PyObject* o, Py_ssize_t *length) {$/;"	f	file:
+__Pyx_PyUnicode_AsUnicode	wulfila/utils/__init__.c	705;"	d	file:
+__Pyx_PyUnicode_AsUnicode	wulfila/utils/icelandic.c	705;"	d	file:
+__Pyx_PyUnicode_BuildFromAscii	wulfila/utils/icelandic.c	/^static PyObject* __Pyx_PyUnicode_BuildFromAscii(Py_ssize_t ulength, char* chars, int clength,$/;"	f	file:
+__Pyx_PyUnicode_Concat	wulfila/utils/__init__.c	471;"	d	file:
+__Pyx_PyUnicode_Concat	wulfila/utils/__init__.c	474;"	d	file:
+__Pyx_PyUnicode_Concat	wulfila/utils/icelandic.c	471;"	d	file:
+__Pyx_PyUnicode_Concat	wulfila/utils/icelandic.c	474;"	d	file:
+__Pyx_PyUnicode_ConcatSafe	wulfila/utils/__init__.c	472;"	d	file:
+__Pyx_PyUnicode_ConcatSafe	wulfila/utils/__init__.c	475;"	d	file:
+__Pyx_PyUnicode_ConcatSafe	wulfila/utils/icelandic.c	472;"	d	file:
+__Pyx_PyUnicode_ConcatSafe	wulfila/utils/icelandic.c	475;"	d	file:
+__Pyx_PyUnicode_DATA	wulfila/utils/__init__.c	447;"	d	file:
+__Pyx_PyUnicode_DATA	wulfila/utils/__init__.c	465;"	d	file:
+__Pyx_PyUnicode_DATA	wulfila/utils/icelandic.c	447;"	d	file:
+__Pyx_PyUnicode_DATA	wulfila/utils/icelandic.c	465;"	d	file:
+__Pyx_PyUnicode_FormatSafe	wulfila/utils/__init__.c	488;"	d	file:
+__Pyx_PyUnicode_FormatSafe	wulfila/utils/icelandic.c	488;"	d	file:
+__Pyx_PyUnicode_FromCString	wulfila/utils/__init__.c	697;"	d	file:
+__Pyx_PyUnicode_FromCString	wulfila/utils/icelandic.c	697;"	d	file:
+__Pyx_PyUnicode_FromString	wulfila/utils/__init__.c	/^static CYTHON_INLINE PyObject* __Pyx_PyUnicode_FromString(const char* c_str) {$/;"	f	file:
+__Pyx_PyUnicode_FromString	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyUnicode_FromString(const char* c_str) {$/;"	f	file:
+__Pyx_PyUnicode_FromStringAndSize	wulfila/utils/__init__.c	775;"	d	file:
+__Pyx_PyUnicode_FromStringAndSize	wulfila/utils/__init__.c	777;"	d	file:
+__Pyx_PyUnicode_FromStringAndSize	wulfila/utils/icelandic.c	775;"	d	file:
+__Pyx_PyUnicode_FromStringAndSize	wulfila/utils/icelandic.c	777;"	d	file:
+__Pyx_PyUnicode_FromUnicode	wulfila/utils/__init__.c	703;"	d	file:
+__Pyx_PyUnicode_FromUnicode	wulfila/utils/icelandic.c	703;"	d	file:
+__Pyx_PyUnicode_FromUnicodeAndLength	wulfila/utils/__init__.c	704;"	d	file:
+__Pyx_PyUnicode_FromUnicodeAndLength	wulfila/utils/icelandic.c	704;"	d	file:
+__Pyx_PyUnicode_From_Py_ssize_t	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyUnicode_From_Py_ssize_t(Py_ssize_t value, Py_ssize_t width, char padding_char, char format_char) {$/;"	f	file:
+__Pyx_PyUnicode_From_int	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PyObject* __Pyx_PyUnicode_From_int(int value, Py_ssize_t width, char padding_char, char format_char) {$/;"	f	file:
+__Pyx_PyUnicode_GET_LENGTH	wulfila/utils/__init__.c	443;"	d	file:
+__Pyx_PyUnicode_GET_LENGTH	wulfila/utils/__init__.c	461;"	d	file:
+__Pyx_PyUnicode_GET_LENGTH	wulfila/utils/icelandic.c	443;"	d	file:
+__Pyx_PyUnicode_GET_LENGTH	wulfila/utils/icelandic.c	461;"	d	file:
+__Pyx_PyUnicode_IS_TRUE	wulfila/utils/__init__.c	451;"	d	file:
+__Pyx_PyUnicode_IS_TRUE	wulfila/utils/__init__.c	453;"	d	file:
+__Pyx_PyUnicode_IS_TRUE	wulfila/utils/__init__.c	468;"	d	file:
+__Pyx_PyUnicode_IS_TRUE	wulfila/utils/icelandic.c	451;"	d	file:
+__Pyx_PyUnicode_IS_TRUE	wulfila/utils/icelandic.c	453;"	d	file:
+__Pyx_PyUnicode_IS_TRUE	wulfila/utils/icelandic.c	468;"	d	file:
+__Pyx_PyUnicode_Join	wulfila/utils/icelandic.c	/^static PyObject* __Pyx_PyUnicode_Join(PyObject* value_tuple, Py_ssize_t value_count, Py_ssize_t result_ulength,$/;"	f	file:
+__Pyx_PyUnicode_KIND	wulfila/utils/__init__.c	446;"	d	file:
+__Pyx_PyUnicode_KIND	wulfila/utils/__init__.c	464;"	d	file:
+__Pyx_PyUnicode_KIND	wulfila/utils/icelandic.c	446;"	d	file:
+__Pyx_PyUnicode_KIND	wulfila/utils/icelandic.c	464;"	d	file:
+__Pyx_PyUnicode_MAX_CHAR_VALUE	wulfila/utils/__init__.c	445;"	d	file:
+__Pyx_PyUnicode_MAX_CHAR_VALUE	wulfila/utils/__init__.c	463;"	d	file:
+__Pyx_PyUnicode_MAX_CHAR_VALUE	wulfila/utils/icelandic.c	445;"	d	file:
+__Pyx_PyUnicode_MAX_CHAR_VALUE	wulfila/utils/icelandic.c	463;"	d	file:
+__Pyx_PyUnicode_READ	wulfila/utils/__init__.c	448;"	d	file:
+__Pyx_PyUnicode_READ	wulfila/utils/__init__.c	466;"	d	file:
+__Pyx_PyUnicode_READ	wulfila/utils/icelandic.c	448;"	d	file:
+__Pyx_PyUnicode_READ	wulfila/utils/icelandic.c	466;"	d	file:
+__Pyx_PyUnicode_READY	wulfila/utils/__init__.c	441;"	d	file:
+__Pyx_PyUnicode_READY	wulfila/utils/__init__.c	460;"	d	file:
+__Pyx_PyUnicode_READY	wulfila/utils/icelandic.c	441;"	d	file:
+__Pyx_PyUnicode_READY	wulfila/utils/icelandic.c	460;"	d	file:
+__Pyx_PyUnicode_READ_CHAR	wulfila/utils/__init__.c	444;"	d	file:
+__Pyx_PyUnicode_READ_CHAR	wulfila/utils/__init__.c	462;"	d	file:
+__Pyx_PyUnicode_READ_CHAR	wulfila/utils/icelandic.c	444;"	d	file:
+__Pyx_PyUnicode_READ_CHAR	wulfila/utils/icelandic.c	462;"	d	file:
+__Pyx_PyUnicode_WRITE	wulfila/utils/__init__.c	449;"	d	file:
+__Pyx_PyUnicode_WRITE	wulfila/utils/__init__.c	467;"	d	file:
+__Pyx_PyUnicode_WRITE	wulfila/utils/icelandic.c	449;"	d	file:
+__Pyx_PyUnicode_WRITE	wulfila/utils/icelandic.c	467;"	d	file:
+__Pyx_Py_UNICODE_strlen	wulfila/utils/__init__.c	/^static CYTHON_INLINE size_t __Pyx_Py_UNICODE_strlen(const Py_UNICODE *u) {$/;"	f	file:
+__Pyx_Py_UNICODE_strlen	wulfila/utils/icelandic.c	/^static CYTHON_INLINE size_t __Pyx_Py_UNICODE_strlen(const Py_UNICODE *u) {$/;"	f	file:
+__Pyx_Raise	wulfila/utils/icelandic.c	/^static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb, PyObject *cause) {$/;"	f	file:
+__Pyx_Raise	wulfila/utils/icelandic.c	/^static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb,$/;"	f	file:
+__Pyx_RaiseArgtupleInvalid	wulfila/utils/icelandic.c	/^static void __Pyx_RaiseArgtupleInvalid($/;"	f	file:
+__Pyx_RaiseDoubleKeywordsError	wulfila/utils/icelandic.c	/^static void __Pyx_RaiseDoubleKeywordsError($/;"	f	file:
+__Pyx_RaiseGenericGetAttributeError	wulfila/utils/icelandic.c	/^static PyObject *__Pyx_RaiseGenericGetAttributeError(PyTypeObject *tp, PyObject *attr_name) {$/;"	f	file:
+__Pyx_RaiseNeedMoreValuesError	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx_RaiseNeedMoreValuesError(Py_ssize_t index) {$/;"	f	file:
+__Pyx_RaiseTooManyValuesError	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx_RaiseTooManyValuesError(Py_ssize_t expected) {$/;"	f	file:
+__Pyx_RaiseUnboundLocalError	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx_RaiseUnboundLocalError(const char *varname) {$/;"	f	file:
+__Pyx_RefNanny	wulfila/utils/__init__.c	/^  static __Pyx_RefNannyAPIStruct *__Pyx_RefNanny = NULL;$/;"	v	file:
+__Pyx_RefNanny	wulfila/utils/icelandic.c	/^  static __Pyx_RefNannyAPIStruct *__Pyx_RefNanny = NULL;$/;"	v	file:
+__Pyx_RefNannyAPIStruct	wulfila/utils/__init__.c	/^  } __Pyx_RefNannyAPIStruct;$/;"	t	typeref:struct:__anon12	file:
+__Pyx_RefNannyAPIStruct	wulfila/utils/icelandic.c	/^  } __Pyx_RefNannyAPIStruct;$/;"	t	typeref:struct:__anon4	file:
+__Pyx_RefNannyDeclarations	wulfila/utils/__init__.c	849;"	d	file:
+__Pyx_RefNannyDeclarations	wulfila/utils/__init__.c	874;"	d	file:
+__Pyx_RefNannyDeclarations	wulfila/utils/icelandic.c	896;"	d	file:
+__Pyx_RefNannyDeclarations	wulfila/utils/icelandic.c	921;"	d	file:
+__Pyx_RefNannyFinishContext	wulfila/utils/__init__.c	863;"	d	file:
+__Pyx_RefNannyFinishContext	wulfila/utils/__init__.c	876;"	d	file:
+__Pyx_RefNannyFinishContext	wulfila/utils/icelandic.c	910;"	d	file:
+__Pyx_RefNannyFinishContext	wulfila/utils/icelandic.c	923;"	d	file:
+__Pyx_RefNannyImportAPI	wulfila/utils/__init__.c	/^static __Pyx_RefNannyAPIStruct *__Pyx_RefNannyImportAPI(const char *modname) {$/;"	f	file:
+__Pyx_RefNannyImportAPI	wulfila/utils/icelandic.c	/^static __Pyx_RefNannyAPIStruct *__Pyx_RefNannyImportAPI(const char *modname) {$/;"	f	file:
+__Pyx_RefNannySetupContext	wulfila/utils/__init__.c	851;"	d	file:
+__Pyx_RefNannySetupContext	wulfila/utils/__init__.c	860;"	d	file:
+__Pyx_RefNannySetupContext	wulfila/utils/__init__.c	875;"	d	file:
+__Pyx_RefNannySetupContext	wulfila/utils/icelandic.c	898;"	d	file:
+__Pyx_RefNannySetupContext	wulfila/utils/icelandic.c	907;"	d	file:
+__Pyx_RefNannySetupContext	wulfila/utils/icelandic.c	922;"	d	file:
+__Pyx_SET_REFCNT	wulfila/utils/__init__.c	518;"	d	file:
+__Pyx_SET_REFCNT	wulfila/utils/__init__.c	521;"	d	file:
+__Pyx_SET_REFCNT	wulfila/utils/icelandic.c	518;"	d	file:
+__Pyx_SET_REFCNT	wulfila/utils/icelandic.c	521;"	d	file:
+__Pyx_SET_SIZE	wulfila/utils/__init__.c	519;"	d	file:
+__Pyx_SET_SIZE	wulfila/utils/__init__.c	522;"	d	file:
+__Pyx_SET_SIZE	wulfila/utils/icelandic.c	519;"	d	file:
+__Pyx_SET_SIZE	wulfila/utils/icelandic.c	522;"	d	file:
+__Pyx_SetPackagePathFromImportLib	wulfila/utils/__init__.c	/^static int __Pyx_SetPackagePathFromImportLib(const char* parent_package_name, PyObject *module_name) {$/;"	f	file:
+__Pyx_SetPackagePathFromImportLib	wulfila/utils/__init__.c	908;"	d	file:
+__Pyx_StringTabEntry	wulfila/utils/__init__.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	t	typeref:struct:__anon11	file:
+__Pyx_StringTabEntry	wulfila/utils/icelandic.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	t	typeref:struct:__anon3	file:
+__Pyx_TryUnpackUnboundCMethod	wulfila/utils/icelandic.c	/^static int __Pyx_TryUnpackUnboundCMethod(__Pyx_CachedCFunction* target) {$/;"	f	file:
+__Pyx_TypeCheck	wulfila/utils/__init__.c	1010;"	d	file:
+__Pyx_TypeCheck	wulfila/utils/__init__.c	1015;"	d	file:
+__Pyx_TypeCheck	wulfila/utils/icelandic.c	1377;"	d	file:
+__Pyx_TypeCheck	wulfila/utils/icelandic.c	1382;"	d	file:
+__Pyx_TypeTest	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_TypeTest(PyObject *obj, PyTypeObject *type) {$/;"	f	file:
+__Pyx_WriteUnraisable	wulfila/utils/icelandic.c	/^static void __Pyx_WriteUnraisable(const char *name, CYTHON_UNUSED int clineno,$/;"	f	file:
+__Pyx_XCLEAR	wulfila/utils/__init__.c	895;"	d	file:
+__Pyx_XCLEAR	wulfila/utils/icelandic.c	942;"	d	file:
+__Pyx_XDECREF	wulfila/utils/__init__.c	870;"	d	file:
+__Pyx_XDECREF	wulfila/utils/__init__.c	882;"	d	file:
+__Pyx_XDECREF	wulfila/utils/icelandic.c	917;"	d	file:
+__Pyx_XDECREF	wulfila/utils/icelandic.c	929;"	d	file:
+__Pyx_XDECREF_SET	wulfila/utils/__init__.c	886;"	d	file:
+__Pyx_XDECREF_SET	wulfila/utils/icelandic.c	933;"	d	file:
+__Pyx_XGIVEREF	wulfila/utils/__init__.c	872;"	d	file:
+__Pyx_XGIVEREF	wulfila/utils/__init__.c	884;"	d	file:
+__Pyx_XGIVEREF	wulfila/utils/icelandic.c	919;"	d	file:
+__Pyx_XGIVEREF	wulfila/utils/icelandic.c	931;"	d	file:
+__Pyx_XGOTREF	wulfila/utils/__init__.c	871;"	d	file:
+__Pyx_XGOTREF	wulfila/utils/__init__.c	883;"	d	file:
+__Pyx_XGOTREF	wulfila/utils/icelandic.c	918;"	d	file:
+__Pyx_XGOTREF	wulfila/utils/icelandic.c	930;"	d	file:
+__Pyx_XINCREF	wulfila/utils/__init__.c	869;"	d	file:
+__Pyx_XINCREF	wulfila/utils/__init__.c	881;"	d	file:
+__Pyx_XINCREF	wulfila/utils/icelandic.c	916;"	d	file:
+__Pyx_XINCREF	wulfila/utils/icelandic.c	928;"	d	file:
+__Pyx__ArgTypeTest	wulfila/utils/icelandic.c	/^static int __Pyx__ArgTypeTest(PyObject *obj, PyTypeObject *type, const char *name, int exact)$/;"	f	file:
+__Pyx__CallUnboundCMethod0	wulfila/utils/icelandic.c	/^static PyObject* __Pyx__CallUnboundCMethod0(__Pyx_CachedCFunction* cfunc, PyObject* self) {$/;"	f	file:
+__Pyx__Coroutine_AlreadyRunningError	wulfila/utils/icelandic.c	/^static void __Pyx__Coroutine_AlreadyRunningError(CYTHON_UNUSED __pyx_CoroutineObject *gen) {$/;"	f	file:
+__Pyx__Coroutine_AlreadyTerminatedError	wulfila/utils/icelandic.c	/^static void __Pyx__Coroutine_AlreadyTerminatedError(CYTHON_UNUSED PyObject *gen, PyObject *value, CYTHON_UNUSED int closing) {$/;"	f	file:
+__Pyx__Coroutine_New	wulfila/utils/icelandic.c	/^static __pyx_CoroutineObject *__Pyx__Coroutine_New($/;"	f	file:
+__Pyx__Coroutine_NewInit	wulfila/utils/icelandic.c	/^static __pyx_CoroutineObject *__Pyx__Coroutine_NewInit($/;"	f	file:
+__Pyx__Coroutine_NotStartedError	wulfila/utils/icelandic.c	/^static void __Pyx__Coroutine_NotStartedError(CYTHON_UNUSED PyObject *gen) {$/;"	f	file:
+__Pyx__Coroutine_Throw	wulfila/utils/icelandic.c	/^static PyObject *__Pyx__Coroutine_Throw(PyObject *self, PyObject *typ, PyObject *val, PyObject *tb,$/;"	f	file:
+__Pyx__ExceptionReset	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx__ExceptionReset(PyThreadState *tstate, PyObject *type, PyObject *value, PyObject *tb) {$/;"	f	file:
+__Pyx__ExceptionSave	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx__ExceptionSave(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb) {$/;"	f	file:
+__Pyx__ExceptionSwap	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx__ExceptionSwap(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb) {$/;"	f	file:
+__Pyx__GetException	wulfila/utils/icelandic.c	/^static int __Pyx__GetException(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb)$/;"	f	file:
+__Pyx__GetModuleGlobalName	wulfila/utils/icelandic.c	/^static PyObject *__Pyx__GetModuleGlobalName(PyObject *name, PY_UINT64_T *dict_version, PyObject **dict_cached_value)$/;"	f	file:
+__Pyx__PyObject_CallMethod1	wulfila/utils/icelandic.c	/^static PyObject* __Pyx__PyObject_CallMethod1(PyObject* method, PyObject* arg) {$/;"	f	file:
+__Pyx__PyObject_CallOneArg	wulfila/utils/icelandic.c	/^static PyObject* __Pyx__PyObject_CallOneArg(PyObject *func, PyObject *arg) {$/;"	f	file:
+__Pyx_check_binary_version	wulfila/utils/__init__.c	/^static int __Pyx_check_binary_version(void) {$/;"	f	file:
+__Pyx_check_binary_version	wulfila/utils/icelandic.c	/^static int __Pyx_check_binary_version(void) {$/;"	f	file:
+__Pyx_fits_Py_ssize_t	wulfila/utils/__init__.c	639;"	d	file:
+__Pyx_fits_Py_ssize_t	wulfila/utils/icelandic.c	639;"	d	file:
+__Pyx_get_object_dict_version	wulfila/utils/__init__.c	/^static CYTHON_INLINE PY_UINT64_T __Pyx_get_object_dict_version(PyObject *obj) {$/;"	f	file:
+__Pyx_get_object_dict_version	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PY_UINT64_T __Pyx_get_object_dict_version(PyObject *obj) {$/;"	f	file:
+__Pyx_get_tp_dict_version	wulfila/utils/__init__.c	/^static CYTHON_INLINE PY_UINT64_T __Pyx_get_tp_dict_version(PyObject *obj) {$/;"	f	file:
+__Pyx_get_tp_dict_version	wulfila/utils/icelandic.c	/^static CYTHON_INLINE PY_UINT64_T __Pyx_get_tp_dict_version(PyObject *obj) {$/;"	f	file:
+__Pyx_init_sys_getdefaultencoding_params	wulfila/utils/__init__.c	/^static int __Pyx_init_sys_getdefaultencoding_params(void) {$/;"	f	file:
+__Pyx_init_sys_getdefaultencoding_params	wulfila/utils/icelandic.c	/^static int __Pyx_init_sys_getdefaultencoding_params(void) {$/;"	f	file:
+__Pyx_inner_PyErr_GivenExceptionMatches2	wulfila/utils/__init__.c	/^static CYTHON_INLINE int __Pyx_inner_PyErr_GivenExceptionMatches2(PyObject *err, PyObject* exc_type1, PyObject *exc_type2) {$/;"	f	file:
+__Pyx_inner_PyErr_GivenExceptionMatches2	wulfila/utils/__init__.c	/^static int __Pyx_inner_PyErr_GivenExceptionMatches2(PyObject *err, PyObject* exc_type1, PyObject* exc_type2) {$/;"	f	file:
+__Pyx_inner_PyErr_GivenExceptionMatches2	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_inner_PyErr_GivenExceptionMatches2(PyObject *err, PyObject* exc_type1, PyObject *exc_type2) {$/;"	f	file:
+__Pyx_inner_PyErr_GivenExceptionMatches2	wulfila/utils/icelandic.c	/^static int __Pyx_inner_PyErr_GivenExceptionMatches2(PyObject *err, PyObject* exc_type1, PyObject* exc_type2) {$/;"	f	file:
+__Pyx_is_valid_index	wulfila/utils/__init__.c	/^static CYTHON_INLINE int __Pyx_is_valid_index(Py_ssize_t i, Py_ssize_t limit) {$/;"	f	file:
+__Pyx_is_valid_index	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_is_valid_index(Py_ssize_t i, Py_ssize_t limit) {$/;"	f	file:
+__Pyx_long_cast	wulfila/utils/__init__.c	638;"	d	file:
+__Pyx_long_cast	wulfila/utils/icelandic.c	638;"	d	file:
+__Pyx_modinit_function_export_code	wulfila/utils/__init__.c	/^static int __Pyx_modinit_function_export_code(void) {$/;"	f	file:
+__Pyx_modinit_function_export_code	wulfila/utils/icelandic.c	/^static int __Pyx_modinit_function_export_code(void) {$/;"	f	file:
+__Pyx_modinit_function_import_code	wulfila/utils/__init__.c	/^static int __Pyx_modinit_function_import_code(void) {$/;"	f	file:
+__Pyx_modinit_function_import_code	wulfila/utils/icelandic.c	/^static int __Pyx_modinit_function_import_code(void) {$/;"	f	file:
+__Pyx_modinit_global_init_code	wulfila/utils/__init__.c	/^static int __Pyx_modinit_global_init_code(void) {$/;"	f	file:
+__Pyx_modinit_global_init_code	wulfila/utils/icelandic.c	/^static int __Pyx_modinit_global_init_code(void) {$/;"	f	file:
+__Pyx_modinit_type_import_code	wulfila/utils/__init__.c	/^static int __Pyx_modinit_type_import_code(void) {$/;"	f	file:
+__Pyx_modinit_type_import_code	wulfila/utils/icelandic.c	/^static int __Pyx_modinit_type_import_code(void) {$/;"	f	file:
+__Pyx_modinit_type_init_code	wulfila/utils/__init__.c	/^static int __Pyx_modinit_type_init_code(void) {$/;"	f	file:
+__Pyx_modinit_type_init_code	wulfila/utils/icelandic.c	/^static int __Pyx_modinit_type_init_code(void) {$/;"	f	file:
+__Pyx_modinit_variable_export_code	wulfila/utils/__init__.c	/^static int __Pyx_modinit_variable_export_code(void) {$/;"	f	file:
+__Pyx_modinit_variable_export_code	wulfila/utils/icelandic.c	/^static int __Pyx_modinit_variable_export_code(void) {$/;"	f	file:
+__Pyx_modinit_variable_import_code	wulfila/utils/__init__.c	/^static int __Pyx_modinit_variable_import_code(void) {$/;"	f	file:
+__Pyx_modinit_variable_import_code	wulfila/utils/icelandic.c	/^static int __Pyx_modinit_variable_import_code(void) {$/;"	f	file:
+__Pyx_object_dict_version_matches	wulfila/utils/__init__.c	/^static CYTHON_INLINE int __Pyx_object_dict_version_matches(PyObject* obj, PY_UINT64_T tp_dict_version, PY_UINT64_T obj_dict_version) {$/;"	f	file:
+__Pyx_object_dict_version_matches	wulfila/utils/icelandic.c	/^static CYTHON_INLINE int __Pyx_object_dict_version_matches(PyObject* obj, PY_UINT64_T tp_dict_version, PY_UINT64_T obj_dict_version) {$/;"	f	file:
+__Pyx_patch_abc	wulfila/utils/icelandic.c	/^static int __Pyx_patch_abc(void) {$/;"	f	file:
+__Pyx_patch_abc_module	wulfila/utils/icelandic.c	/^static PyObject* __Pyx_patch_abc_module(PyObject *module) {$/;"	f	file:
+__Pyx_pretend_to_initialize	wulfila/utils/__init__.c	/^static CYTHON_INLINE void __Pyx_pretend_to_initialize(void* ptr) { (void)ptr; }$/;"	f	file:
+__Pyx_pretend_to_initialize	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __Pyx_pretend_to_initialize(void* ptr) { (void)ptr; }$/;"	f	file:
+__Pyx_setup_reduce	wulfila/utils/icelandic.c	/^static int __Pyx_setup_reduce(PyObject* type_obj) {$/;"	f	file:
+__Pyx_setup_reduce_is_named	wulfila/utils/icelandic.c	/^static int __Pyx_setup_reduce_is_named(PyObject* meth, PyObject* name) {$/;"	f	file:
+__Pyx_sst_abs	wulfila/utils/__init__.c	654;"	d	file:
+__Pyx_sst_abs	wulfila/utils/__init__.c	656;"	d	file:
+__Pyx_sst_abs	wulfila/utils/__init__.c	658;"	d	file:
+__Pyx_sst_abs	wulfila/utils/__init__.c	660;"	d	file:
+__Pyx_sst_abs	wulfila/utils/__init__.c	662;"	d	file:
+__Pyx_sst_abs	wulfila/utils/__init__.c	664;"	d	file:
+__Pyx_sst_abs	wulfila/utils/__init__.c	666;"	d	file:
+__Pyx_sst_abs	wulfila/utils/icelandic.c	654;"	d	file:
+__Pyx_sst_abs	wulfila/utils/icelandic.c	656;"	d	file:
+__Pyx_sst_abs	wulfila/utils/icelandic.c	658;"	d	file:
+__Pyx_sst_abs	wulfila/utils/icelandic.c	660;"	d	file:
+__Pyx_sst_abs	wulfila/utils/icelandic.c	662;"	d	file:
+__Pyx_sst_abs	wulfila/utils/icelandic.c	664;"	d	file:
+__Pyx_sst_abs	wulfila/utils/icelandic.c	666;"	d	file:
+__Pyx_sys_getdefaultencoding_not_ascii	wulfila/utils/__init__.c	/^static int __Pyx_sys_getdefaultencoding_not_ascii;$/;"	v	file:
+__Pyx_sys_getdefaultencoding_not_ascii	wulfila/utils/icelandic.c	/^static int __Pyx_sys_getdefaultencoding_not_ascii;$/;"	v	file:
+__Pyx_truncl	wulfila/utils/__init__.c	599;"	d	file:
+__Pyx_truncl	wulfila/utils/__init__.c	601;"	d	file:
+__Pyx_truncl	wulfila/utils/icelandic.c	599;"	d	file:
+__Pyx_truncl	wulfila/utils/icelandic.c	601;"	d	file:
+__Pyx_uchar_cast	wulfila/utils/__init__.c	637;"	d	file:
+__Pyx_uchar_cast	wulfila/utils/icelandic.c	637;"	d	file:
+__Pyx_void_to_None	wulfila/utils/__init__.c	260;"	d	file:
+__Pyx_void_to_None	wulfila/utils/icelandic.c	260;"	d	file:
+__cdecl	wulfila/utils/__init__.c	34;"	d	file:
+__cdecl	wulfila/utils/icelandic.c	34;"	d	file:
+__fastcall	wulfila/utils/__init__.c	37;"	d	file:
+__fastcall	wulfila/utils/icelandic.c	37;"	d	file:
+__has_attribute	wulfila/utils/__init__.c	217;"	d	file:
+__has_attribute	wulfila/utils/icelandic.c	217;"	d	file:
+__has_cpp_attribute	wulfila/utils/__init__.c	220;"	d	file:
+__has_cpp_attribute	wulfila/utils/icelandic.c	220;"	d	file:
+__init__	wulfila/lang/lang.py	/^    def __init__(self):$/;"	m	class:Registry
+__init__	wulfila/lang/lang.py	/^    def __init__(self, name):$/;"	m	class:Language
+__init__	wulfila/lang/letter.py	/^    def __init__(self, string, latex=None):$/;"	m	class:Letter
+__init__	wulfila/lang/lex.py	/^    def __init__(self):$/;"	m	class:Lexicon
+__init__	wulfila/lang/lex.py	/^    def __init__(self, data):$/;"	m	class:Term
+__init__	wulfila/lang/phono.py	/^    def __init__(self):$/;"	m	class:Phonology
+__init__	wulfila/lang/word.py	/^    def __init__(self):$/;"	m	class:Word
+__pyx_CoroutineObject	wulfila/utils/icelandic.c	/^} __pyx_CoroutineObject;$/;"	t	typeref:struct:__anon8	file:
+__pyx_GeneratorType	wulfila/utils/icelandic.c	/^static PyTypeObject *__pyx_GeneratorType = 0;$/;"	v	file:
+__pyx_GeneratorType_type	wulfila/utils/icelandic.c	/^static PyTypeObject __pyx_GeneratorType_type = {$/;"	v	file:
+__pyx_Generator_getsets	wulfila/utils/icelandic.c	/^static PyGetSetDef __pyx_Generator_getsets[] = {$/;"	v	file:
+__pyx_Generator_init	wulfila/utils/icelandic.c	/^static int __pyx_Generator_init(void) {$/;"	f	file:
+__pyx_Generator_memberlist	wulfila/utils/icelandic.c	/^static PyMemberDef __pyx_Generator_memberlist[] = {$/;"	v	file:
+__pyx_Generator_methods	wulfila/utils/icelandic.c	/^static PyMethodDef __pyx_Generator_methods[] = {$/;"	v	file:
+__pyx_PyFloat_AsDouble	wulfila/utils/__init__.c	717;"	d	file:
+__pyx_PyFloat_AsDouble	wulfila/utils/__init__.c	719;"	d	file:
+__pyx_PyFloat_AsDouble	wulfila/utils/icelandic.c	717;"	d	file:
+__pyx_PyFloat_AsDouble	wulfila/utils/icelandic.c	719;"	d	file:
+__pyx_PyFloat_AsFloat	wulfila/utils/__init__.c	721;"	d	file:
+__pyx_PyFloat_AsFloat	wulfila/utils/icelandic.c	721;"	d	file:
+__pyx_b	wulfila/utils/__init__.c	/^static PyObject *__pyx_b;$/;"	v	file:
+__pyx_b	wulfila/utils/icelandic.c	/^static PyObject *__pyx_b;$/;"	v	file:
+__pyx_bisect_code_objects	wulfila/utils/__init__.c	/^static int __pyx_bisect_code_objects(__Pyx_CodeObjectCacheEntry* entries, int count, int code_line) {$/;"	f	file:
+__pyx_bisect_code_objects	wulfila/utils/icelandic.c	/^static int __pyx_bisect_code_objects(__Pyx_CodeObjectCacheEntry* entries, int count, int code_line) {$/;"	f	file:
+__pyx_builtin_open	wulfila/utils/icelandic.c	/^static PyObject *__pyx_builtin_open;$/;"	v	file:
+__pyx_cfilenm	wulfila/utils/__init__.c	/^static const char * __pyx_cfilenm= __FILE__;$/;"	v	file:
+__pyx_cfilenm	wulfila/utils/icelandic.c	/^static const char * __pyx_cfilenm= __FILE__;$/;"	v	file:
+__pyx_check_sizeof_voidp	wulfila/utils/__init__.c	/^    enum { __pyx_check_sizeof_voidp = 1 \/ (int)(SIZEOF_VOID_P == sizeof(void*)) };$/;"	e	enum:__anon9	file:
+__pyx_check_sizeof_voidp	wulfila/utils/icelandic.c	/^    enum { __pyx_check_sizeof_voidp = 1 \/ (int)(SIZEOF_VOID_P == sizeof(void*)) };$/;"	e	enum:__anon1	file:
+__pyx_clineno	wulfila/utils/__init__.c	/^static int __pyx_clineno = 0;$/;"	v	file:
+__pyx_clineno	wulfila/utils/icelandic.c	/^static int __pyx_clineno = 0;$/;"	v	file:
+__pyx_code_cache	wulfila/utils/__init__.c	/^static struct __Pyx_CodeObjectCache __pyx_code_cache = {0,0,NULL};$/;"	v	typeref:struct:__Pyx_CodeObjectCache	file:
+__pyx_code_cache	wulfila/utils/icelandic.c	/^static struct __Pyx_CodeObjectCache __pyx_code_cache = {0,0,NULL};$/;"	v	typeref:struct:__Pyx_CodeObjectCache	file:
+__pyx_codeobj__94	wulfila/utils/icelandic.c	/^static PyObject *__pyx_codeobj__94;$/;"	v	file:
+__pyx_codeobj__96	wulfila/utils/icelandic.c	/^static PyObject *__pyx_codeobj__96;$/;"	v	file:
+__pyx_coroutine_body_t	wulfila/utils/icelandic.c	/^typedef PyObject *(*__pyx_coroutine_body_t)(PyObject *, PyThreadState *, PyObject *);$/;"	t	file:
+__pyx_cython_runtime	wulfila/utils/__init__.c	/^static PyObject *__pyx_cython_runtime = NULL;$/;"	v	file:
+__pyx_cython_runtime	wulfila/utils/icelandic.c	/^static PyObject *__pyx_cython_runtime = NULL;$/;"	v	file:
+__pyx_d	wulfila/utils/__init__.c	/^static PyObject *__pyx_d;$/;"	v	file:
+__pyx_d	wulfila/utils/icelandic.c	/^static PyObject *__pyx_d;$/;"	v	file:
+__pyx_doc_7wulfila_5utils_8__init___update_ois	wulfila/utils/__init__.c	/^static char __pyx_doc_7wulfila_5utils_8__init___update_ois[] = "Updates Old Icelandic Dictionary";$/;"	v	file:
+__pyx_empty_bytes	wulfila/utils/__init__.c	/^static PyObject *__pyx_empty_bytes;$/;"	v	file:
+__pyx_empty_bytes	wulfila/utils/icelandic.c	/^static PyObject *__pyx_empty_bytes;$/;"	v	file:
+__pyx_empty_tuple	wulfila/utils/__init__.c	/^static PyObject *__pyx_empty_tuple;$/;"	v	file:
+__pyx_empty_tuple	wulfila/utils/icelandic.c	/^static PyObject *__pyx_empty_tuple;$/;"	v	file:
+__pyx_empty_unicode	wulfila/utils/__init__.c	/^static PyObject *__pyx_empty_unicode;$/;"	v	file:
+__pyx_empty_unicode	wulfila/utils/icelandic.c	/^static PyObject *__pyx_empty_unicode;$/;"	v	file:
+__pyx_f	wulfila/utils/__init__.c	/^static const char *__pyx_f[] = {$/;"	v	file:
+__pyx_f	wulfila/utils/icelandic.c	/^static const char *__pyx_f[] = {$/;"	v	file:
+__pyx_f_7wulfila_5utils_8__init___update_ois	wulfila/utils/__init__.c	/^static CYTHON_INLINE void __pyx_f_7wulfila_5utils_8__init___update_ois(CYTHON_UNUSED int __pyx_skip_dispatch) {$/;"	f	file:
+__pyx_f_7wulfila_5utils_9icelandic___pyx_unpickle_Line__set_state	wulfila/utils/icelandic.c	/^static PyObject *__pyx_f_7wulfila_5utils_9icelandic___pyx_unpickle_Line__set_state(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {$/;"	f	file:
+__pyx_f_7wulfila_5utils_9icelandic___pyx_unpickle_Word__set_state	wulfila/utils/icelandic.c	/^static PyObject *__pyx_f_7wulfila_5utils_9icelandic___pyx_unpickle_Word__set_state(struct __pyx_obj_7wulfila_5utils_9icelandic_Word *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {$/;"	f	file:
+__pyx_f_7wulfila_5utils_9icelandic_add_data	wulfila/utils/icelandic.c	/^static void __pyx_f_7wulfila_5utils_9icelandic_add_data(PyObject *__pyx_v_cur, PyObject *__pyx_v_data) {$/;"	f	file:
+__pyx_f_7wulfila_5utils_9icelandic_clean	wulfila/utils/icelandic.c	/^static PyObject *__pyx_f_7wulfila_5utils_9icelandic_clean(PyObject *__pyx_v_text) {$/;"	f	file:
+__pyx_f_7wulfila_5utils_9icelandic_preprocess_data	wulfila/utils/icelandic.c	/^static PyObject *__pyx_f_7wulfila_5utils_9icelandic_preprocess_data(PyObject *__pyx_v_base_data) {$/;"	f	file:
+__pyx_f_7wulfila_5utils_9icelandic_run	wulfila/utils/__init__.c	/^static CYTHON_INLINE void (*__pyx_f_7wulfila_5utils_9icelandic_run)(void); \/*proto*\/$/;"	v	file:
+__pyx_f_7wulfila_5utils_9icelandic_run	wulfila/utils/icelandic.c	/^static CYTHON_INLINE void __pyx_f_7wulfila_5utils_9icelandic_run(void) {$/;"	f	file:
+__pyx_f_7wulfila_5utils_9icelandic_set_schema	wulfila/utils/icelandic.c	/^static void __pyx_f_7wulfila_5utils_9icelandic_set_schema(PyObject *__pyx_v_cur) {$/;"	f	file:
+__pyx_f_7wulfila_5utils_9icelandic_update_datafile	wulfila/utils/icelandic.c	/^static void __pyx_f_7wulfila_5utils_9icelandic_update_datafile(void) {$/;"	f	file:
+__pyx_filename	wulfila/utils/__init__.c	/^static const char *__pyx_filename;$/;"	v	file:
+__pyx_filename	wulfila/utils/icelandic.c	/^static const char *__pyx_filename;$/;"	v	file:
+__pyx_find_code_object	wulfila/utils/__init__.c	/^static PyCodeObject *__pyx_find_code_object(int code_line) {$/;"	f	file:
+__pyx_find_code_object	wulfila/utils/icelandic.c	/^static PyCodeObject *__pyx_find_code_object(int code_line) {$/;"	f	file:
+__pyx_freecount_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	wulfila/utils/icelandic.c	/^static int __pyx_freecount_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__ = 0;$/;"	v	file:
+__pyx_freelist_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	wulfila/utils/icelandic.c	/^static struct __pyx_obj_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__ *__pyx_freelist_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__[8];$/;"	v	typeref:struct:__pyx_obj_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	file:
+__pyx_gb_7wulfila_5utils_9icelandic_4Word_8generator	wulfila/utils/icelandic.c	/^static PyObject *__pyx_gb_7wulfila_5utils_9icelandic_4Word_8generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) \/* generator body *\/$/;"	f	file:
+__pyx_getprop_7wulfila_5utils_9icelandic_4Line_headword	wulfila/utils/icelandic.c	/^static PyObject *__pyx_getprop_7wulfila_5utils_9icelandic_4Line_headword(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	file:
+__pyx_getprop_7wulfila_5utils_9icelandic_4Line_line	wulfila/utils/icelandic.c	/^static PyObject *__pyx_getprop_7wulfila_5utils_9icelandic_4Line_line(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	file:
+__pyx_getprop_7wulfila_5utils_9icelandic_4Line_pagenum	wulfila/utils/icelandic.c	/^static PyObject *__pyx_getprop_7wulfila_5utils_9icelandic_4Line_pagenum(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	file:
+__pyx_getsets_7wulfila_5utils_9icelandic_Line	wulfila/utils/icelandic.c	/^static struct PyGetSetDef __pyx_getsets_7wulfila_5utils_9icelandic_Line[] = {$/;"	v	typeref:struct:PyGetSetDef	file:
+__pyx_insert_code_object	wulfila/utils/__init__.c	/^static void __pyx_insert_code_object(int code_line, PyCodeObject* code_object) {$/;"	f	file:
+__pyx_insert_code_object	wulfila/utils/icelandic.c	/^static void __pyx_insert_code_object(int code_line, PyCodeObject* code_object) {$/;"	f	file:
+__pyx_int_1	wulfila/utils/icelandic.c	/^static PyObject *__pyx_int_1;$/;"	v	file:
+__pyx_int_146202145	wulfila/utils/icelandic.c	/^static PyObject *__pyx_int_146202145;$/;"	v	file:
+__pyx_int_3	wulfila/utils/icelandic.c	/^static PyObject *__pyx_int_3;$/;"	v	file:
+__pyx_int_83684090	wulfila/utils/icelandic.c	/^static PyObject *__pyx_int_83684090;$/;"	v	file:
+__pyx_k_	wulfila/utils/icelandic.c	/^static const char __pyx_k_[] = "'";$/;"	v	file:
+__pyx_k_0m	wulfila/utils/icelandic.c	/^static const char __pyx_k_0m[] = "\\033[0m";$/;"	v	file:
+__pyx_k_1m	wulfila/utils/icelandic.c	/^static const char __pyx_k_1m[] = "\\033[1m";$/;"	v	file:
+__pyx_k_3m	wulfila/utils/icelandic.c	/^static const char __pyx_k_3m[] = "\\033[3m";$/;"	v	file:
+__pyx_k_AElig	wulfila/utils/icelandic.c	/^static const char __pyx_k_AElig[] = "&AElig;";$/;"	v	file:
+__pyx_k_Aacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_Aacute[] = "&Aacute;";$/;"	v	file:
+__pyx_k_ArgumentParser	wulfila/utils/icelandic.c	/^static const char __pyx_k_ArgumentParser[] = "ArgumentParser";$/;"	v	file:
+__pyx_k_Auml	wulfila/utils/icelandic.c	/^static const char __pyx_k_Auml[] = "&Auml;";$/;"	v	file:
+__pyx_k_B	wulfila/utils/icelandic.c	/^static const char __pyx_k_B[] = "<B>";$/;"	v	file:
+__pyx_k_CREATE_TABLE_entries_id_INT_PRIM	wulfila/utils/icelandic.c	/^static const char __pyx_k_CREATE_TABLE_entries_id_INT_PRIM[] = "CREATE TABLE entries (id INT PRIMARY KEY, term TEXT, definition BLOB);";$/;"	v	file:
+__pyx_k_CREATE_TABLE_patterns_id_INT_PRI	wulfila/utils/icelandic.c	/^static const char __pyx_k_CREATE_TABLE_patterns_id_INT_PRI[] = "CREATE TABLE patterns (id INT PRIMARY KEY, pattern TEXT, entry_id INT);";$/;"	v	file:
+__pyx_k_Closing_SQLite_Connection	wulfila/utils/icelandic.c	/^static const char __pyx_k_Closing_SQLite_Connection[] = "Closing SQLite Connection";$/;"	v	file:
+__pyx_k_Creating_Overwriting_Data_File	wulfila/utils/icelandic.c	/^static const char __pyx_k_Creating_Overwriting_Data_File[] = "Creating\/Overwriting Data File";$/;"	v	file:
+__pyx_k_D	wulfila/utils/icelandic.c	/^static const char __pyx_k_D[] = "-D";$/;"	v	file:
+__pyx_k_DEBUG	wulfila/utils/icelandic.c	/^static const char __pyx_k_DEBUG[] = "DEBUG";$/;"	v	file:
+__pyx_k_Data_File_exists_use_force_to_re	wulfila/utils/icelandic.c	/^static const char __pyx_k_Data_File_exists_use_force_to_re[] = "Data File exists, use --force to re-download";$/;"	v	file:
+__pyx_k_ETH	wulfila/utils/icelandic.c	/^static const char __pyx_k_ETH[] = "&ETH;";$/;"	v	file:
+__pyx_k_Eacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_Eacute[] = "&Eacute;";$/;"	v	file:
+__pyx_k_Forces_operations_overwriting_fi	wulfila/utils/icelandic.c	/^static const char __pyx_k_Forces_operations_overwriting_fi[] = "Forces operations, overwriting files";$/;"	v	file:
+__pyx_k_HEADER_HEADER	wulfila/utils/icelandic.c	/^static const char __pyx_k_HEADER_HEADER[] = "<HEADER>.*?<\/HEADER>";$/;"	v	file:
+__pyx_k_I	wulfila/utils/icelandic.c	/^static const char __pyx_k_I[] = "<I>";$/;"	v	file:
+__pyx_k_INSERT_INTO_entries_VALUES	wulfila/utils/icelandic.c	/^static const char __pyx_k_INSERT_INTO_entries_VALUES[] = "INSERT INTO entries VALUES (?, ?, ?)";$/;"	v	file:
+__pyx_k_INSERT_INTO_patterns_VALUES	wulfila/utils/icelandic.c	/^static const char __pyx_k_INSERT_INTO_patterns_VALUES[] = "INSERT INTO patterns VALUES (?, ?, ?)";$/;"	v	file:
+__pyx_k_I_B	wulfila/utils/icelandic.c	/^static const char __pyx_k_I_B[] = "<\/I>|<\/B>";$/;"	v	file:
+__pyx_k_Iacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_Iacute[] = "&Iacute;";$/;"	v	file:
+__pyx_k_Incompatible_checksums_s_vs_0x4f	wulfila/utils/icelandic.c	/^static const char __pyx_k_Incompatible_checksums_s_vs_0x4f[] = "Incompatible checksums (%s vs 0x4fceafa = (definition, lines, term))";$/;"	v	file:
+__pyx_k_Incompatible_checksums_s_vs_0x8b	wulfila/utils/icelandic.c	/^static const char __pyx_k_Incompatible_checksums_s_vs_0x8b[] = "Incompatible checksums (%s vs 0x8b6de21 = (headword, line, pagenum))";$/;"	v	file:
+__pyx_k_Line	wulfila/utils/icelandic.c	/^static const char __pyx_k_Line[] = "Line";$/;"	v	file:
+__pyx_k_Line_headword	wulfila/utils/icelandic.c	/^static const char __pyx_k_Line_headword[] = "Line: headword='";$/;"	v	file:
+__pyx_k_Main_Functions_used_to_initiate	wulfila/utils/__init__.c	/^static const char __pyx_k_Main_Functions_used_to_initiate[] = "Main Functions used to initiate utility operations";$/;"	v	file:
+__pyx_k_Number_of_Words	wulfila/utils/icelandic.c	/^static const char __pyx_k_Number_of_Words[] = "Number of Words: ";$/;"	v	file:
+__pyx_k_OElig	wulfila/utils/icelandic.c	/^static const char __pyx_k_OElig[] = "&OElig;";$/;"	v	file:
+__pyx_k_OSLASH	wulfila/utils/icelandic.c	/^static const char __pyx_k_OSLASH[] = "&OSLASH;";$/;"	v	file:
+__pyx_k_Oacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_Oacute[] = "&Oacute;";$/;"	v	file:
+__pyx_k_Opening_SQLite_Connection	wulfila/utils/icelandic.c	/^static const char __pyx_k_Opening_SQLite_Connection[] = "Opening SQLite Connection";$/;"	v	file:
+__pyx_k_Ouml	wulfila/utils/icelandic.c	/^static const char __pyx_k_Ouml[] = "&Ouml;";$/;"	v	file:
+__pyx_k_PAGE_NUM	wulfila/utils/icelandic.c	/^static const char __pyx_k_PAGE_NUM[] = "<PAGE NUM=\\"";$/;"	v	file:
+__pyx_k_Path	wulfila/utils/icelandic.c	/^static const char __pyx_k_Path[] = "Path";$/;"	v	file:
+__pyx_k_PickleError	wulfila/utils/icelandic.c	/^static const char __pyx_k_PickleError[] = "PickleError";$/;"	v	file:
+__pyx_k_Removing_Database_File_for_Old_I	wulfila/utils/icelandic.c	/^static const char __pyx_k_Removing_Database_File_for_Old_I[] = "Removing Database File for Old Icelandic";$/;"	v	file:
+__pyx_k_Saving_data_to_JSON_file	wulfila/utils/icelandic.c	/^static const char __pyx_k_Saving_data_to_JSON_file[] = "Saving data to JSON file";$/;"	v	file:
+__pyx_k_THORN	wulfila/utils/icelandic.c	/^static const char __pyx_k_THORN[] = "&THORN;";$/;"	v	file:
+__pyx_k_Uacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_Uacute[] = "&Uacute;";$/;"	v	file:
+__pyx_k_Updating_Database	wulfila/utils/icelandic.c	/^static const char __pyx_k_Updating_Database[] = "Updating Database";$/;"	v	file:
+__pyx_k_WARN	wulfila/utils/icelandic.c	/^static const char __pyx_k_WARN[] = "WARN";$/;"	v	file:
+__pyx_k_Word	wulfila/utils/icelandic.c	/^static const char __pyx_k_Word[] = "Word";$/;"	v	file:
+__pyx_k_Word___iter	wulfila/utils/icelandic.c	/^static const char __pyx_k_Word___iter[] = "Word.__iter__";$/;"	v	file:
+__pyx_k_Yacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_Yacute[] = "&Yacute;";$/;"	v	file:
+__pyx_k__14	wulfila/utils/icelandic.c	/^static const char __pyx_k__14[] = "&";$/;"	v	file:
+__pyx_k__16	wulfila/utils/icelandic.c	/^static const char __pyx_k__16[] = "\\303\\201";$/;"	v	file:
+__pyx_k__18	wulfila/utils/icelandic.c	/^static const char __pyx_k__18[] = "\\303\\241";$/;"	v	file:
+__pyx_k__2	wulfila/utils/icelandic.c	/^static const char __pyx_k__2[] = "";$/;"	v	file:
+__pyx_k__20	wulfila/utils/icelandic.c	/^static const char __pyx_k__20[] = "\\303\\251";$/;"	v	file:
+__pyx_k__22	wulfila/utils/icelandic.c	/^static const char __pyx_k__22[] = "\\303\\211";$/;"	v	file:
+__pyx_k__24	wulfila/utils/icelandic.c	/^static const char __pyx_k__24[] = "\\303\\255";$/;"	v	file:
+__pyx_k__26	wulfila/utils/icelandic.c	/^static const char __pyx_k__26[] = "\\303\\215";$/;"	v	file:
+__pyx_k__28	wulfila/utils/icelandic.c	/^static const char __pyx_k__28[] = "\\303\\263";$/;"	v	file:
+__pyx_k__3	wulfila/utils/icelandic.c	/^static const char __pyx_k__3[] = " ";$/;"	v	file:
+__pyx_k__30	wulfila/utils/icelandic.c	/^static const char __pyx_k__30[] = "\\303\\223";$/;"	v	file:
+__pyx_k__32	wulfila/utils/icelandic.c	/^static const char __pyx_k__32[] = "\\303\\272";$/;"	v	file:
+__pyx_k__34	wulfila/utils/icelandic.c	/^static const char __pyx_k__34[] = "\\303\\232";$/;"	v	file:
+__pyx_k__36	wulfila/utils/icelandic.c	/^static const char __pyx_k__36[] = "\\303\\275";$/;"	v	file:
+__pyx_k__38	wulfila/utils/icelandic.c	/^static const char __pyx_k__38[] = "\\303\\235";$/;"	v	file:
+__pyx_k__40	wulfila/utils/icelandic.c	/^static const char __pyx_k__40[] = "\\303\\246";$/;"	v	file:
+__pyx_k__42	wulfila/utils/icelandic.c	/^static const char __pyx_k__42[] = "\\303\\206";$/;"	v	file:
+__pyx_k__44	wulfila/utils/icelandic.c	/^static const char __pyx_k__44[] = "\\305\\223";$/;"	v	file:
+__pyx_k__46	wulfila/utils/icelandic.c	/^static const char __pyx_k__46[] = "\\305\\222";$/;"	v	file:
+__pyx_k__48	wulfila/utils/icelandic.c	/^static const char __pyx_k__48[] = "\\303\\266";$/;"	v	file:
+__pyx_k__50	wulfila/utils/icelandic.c	/^static const char __pyx_k__50[] = "\\303\\226";$/;"	v	file:
+__pyx_k__52	wulfila/utils/icelandic.c	/^static const char __pyx_k__52[] = "\\303\\244";$/;"	v	file:
+__pyx_k__54	wulfila/utils/icelandic.c	/^static const char __pyx_k__54[] = "\\303\\204";$/;"	v	file:
+__pyx_k__56	wulfila/utils/icelandic.c	/^static const char __pyx_k__56[] = "\\303\\270";$/;"	v	file:
+__pyx_k__58	wulfila/utils/icelandic.c	/^static const char __pyx_k__58[] = "\\303\\230";$/;"	v	file:
+__pyx_k__60	wulfila/utils/icelandic.c	/^static const char __pyx_k__60[] = "\\303\\260";$/;"	v	file:
+__pyx_k__62	wulfila/utils/icelandic.c	/^static const char __pyx_k__62[] = "\\303\\220";$/;"	v	file:
+__pyx_k__64	wulfila/utils/icelandic.c	/^static const char __pyx_k__64[] = "\\303\\276";$/;"	v	file:
+__pyx_k__66	wulfila/utils/icelandic.c	/^static const char __pyx_k__66[] = "\\303\\236";$/;"	v	file:
+__pyx_k__73	wulfila/utils/icelandic.c	/^static const char __pyx_k__73[] = ",$";$/;"	v	file:
+__pyx_k__76	wulfila/utils/icelandic.c	/^static const char __pyx_k__76[] = "-";$/;"	v	file:
+__pyx_k__78	wulfila/utils/icelandic.c	/^static const char __pyx_k__78[] = "\\342\\200\\221";$/;"	v	file:
+__pyx_k_a	wulfila/utils/icelandic.c	/^static const char __pyx_k_a[] = "a'";$/;"	v	file:
+__pyx_k_a_2	wulfila/utils/icelandic.c	/^static const char __pyx_k_a_2[] = "a:";$/;"	v	file:
+__pyx_k_aacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_aacute[] = "&aacute;";$/;"	v	file:
+__pyx_k_action	wulfila/utils/icelandic.c	/^static const char __pyx_k_action[] = "action";$/;"	v	file:
+__pyx_k_add	wulfila/utils/icelandic.c	/^static const char __pyx_k_add[] = "add";$/;"	v	file:
+__pyx_k_add_argument	wulfila/utils/icelandic.c	/^static const char __pyx_k_add_argument[] = "add_argument";$/;"	v	file:
+__pyx_k_ae	wulfila/utils/icelandic.c	/^static const char __pyx_k_ae[] = "ae";$/;"	v	file:
+__pyx_k_aelig	wulfila/utils/icelandic.c	/^static const char __pyx_k_aelig[] = "&aelig;";$/;"	v	file:
+__pyx_k_amp	wulfila/utils/icelandic.c	/^static const char __pyx_k_amp[] = "amp";$/;"	v	file:
+__pyx_k_argparse	wulfila/utils/icelandic.c	/^static const char __pyx_k_argparse[] = "argparse";$/;"	v	file:
+__pyx_k_args	wulfila/utils/icelandic.c	/^static const char __pyx_k_args[] = "args";$/;"	v	file:
+__pyx_k_auml	wulfila/utils/icelandic.c	/^static const char __pyx_k_auml[] = "&auml;";$/;"	v	file:
+__pyx_k_b_0_9	wulfila/utils/icelandic.c	/^static const char __pyx_k_b_0_9[] = "^b[0-9]+";$/;"	v	file:
+__pyx_k_basicConfig	wulfila/utils/icelandic.c	/^static const char __pyx_k_basicConfig[] = "basicConfig";$/;"	v	file:
+__pyx_k_bopen	wulfila/utils/icelandic.c	/^static const char __pyx_k_bopen[] = "bopen";$/;"	v	file:
+__pyx_k_bsplit	wulfila/utils/icelandic.c	/^static const char __pyx_k_bsplit[] = "bsplit";$/;"	v	file:
+__pyx_k_clear_ws	wulfila/utils/icelandic.c	/^static const char __pyx_k_clear_ws[] = "clear_ws";$/;"	v	file:
+__pyx_k_cline_in_traceback	wulfila/utils/__init__.c	/^static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";$/;"	v	file:
+__pyx_k_cline_in_traceback	wulfila/utils/icelandic.c	/^static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";$/;"	v	file:
+__pyx_k_close	wulfila/utils/icelandic.c	/^static const char __pyx_k_close[] = "close";$/;"	v	file:
+__pyx_k_commit	wulfila/utils/icelandic.c	/^static const char __pyx_k_commit[] = "commit";$/;"	v	file:
+__pyx_k_compile	wulfila/utils/icelandic.c	/^static const char __pyx_k_compile[] = "compile";$/;"	v	file:
+__pyx_k_connect	wulfila/utils/icelandic.c	/^static const char __pyx_k_connect[] = "connect";$/;"	v	file:
+__pyx_k_copy	wulfila/utils/icelandic.c	/^static const char __pyx_k_copy[] = "copy";$/;"	v	file:
+__pyx_k_cursor	wulfila/utils/icelandic.c	/^static const char __pyx_k_cursor[] = "cursor";$/;"	v	file:
+__pyx_k_data_cleasby_vigfuson_dictionary	wulfila/utils/icelandic.c	/^static const char __pyx_k_data_cleasby_vigfuson_dictionary[] = "data\/cleasby-vigfuson-dictionary.txt";$/;"	v	file:
+__pyx_k_data_cleasby_vigfuson_dictionary_2	wulfila/utils/icelandic.c	/^static const char __pyx_k_data_cleasby_vigfuson_dictionary_2[] = "data\/cleasby-vigfuson-dictionary.json";$/;"	v	file:
+__pyx_k_datafile	wulfila/utils/icelandic.c	/^static const char __pyx_k_datafile[] = "datafile";$/;"	v	file:
+__pyx_k_dbfile	wulfila/utils/icelandic.c	/^static const char __pyx_k_dbfile[] = "dbfile";$/;"	v	file:
+__pyx_k_debug	wulfila/utils/icelandic.c	/^static const char __pyx_k_debug[] = "debug";$/;"	v	file:
+__pyx_k_debug_2	wulfila/utils/icelandic.c	/^static const char __pyx_k_debug_2[] = "--debug";$/;"	v	file:
+__pyx_k_def	wulfila/utils/icelandic.c	/^static const char __pyx_k_def[] = "def";$/;"	v	file:
+__pyx_k_dh	wulfila/utils/icelandic.c	/^static const char __pyx_k_dh[] = "dh";$/;"	v	file:
+__pyx_k_dict	wulfila/utils/icelandic.c	/^static const char __pyx_k_dict[] = "__dict__";$/;"	v	file:
+__pyx_k_download	wulfila/utils/icelandic.c	/^static const char __pyx_k_download[] = "download";$/;"	v	file:
+__pyx_k_dump	wulfila/utils/icelandic.c	/^static const char __pyx_k_dump[] = "dump";$/;"	v	file:
+__pyx_k_e	wulfila/utils/icelandic.c	/^static const char __pyx_k_e[] = "e'";$/;"	v	file:
+__pyx_k_eacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_eacute[] = "&eacute;";$/;"	v	file:
+__pyx_k_ensure_ascii	wulfila/utils/icelandic.c	/^static const char __pyx_k_ensure_ascii[] = "ensure_ascii";$/;"	v	file:
+__pyx_k_enter	wulfila/utils/icelandic.c	/^static const char __pyx_k_enter[] = "__enter__";$/;"	v	file:
+__pyx_k_eth	wulfila/utils/icelandic.c	/^static const char __pyx_k_eth[] = "&eth;";$/;"	v	file:
+__pyx_k_execute	wulfila/utils/icelandic.c	/^static const char __pyx_k_execute[] = "execute";$/;"	v	file:
+__pyx_k_exists	wulfila/utils/icelandic.c	/^static const char __pyx_k_exists[] = "exists";$/;"	v	file:
+__pyx_k_exit	wulfila/utils/icelandic.c	/^static const char __pyx_k_exit[] = "__exit__";$/;"	v	file:
+__pyx_k_f	wulfila/utils/icelandic.c	/^static const char __pyx_k_f[] = "-f";$/;"	v	file:
+__pyx_k_force	wulfila/utils/icelandic.c	/^static const char __pyx_k_force[] = "--force";$/;"	v	file:
+__pyx_k_force_2	wulfila/utils/icelandic.c	/^static const char __pyx_k_force_2[] = "force";$/;"	v	file:
+__pyx_k_format	wulfila/utils/icelandic.c	/^static const char __pyx_k_format[] = "format";$/;"	v	file:
+__pyx_k_getstate	wulfila/utils/icelandic.c	/^static const char __pyx_k_getstate[] = "__getstate__";$/;"	v	file:
+__pyx_k_header	wulfila/utils/icelandic.c	/^static const char __pyx_k_header[] = "header";$/;"	v	file:
+__pyx_k_help	wulfila/utils/icelandic.c	/^static const char __pyx_k_help[] = "help";$/;"	v	file:
+__pyx_k_http_www_germanic_lexicon_projec	wulfila/utils/icelandic.c	/^static const char __pyx_k_http_www_germanic_lexicon_projec[] = "http:\/\/www.germanic-lexicon-project.org\/txt\/oi_cleasbyvigfusson.txt";$/;"	v	file:
+__pyx_k_i	wulfila/utils/icelandic.c	/^static const char __pyx_k_i[] = "i'";$/;"	v	file:
+__pyx_k_iacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_iacute[] = "&iacute;";$/;"	v	file:
+__pyx_k_import	wulfila/utils/icelandic.c	/^static const char __pyx_k_import[] = "__import__";$/;"	v	file:
+__pyx_k_indent	wulfila/utils/icelandic.c	/^static const char __pyx_k_indent[] = "indent";$/;"	v	file:
+__pyx_k_info	wulfila/utils/icelandic.c	/^static const char __pyx_k_info[] = "info";$/;"	v	file:
+__pyx_k_iter	wulfila/utils/icelandic.c	/^static const char __pyx_k_iter[] = "__iter__";$/;"	v	file:
+__pyx_k_json	wulfila/utils/icelandic.c	/^static const char __pyx_k_json[] = "json";$/;"	v	file:
+__pyx_k_jsonfile	wulfila/utils/icelandic.c	/^static const char __pyx_k_jsonfile[] = "jsonfile";$/;"	v	file:
+__pyx_k_level	wulfila/utils/icelandic.c	/^static const char __pyx_k_level[] = "level";$/;"	v	file:
+__pyx_k_levelname_s_message_s	wulfila/utils/icelandic.c	/^static const char __pyx_k_levelname_s_message_s[] = "[ %(levelname)s ]: %(message)s";$/;"	v	file:
+__pyx_k_line	wulfila/utils/icelandic.c	/^static const char __pyx_k_line[] = "line";$/;"	v	file:
+__pyx_k_logging	wulfila/utils/icelandic.c	/^static const char __pyx_k_logging[] = "logging";$/;"	v	file:
+__pyx_k_lower	wulfila/utils/icelandic.c	/^static const char __pyx_k_lower[] = "lower";$/;"	v	file:
+__pyx_k_main	wulfila/utils/__init__.c	/^static const char __pyx_k_main[] = "__main__";$/;"	v	file:
+__pyx_k_main	wulfila/utils/icelandic.c	/^static const char __pyx_k_main[] = "__main__";$/;"	v	file:
+__pyx_k_match	wulfila/utils/icelandic.c	/^static const char __pyx_k_match[] = "match";$/;"	v	file:
+__pyx_k_maxsplit	wulfila/utils/icelandic.c	/^static const char __pyx_k_maxsplit[] = "maxsplit";$/;"	v	file:
+__pyx_k_name	wulfila/utils/__init__.c	/^static const char __pyx_k_name[] = "__name__";$/;"	v	file:
+__pyx_k_name	wulfila/utils/icelandic.c	/^static const char __pyx_k_name[] = "__name__";$/;"	v	file:
+__pyx_k_new	wulfila/utils/icelandic.c	/^static const char __pyx_k_new[] = "__new__";$/;"	v	file:
+__pyx_k_newline	wulfila/utils/icelandic.c	/^static const char __pyx_k_newline[] = "newline";$/;"	v	file:
+__pyx_k_num	wulfila/utils/icelandic.c	/^static const char __pyx_k_num[] = "num";$/;"	v	file:
+__pyx_k_o	wulfila/utils/icelandic.c	/^static const char __pyx_k_o[] = "o'";$/;"	v	file:
+__pyx_k_o_2	wulfila/utils/icelandic.c	/^static const char __pyx_k_o_2[] = "o:";$/;"	v	file:
+__pyx_k_o_3	wulfila/utils/icelandic.c	/^static const char __pyx_k_o_3[] = "o\/";$/;"	v	file:
+__pyx_k_oacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_oacute[] = "&oacute;";$/;"	v	file:
+__pyx_k_oe	wulfila/utils/icelandic.c	/^static const char __pyx_k_oe[] = "oe";$/;"	v	file:
+__pyx_k_oelig	wulfila/utils/icelandic.c	/^static const char __pyx_k_oelig[] = "&oelig;";$/;"	v	file:
+__pyx_k_on_page	wulfila/utils/icelandic.c	/^static const char __pyx_k_on_page[] = "' on page='";$/;"	v	file:
+__pyx_k_open	wulfila/utils/icelandic.c	/^static const char __pyx_k_open[] = "open";$/;"	v	file:
+__pyx_k_oslash	wulfila/utils/icelandic.c	/^static const char __pyx_k_oslash[] = "&oslash;";$/;"	v	file:
+__pyx_k_ouml	wulfila/utils/icelandic.c	/^static const char __pyx_k_ouml[] = "&ouml;";$/;"	v	file:
+__pyx_k_pagenum	wulfila/utils/icelandic.c	/^static const char __pyx_k_pagenum[] = "pagenum";$/;"	v	file:
+__pyx_k_parse_args	wulfila/utils/icelandic.c	/^static const char __pyx_k_parse_args[] = "parse_args";$/;"	v	file:
+__pyx_k_pathlib	wulfila/utils/icelandic.c	/^static const char __pyx_k_pathlib[] = "pathlib";$/;"	v	file:
+__pyx_k_pickle	wulfila/utils/icelandic.c	/^static const char __pyx_k_pickle[] = "pickle";$/;"	v	file:
+__pyx_k_process	wulfila/utils/icelandic.c	/^static const char __pyx_k_process[] = "process";$/;"	v	file:
+__pyx_k_pyx_PickleError	wulfila/utils/icelandic.c	/^static const char __pyx_k_pyx_PickleError[] = "__pyx_PickleError";$/;"	v	file:
+__pyx_k_pyx_checksum	wulfila/utils/icelandic.c	/^static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";$/;"	v	file:
+__pyx_k_pyx_result	wulfila/utils/icelandic.c	/^static const char __pyx_k_pyx_result[] = "__pyx_result";$/;"	v	file:
+__pyx_k_pyx_state	wulfila/utils/icelandic.c	/^static const char __pyx_k_pyx_state[] = "__pyx_state";$/;"	v	file:
+__pyx_k_pyx_type	wulfila/utils/icelandic.c	/^static const char __pyx_k_pyx_type[] = "__pyx_type";$/;"	v	file:
+__pyx_k_pyx_unpickle_Line	wulfila/utils/icelandic.c	/^static const char __pyx_k_pyx_unpickle_Line[] = "__pyx_unpickle_Line";$/;"	v	file:
+__pyx_k_pyx_unpickle_Word	wulfila/utils/icelandic.c	/^static const char __pyx_k_pyx_unpickle_Word[] = "__pyx_unpickle_Word";$/;"	v	file:
+__pyx_k_r	wulfila/utils/icelandic.c	/^static const char __pyx_k_r[] = "r";$/;"	v	file:
+__pyx_k_re	wulfila/utils/icelandic.c	/^static const char __pyx_k_re[] = "re";$/;"	v	file:
+__pyx_k_re_bold_open	wulfila/utils/icelandic.c	/^static const char __pyx_k_re_bold_open[] = "re_bold_open";$/;"	v	file:
+__pyx_k_re_close	wulfila/utils/icelandic.c	/^static const char __pyx_k_re_close[] = "re_close";$/;"	v	file:
+__pyx_k_re_italic_open	wulfila/utils/icelandic.c	/^static const char __pyx_k_re_italic_open[] = "re_italic_open";$/;"	v	file:
+__pyx_k_re_term_comma	wulfila/utils/icelandic.c	/^static const char __pyx_k_re_term_comma[] = "re_term_comma";$/;"	v	file:
+__pyx_k_read	wulfila/utils/icelandic.c	/^static const char __pyx_k_read[] = "read";$/;"	v	file:
+__pyx_k_reduce	wulfila/utils/icelandic.c	/^static const char __pyx_k_reduce[] = "__reduce__";$/;"	v	file:
+__pyx_k_reduce_cython	wulfila/utils/icelandic.c	/^static const char __pyx_k_reduce_cython[] = "__reduce_cython__";$/;"	v	file:
+__pyx_k_reduce_ex	wulfila/utils/icelandic.c	/^static const char __pyx_k_reduce_ex[] = "__reduce_ex__";$/;"	v	file:
+__pyx_k_s	wulfila/utils/icelandic.c	/^static const char __pyx_k_s[] = "\\n\\\\s+";$/;"	v	file:
+__pyx_k_s_2	wulfila/utils/icelandic.c	/^static const char __pyx_k_s_2[] = "\\\\s+";$/;"	v	file:
+__pyx_k_s_B	wulfila/utils/icelandic.c	/^static const char __pyx_k_s_B[] = "^\\\\s*<B>";$/;"	v	file:
+__pyx_k_s_B_s	wulfila/utils/icelandic.c	/^static const char __pyx_k_s_B_s[] = "\\\\s*?<\/B>\\\\s*?";$/;"	v	file:
+__pyx_k_send	wulfila/utils/icelandic.c	/^static const char __pyx_k_send[] = "send";$/;"	v	file:
+__pyx_k_setstate	wulfila/utils/icelandic.c	/^static const char __pyx_k_setstate[] = "__setstate__";$/;"	v	file:
+__pyx_k_setstate_cython	wulfila/utils/icelandic.c	/^static const char __pyx_k_setstate_cython[] = "__setstate_cython__";$/;"	v	file:
+__pyx_k_split	wulfila/utils/icelandic.c	/^static const char __pyx_k_split[] = "split";$/;"	v	file:
+__pyx_k_sql	wulfila/utils/icelandic.c	/^static const char __pyx_k_sql[] = "sql";$/;"	v	file:
+__pyx_k_sqlite3	wulfila/utils/icelandic.c	/^static const char __pyx_k_sqlite3[] = "sqlite3";$/;"	v	file:
+__pyx_k_store_true	wulfila/utils/icelandic.c	/^static const char __pyx_k_store_true[] = "store_true";$/;"	v	file:
+__pyx_k_stringsource	wulfila/utils/icelandic.c	/^static const char __pyx_k_stringsource[] = "stringsource";$/;"	v	file:
+__pyx_k_strip	wulfila/utils/icelandic.c	/^static const char __pyx_k_strip[] = "strip";$/;"	v	file:
+__pyx_k_sub	wulfila/utils/icelandic.c	/^static const char __pyx_k_sub[] = "sub";$/;"	v	file:
+__pyx_k_term	wulfila/utils/icelandic.c	/^static const char __pyx_k_term[] = "term";$/;"	v	file:
+__pyx_k_test	wulfila/utils/__init__.c	/^static const char __pyx_k_test[] = "__test__";$/;"	v	file:
+__pyx_k_test	wulfila/utils/icelandic.c	/^static const char __pyx_k_test[] = "__test__";$/;"	v	file:
+__pyx_k_textwrap	wulfila/utils/icelandic.c	/^static const char __pyx_k_textwrap[] = "textwrap";$/;"	v	file:
+__pyx_k_th	wulfila/utils/icelandic.c	/^static const char __pyx_k_th[] = "th";$/;"	v	file:
+__pyx_k_thorn	wulfila/utils/icelandic.c	/^static const char __pyx_k_thorn[] = "&thorn;";$/;"	v	file:
+__pyx_k_throw	wulfila/utils/icelandic.c	/^static const char __pyx_k_throw[] = "throw";$/;"	v	file:
+__pyx_k_u	wulfila/utils/icelandic.c	/^static const char __pyx_k_u[] = "u'";$/;"	v	file:
+__pyx_k_uacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_uacute[] = "&uacute;";$/;"	v	file:
+__pyx_k_unlink	wulfila/utils/icelandic.c	/^static const char __pyx_k_unlink[] = "unlink";$/;"	v	file:
+__pyx_k_update	wulfila/utils/icelandic.c	/^static const char __pyx_k_update[] = "update";$/;"	v	file:
+__pyx_k_utils	wulfila/utils/__init__.c	/^static const char __pyx_k_utils[] = "utils";$/;"	v	file:
+__pyx_k_w	wulfila/utils/icelandic.c	/^static const char __pyx_k_w[] = "w";$/;"	v	file:
+__pyx_k_warning	wulfila/utils/icelandic.c	/^static const char __pyx_k_warning[] = "warning";$/;"	v	file:
+__pyx_k_wget	wulfila/utils/icelandic.c	/^static const char __pyx_k_wget[] = "wget";$/;"	v	file:
+__pyx_k_wulfila_data_old_icelandic_db	wulfila/utils/icelandic.c	/^static const char __pyx_k_wulfila_data_old_icelandic_db[] = "wulfila\/data\/old-icelandic.db";$/;"	v	file:
+__pyx_k_wulfila_utils_icelandic	wulfila/utils/icelandic.c	/^static const char __pyx_k_wulfila_utils_icelandic[] = "wulfila.utils.icelandic";$/;"	v	file:
+__pyx_k_y	wulfila/utils/icelandic.c	/^static const char __pyx_k_y[] = "y'";$/;"	v	file:
+__pyx_k_yacute	wulfila/utils/icelandic.c	/^static const char __pyx_k_yacute[] = "&yacute;";$/;"	v	file:
+__pyx_kp_s_Incompatible_checksums_s_vs_0x4f	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_s_Incompatible_checksums_s_vs_0x4f;$/;"	v	file:
+__pyx_kp_s_Incompatible_checksums_s_vs_0x8b	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_s_Incompatible_checksums_s_vs_0x8b;$/;"	v	file:
+__pyx_kp_s_stringsource	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_s_stringsource;$/;"	v	file:
+__pyx_kp_u_	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_;$/;"	v	file:
+__pyx_kp_u_0m	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_0m;$/;"	v	file:
+__pyx_kp_u_1m	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_1m;$/;"	v	file:
+__pyx_kp_u_3m	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_3m;$/;"	v	file:
+__pyx_kp_u_AElig	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_AElig;$/;"	v	file:
+__pyx_kp_u_Aacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Aacute;$/;"	v	file:
+__pyx_kp_u_Auml	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Auml;$/;"	v	file:
+__pyx_kp_u_B	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_B;$/;"	v	file:
+__pyx_kp_u_CREATE_TABLE_entries_id_INT_PRIM	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_CREATE_TABLE_entries_id_INT_PRIM;$/;"	v	file:
+__pyx_kp_u_CREATE_TABLE_patterns_id_INT_PRI	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_CREATE_TABLE_patterns_id_INT_PRI;$/;"	v	file:
+__pyx_kp_u_Closing_SQLite_Connection	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Closing_SQLite_Connection;$/;"	v	file:
+__pyx_kp_u_Creating_Overwriting_Data_File	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Creating_Overwriting_Data_File;$/;"	v	file:
+__pyx_kp_u_D	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_D;$/;"	v	file:
+__pyx_kp_u_Data_File_exists_use_force_to_re	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Data_File_exists_use_force_to_re;$/;"	v	file:
+__pyx_kp_u_ETH	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_ETH;$/;"	v	file:
+__pyx_kp_u_Eacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Eacute;$/;"	v	file:
+__pyx_kp_u_Forces_operations_overwriting_fi	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Forces_operations_overwriting_fi;$/;"	v	file:
+__pyx_kp_u_HEADER_HEADER	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_HEADER_HEADER;$/;"	v	file:
+__pyx_kp_u_I	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_I;$/;"	v	file:
+__pyx_kp_u_INSERT_INTO_entries_VALUES	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_INSERT_INTO_entries_VALUES;$/;"	v	file:
+__pyx_kp_u_INSERT_INTO_patterns_VALUES	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_INSERT_INTO_patterns_VALUES;$/;"	v	file:
+__pyx_kp_u_I_B	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_I_B;$/;"	v	file:
+__pyx_kp_u_Iacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Iacute;$/;"	v	file:
+__pyx_kp_u_Line_headword	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Line_headword;$/;"	v	file:
+__pyx_kp_u_Number_of_Words	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Number_of_Words;$/;"	v	file:
+__pyx_kp_u_OElig	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_OElig;$/;"	v	file:
+__pyx_kp_u_OSLASH	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_OSLASH;$/;"	v	file:
+__pyx_kp_u_Oacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Oacute;$/;"	v	file:
+__pyx_kp_u_Opening_SQLite_Connection	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Opening_SQLite_Connection;$/;"	v	file:
+__pyx_kp_u_Ouml	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Ouml;$/;"	v	file:
+__pyx_kp_u_PAGE_NUM	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_PAGE_NUM;$/;"	v	file:
+__pyx_kp_u_Removing_Database_File_for_Old_I	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Removing_Database_File_for_Old_I;$/;"	v	file:
+__pyx_kp_u_Saving_data_to_JSON_file	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Saving_data_to_JSON_file;$/;"	v	file:
+__pyx_kp_u_THORN	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_THORN;$/;"	v	file:
+__pyx_kp_u_Uacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Uacute;$/;"	v	file:
+__pyx_kp_u_Updating_Database	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Updating_Database;$/;"	v	file:
+__pyx_kp_u_Yacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_Yacute;$/;"	v	file:
+__pyx_kp_u__14	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u__14;$/;"	v	file:
+__pyx_kp_u__2	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u__2;$/;"	v	file:
+__pyx_kp_u__3	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u__3;$/;"	v	file:
+__pyx_kp_u__73	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u__73;$/;"	v	file:
+__pyx_kp_u__76	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u__76;$/;"	v	file:
+__pyx_kp_u__78	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u__78;$/;"	v	file:
+__pyx_kp_u_a	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_a;$/;"	v	file:
+__pyx_kp_u_a_2	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_a_2;$/;"	v	file:
+__pyx_kp_u_aacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_aacute;$/;"	v	file:
+__pyx_kp_u_aelig	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_aelig;$/;"	v	file:
+__pyx_kp_u_auml	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_auml;$/;"	v	file:
+__pyx_kp_u_b_0_9	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_b_0_9;$/;"	v	file:
+__pyx_kp_u_data_cleasby_vigfuson_dictionary	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_data_cleasby_vigfuson_dictionary;$/;"	v	file:
+__pyx_kp_u_data_cleasby_vigfuson_dictionary_2	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_data_cleasby_vigfuson_dictionary_2;$/;"	v	file:
+__pyx_kp_u_debug_2	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_debug_2;$/;"	v	file:
+__pyx_kp_u_e	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_e;$/;"	v	file:
+__pyx_kp_u_eacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_eacute;$/;"	v	file:
+__pyx_kp_u_eth	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_eth;$/;"	v	file:
+__pyx_kp_u_f	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_f;$/;"	v	file:
+__pyx_kp_u_force	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_force;$/;"	v	file:
+__pyx_kp_u_http_www_germanic_lexicon_projec	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_http_www_germanic_lexicon_projec;$/;"	v	file:
+__pyx_kp_u_i	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_i;$/;"	v	file:
+__pyx_kp_u_iacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_iacute;$/;"	v	file:
+__pyx_kp_u_levelname_s_message_s	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_levelname_s_message_s;$/;"	v	file:
+__pyx_kp_u_o	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_o;$/;"	v	file:
+__pyx_kp_u_o_2	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_o_2;$/;"	v	file:
+__pyx_kp_u_o_3	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_o_3;$/;"	v	file:
+__pyx_kp_u_oacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_oacute;$/;"	v	file:
+__pyx_kp_u_oelig	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_oelig;$/;"	v	file:
+__pyx_kp_u_on_page	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_on_page;$/;"	v	file:
+__pyx_kp_u_oslash	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_oslash;$/;"	v	file:
+__pyx_kp_u_ouml	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_ouml;$/;"	v	file:
+__pyx_kp_u_s	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_s;$/;"	v	file:
+__pyx_kp_u_s_2	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_s_2;$/;"	v	file:
+__pyx_kp_u_s_B	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_s_B;$/;"	v	file:
+__pyx_kp_u_s_B_s	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_s_B_s;$/;"	v	file:
+__pyx_kp_u_thorn	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_thorn;$/;"	v	file:
+__pyx_kp_u_u	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_u;$/;"	v	file:
+__pyx_kp_u_uacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_uacute;$/;"	v	file:
+__pyx_kp_u_wulfila_data_old_icelandic_db	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_wulfila_data_old_icelandic_db;$/;"	v	file:
+__pyx_kp_u_y	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_y;$/;"	v	file:
+__pyx_kp_u_yacute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_kp_u_yacute;$/;"	v	file:
+__pyx_lineno	wulfila/utils/__init__.c	/^static int __pyx_lineno;$/;"	v	file:
+__pyx_lineno	wulfila/utils/icelandic.c	/^static int __pyx_lineno;$/;"	v	file:
+__pyx_m	wulfila/utils/__init__.c	/^static PyObject *__pyx_m = NULL;$/;"	v	file:
+__pyx_m	wulfila/utils/icelandic.c	/^static PyObject *__pyx_m = NULL;$/;"	v	file:
+__pyx_mdef_7wulfila_5utils_9icelandic_1__pyx_unpickle_Line	wulfila/utils/icelandic.c	/^static PyMethodDef __pyx_mdef_7wulfila_5utils_9icelandic_1__pyx_unpickle_Line = {"__pyx_unpickle_Line", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7wulfila_5utils_9icelandic_1__pyx_unpickle_Line, METH_VARARGS|METH_KEYWORDS, 0};$/;"	v	file:
+__pyx_mdef_7wulfila_5utils_9icelandic_3__pyx_unpickle_Word	wulfila/utils/icelandic.c	/^static PyMethodDef __pyx_mdef_7wulfila_5utils_9icelandic_3__pyx_unpickle_Word = {"__pyx_unpickle_Word", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7wulfila_5utils_9icelandic_3__pyx_unpickle_Word, METH_VARARGS|METH_KEYWORDS, 0};$/;"	v	file:
+__pyx_methods	wulfila/utils/__init__.c	/^static PyMethodDef __pyx_methods[] = {$/;"	v	file:
+__pyx_methods	wulfila/utils/icelandic.c	/^static PyMethodDef __pyx_methods[] = {$/;"	v	file:
+__pyx_methods_7wulfila_5utils_9icelandic_Line	wulfila/utils/icelandic.c	/^static PyMethodDef __pyx_methods_7wulfila_5utils_9icelandic_Line[] = {$/;"	v	file:
+__pyx_methods_7wulfila_5utils_9icelandic_Word	wulfila/utils/icelandic.c	/^static PyMethodDef __pyx_methods_7wulfila_5utils_9icelandic_Word[] = {$/;"	v	file:
+__pyx_module_is_main_wulfila__utils____init__	wulfila/utils/__init__.c	/^int __pyx_module_is_main_wulfila__utils____init__ = 0;$/;"	v
+__pyx_module_is_main_wulfila__utils__icelandic	wulfila/utils/icelandic.c	/^int __pyx_module_is_main_wulfila__utils__icelandic = 0;$/;"	v
+__pyx_moduledef	wulfila/utils/__init__.c	/^static struct PyModuleDef __pyx_moduledef = {$/;"	v	typeref:struct:PyModuleDef	file:
+__pyx_moduledef	wulfila/utils/icelandic.c	/^static struct PyModuleDef __pyx_moduledef = {$/;"	v	typeref:struct:PyModuleDef	file:
+__pyx_moduledef_slots	wulfila/utils/__init__.c	/^static PyModuleDef_Slot __pyx_moduledef_slots[] = {$/;"	v	file:
+__pyx_moduledef_slots	wulfila/utils/icelandic.c	/^static PyModuleDef_Slot __pyx_moduledef_slots[] = {$/;"	v	file:
+__pyx_n_s_ArgumentParser	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_ArgumentParser;$/;"	v	file:
+__pyx_n_s_DEBUG	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_DEBUG;$/;"	v	file:
+__pyx_n_s_Line	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_Line;$/;"	v	file:
+__pyx_n_s_Path	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_Path;$/;"	v	file:
+__pyx_n_s_PickleError	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_PickleError;$/;"	v	file:
+__pyx_n_s_WARN	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_WARN;$/;"	v	file:
+__pyx_n_s_Word	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_Word;$/;"	v	file:
+__pyx_n_s_Word___iter	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_Word___iter;$/;"	v	file:
+__pyx_n_s_action	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_action;$/;"	v	file:
+__pyx_n_s_add	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_add;$/;"	v	file:
+__pyx_n_s_add_argument	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_add_argument;$/;"	v	file:
+__pyx_n_s_amp	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_amp;$/;"	v	file:
+__pyx_n_s_argparse	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_argparse;$/;"	v	file:
+__pyx_n_s_args	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_args;$/;"	v	file:
+__pyx_n_s_basicConfig	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_basicConfig;$/;"	v	file:
+__pyx_n_s_bopen	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_bopen;$/;"	v	file:
+__pyx_n_s_bsplit	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_bsplit;$/;"	v	file:
+__pyx_n_s_clear_ws	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_clear_ws;$/;"	v	file:
+__pyx_n_s_cline_in_traceback	wulfila/utils/__init__.c	/^static PyObject *__pyx_n_s_cline_in_traceback;$/;"	v	file:
+__pyx_n_s_cline_in_traceback	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_cline_in_traceback;$/;"	v	file:
+__pyx_n_s_close	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_close;$/;"	v	file:
+__pyx_n_s_commit	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_commit;$/;"	v	file:
+__pyx_n_s_compile	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_compile;$/;"	v	file:
+__pyx_n_s_connect	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_connect;$/;"	v	file:
+__pyx_n_s_copy	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_copy;$/;"	v	file:
+__pyx_n_s_cursor	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_cursor;$/;"	v	file:
+__pyx_n_s_datafile	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_datafile;$/;"	v	file:
+__pyx_n_s_dbfile	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_dbfile;$/;"	v	file:
+__pyx_n_s_debug	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_debug;$/;"	v	file:
+__pyx_n_s_dict	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_dict;$/;"	v	file:
+__pyx_n_s_download	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_download;$/;"	v	file:
+__pyx_n_s_dump	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_dump;$/;"	v	file:
+__pyx_n_s_ensure_ascii	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_ensure_ascii;$/;"	v	file:
+__pyx_n_s_enter	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_enter;$/;"	v	file:
+__pyx_n_s_execute	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_execute;$/;"	v	file:
+__pyx_n_s_exists	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_exists;$/;"	v	file:
+__pyx_n_s_exit	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_exit;$/;"	v	file:
+__pyx_n_s_force_2	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_force_2;$/;"	v	file:
+__pyx_n_s_format	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_format;$/;"	v	file:
+__pyx_n_s_getstate	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_getstate;$/;"	v	file:
+__pyx_n_s_header	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_header;$/;"	v	file:
+__pyx_n_s_help	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_help;$/;"	v	file:
+__pyx_n_s_import	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_import;$/;"	v	file:
+__pyx_n_s_indent	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_indent;$/;"	v	file:
+__pyx_n_s_info	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_info;$/;"	v	file:
+__pyx_n_s_iter	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_iter;$/;"	v	file:
+__pyx_n_s_json	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_json;$/;"	v	file:
+__pyx_n_s_jsonfile	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_jsonfile;$/;"	v	file:
+__pyx_n_s_level	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_level;$/;"	v	file:
+__pyx_n_s_line	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_line;$/;"	v	file:
+__pyx_n_s_logging	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_logging;$/;"	v	file:
+__pyx_n_s_lower	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_lower;$/;"	v	file:
+__pyx_n_s_main	wulfila/utils/__init__.c	/^static PyObject *__pyx_n_s_main;$/;"	v	file:
+__pyx_n_s_main	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_main;$/;"	v	file:
+__pyx_n_s_match	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_match;$/;"	v	file:
+__pyx_n_s_maxsplit	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_maxsplit;$/;"	v	file:
+__pyx_n_s_name	wulfila/utils/__init__.c	/^static PyObject *__pyx_n_s_name;$/;"	v	file:
+__pyx_n_s_name	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_name;$/;"	v	file:
+__pyx_n_s_new	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_new;$/;"	v	file:
+__pyx_n_s_newline	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_newline;$/;"	v	file:
+__pyx_n_s_num	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_num;$/;"	v	file:
+__pyx_n_s_open	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_open;$/;"	v	file:
+__pyx_n_s_pagenum	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pagenum;$/;"	v	file:
+__pyx_n_s_parse_args	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_parse_args;$/;"	v	file:
+__pyx_n_s_pathlib	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pathlib;$/;"	v	file:
+__pyx_n_s_pickle	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pickle;$/;"	v	file:
+__pyx_n_s_process	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_process;$/;"	v	file:
+__pyx_n_s_pyx_PickleError	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pyx_PickleError;$/;"	v	file:
+__pyx_n_s_pyx_checksum	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pyx_checksum;$/;"	v	file:
+__pyx_n_s_pyx_result	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pyx_result;$/;"	v	file:
+__pyx_n_s_pyx_state	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pyx_state;$/;"	v	file:
+__pyx_n_s_pyx_type	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pyx_type;$/;"	v	file:
+__pyx_n_s_pyx_unpickle_Line	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pyx_unpickle_Line;$/;"	v	file:
+__pyx_n_s_pyx_unpickle_Word	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_pyx_unpickle_Word;$/;"	v	file:
+__pyx_n_s_re	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_re;$/;"	v	file:
+__pyx_n_s_re_bold_open	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_re_bold_open;$/;"	v	file:
+__pyx_n_s_re_close	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_re_close;$/;"	v	file:
+__pyx_n_s_re_italic_open	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_re_italic_open;$/;"	v	file:
+__pyx_n_s_re_term_comma	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_re_term_comma;$/;"	v	file:
+__pyx_n_s_read	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_read;$/;"	v	file:
+__pyx_n_s_reduce	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_reduce;$/;"	v	file:
+__pyx_n_s_reduce_cython	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_reduce_cython;$/;"	v	file:
+__pyx_n_s_reduce_ex	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_reduce_ex;$/;"	v	file:
+__pyx_n_s_send	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_send;$/;"	v	file:
+__pyx_n_s_setstate	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_setstate;$/;"	v	file:
+__pyx_n_s_setstate_cython	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_setstate_cython;$/;"	v	file:
+__pyx_n_s_split	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_split;$/;"	v	file:
+__pyx_n_s_sql	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_sql;$/;"	v	file:
+__pyx_n_s_sqlite3	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_sqlite3;$/;"	v	file:
+__pyx_n_s_strip	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_strip;$/;"	v	file:
+__pyx_n_s_sub	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_sub;$/;"	v	file:
+__pyx_n_s_test	wulfila/utils/__init__.c	/^static PyObject *__pyx_n_s_test;$/;"	v	file:
+__pyx_n_s_test	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_test;$/;"	v	file:
+__pyx_n_s_textwrap	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_textwrap;$/;"	v	file:
+__pyx_n_s_throw	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_throw;$/;"	v	file:
+__pyx_n_s_unlink	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_unlink;$/;"	v	file:
+__pyx_n_s_update	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_update;$/;"	v	file:
+__pyx_n_s_warning	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_warning;$/;"	v	file:
+__pyx_n_s_wget	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_wget;$/;"	v	file:
+__pyx_n_s_wulfila_utils_icelandic	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_s_wulfila_utils_icelandic;$/;"	v	file:
+__pyx_n_u__16	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__16;$/;"	v	file:
+__pyx_n_u__18	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__18;$/;"	v	file:
+__pyx_n_u__20	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__20;$/;"	v	file:
+__pyx_n_u__22	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__22;$/;"	v	file:
+__pyx_n_u__24	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__24;$/;"	v	file:
+__pyx_n_u__26	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__26;$/;"	v	file:
+__pyx_n_u__28	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__28;$/;"	v	file:
+__pyx_n_u__30	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__30;$/;"	v	file:
+__pyx_n_u__32	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__32;$/;"	v	file:
+__pyx_n_u__34	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__34;$/;"	v	file:
+__pyx_n_u__36	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__36;$/;"	v	file:
+__pyx_n_u__38	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__38;$/;"	v	file:
+__pyx_n_u__40	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__40;$/;"	v	file:
+__pyx_n_u__42	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__42;$/;"	v	file:
+__pyx_n_u__44	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__44;$/;"	v	file:
+__pyx_n_u__46	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__46;$/;"	v	file:
+__pyx_n_u__48	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__48;$/;"	v	file:
+__pyx_n_u__50	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__50;$/;"	v	file:
+__pyx_n_u__52	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__52;$/;"	v	file:
+__pyx_n_u__54	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__54;$/;"	v	file:
+__pyx_n_u__56	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__56;$/;"	v	file:
+__pyx_n_u__58	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__58;$/;"	v	file:
+__pyx_n_u__60	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__60;$/;"	v	file:
+__pyx_n_u__62	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__62;$/;"	v	file:
+__pyx_n_u__64	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__64;$/;"	v	file:
+__pyx_n_u__66	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u__66;$/;"	v	file:
+__pyx_n_u_ae	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u_ae;$/;"	v	file:
+__pyx_n_u_def	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u_def;$/;"	v	file:
+__pyx_n_u_dh	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u_dh;$/;"	v	file:
+__pyx_n_u_oe	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u_oe;$/;"	v	file:
+__pyx_n_u_r	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u_r;$/;"	v	file:
+__pyx_n_u_store_true	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u_store_true;$/;"	v	file:
+__pyx_n_u_term	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u_term;$/;"	v	file:
+__pyx_n_u_th	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u_th;$/;"	v	file:
+__pyx_n_u_utils	wulfila/utils/__init__.c	/^static PyObject *__pyx_n_u_utils;$/;"	v	file:
+__pyx_n_u_w	wulfila/utils/icelandic.c	/^static PyObject *__pyx_n_u_w;$/;"	v	file:
+__pyx_obj_7wulfila_5utils_9icelandic_Line	wulfila/utils/icelandic.c	/^struct __pyx_obj_7wulfila_5utils_9icelandic_Line {$/;"	s	file:
+__pyx_obj_7wulfila_5utils_9icelandic_Word	wulfila/utils/icelandic.c	/^struct __pyx_obj_7wulfila_5utils_9icelandic_Word {$/;"	s	file:
+__pyx_obj_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	wulfila/utils/icelandic.c	/^struct __pyx_obj_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__ {$/;"	s	file:
+__pyx_pf_7wulfila_5utils_8__init___update_ois	wulfila/utils/__init__.c	/^static PyObject *__pyx_pf_7wulfila_5utils_8__init___update_ois(CYTHON_UNUSED PyObject *__pyx_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_2__pyx_unpickle_Word	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_2__pyx_unpickle_Word(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_2__repr__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Line_2__repr__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_4__reduce_cython__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Line_4__reduce_cython__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_4line_2__set__	wulfila/utils/icelandic.c	/^static int __pyx_pf_7wulfila_5utils_9icelandic_4Line_4line_2__set__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self, PyObject *__pyx_v_value) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_4line_4__del__	wulfila/utils/icelandic.c	/^static int __pyx_pf_7wulfila_5utils_9icelandic_4Line_4line_4__del__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_4line___get__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Line_4line___get__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_6__setstate_cython__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Line_6__setstate_cython__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self, PyObject *__pyx_v___pyx_state) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_7pagenum_2__set__	wulfila/utils/icelandic.c	/^static int __pyx_pf_7wulfila_5utils_9icelandic_4Line_7pagenum_2__set__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self, PyObject *__pyx_v_value) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_7pagenum___get__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Line_7pagenum___get__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_8headword_2__set__	wulfila/utils/icelandic.c	/^static int __pyx_pf_7wulfila_5utils_9icelandic_4Line_8headword_2__set__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self, PyObject *__pyx_v_value) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line_8headword___get__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Line_8headword___get__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Line___init__	wulfila/utils/icelandic.c	/^static int __pyx_pf_7wulfila_5utils_9icelandic_4Line___init__(struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_self, PyObject *__pyx_v_line, int __pyx_v_pagenum) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Word_11__setstate_cython__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Word_11__setstate_cython__(struct __pyx_obj_7wulfila_5utils_9icelandic_Word *__pyx_v_self, PyObject *__pyx_v___pyx_state) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Word_2add	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Word_2add(struct __pyx_obj_7wulfila_5utils_9icelandic_Word *__pyx_v_self, struct __pyx_obj_7wulfila_5utils_9icelandic_Line *__pyx_v_line) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Word_4process	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Word_4process(struct __pyx_obj_7wulfila_5utils_9icelandic_Word *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Word_6__iter__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Word_6__iter__(struct __pyx_obj_7wulfila_5utils_9icelandic_Word *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Word_9__reduce_cython__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic_4Word_9__reduce_cython__(struct __pyx_obj_7wulfila_5utils_9icelandic_Word *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic_4Word___init__	wulfila/utils/icelandic.c	/^static int __pyx_pf_7wulfila_5utils_9icelandic_4Word___init__(struct __pyx_obj_7wulfila_5utils_9icelandic_Word *__pyx_v_self) {$/;"	f	file:
+__pyx_pf_7wulfila_5utils_9icelandic___pyx_unpickle_Line	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pf_7wulfila_5utils_9icelandic___pyx_unpickle_Line(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {$/;"	f	file:
+__pyx_ptype_7wulfila_5utils_9icelandic_Line	wulfila/utils/icelandic.c	/^static PyTypeObject *__pyx_ptype_7wulfila_5utils_9icelandic_Line = 0;$/;"	v	file:
+__pyx_ptype_7wulfila_5utils_9icelandic_Word	wulfila/utils/icelandic.c	/^static PyTypeObject *__pyx_ptype_7wulfila_5utils_9icelandic_Word = 0;$/;"	v	file:
+__pyx_ptype_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	wulfila/utils/icelandic.c	/^static PyTypeObject *__pyx_ptype_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__ = 0;$/;"	v	file:
+__pyx_pw_7wulfila_5utils_8__init___1update_ois	wulfila/utils/__init__.c	/^static PyObject *__pyx_pw_7wulfila_5utils_8__init___1update_ois(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_1__pyx_unpickle_Line	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_1__pyx_unpickle_Line(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_3__pyx_unpickle_Word	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_3__pyx_unpickle_Word(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_1__init__	wulfila/utils/icelandic.c	/^static int __pyx_pw_7wulfila_5utils_9icelandic_4Line_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_3__repr__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Line_3__repr__(PyObject *__pyx_v_self) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_4line_1__get__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Line_4line_1__get__(PyObject *__pyx_v_self) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_4line_3__set__	wulfila/utils/icelandic.c	/^static int __pyx_pw_7wulfila_5utils_9icelandic_4Line_4line_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_4line_5__del__	wulfila/utils/icelandic.c	/^static int __pyx_pw_7wulfila_5utils_9icelandic_4Line_4line_5__del__(PyObject *__pyx_v_self) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_5__reduce_cython__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Line_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_7__setstate_cython__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Line_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_7pagenum_1__get__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Line_7pagenum_1__get__(PyObject *__pyx_v_self) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_7pagenum_3__set__	wulfila/utils/icelandic.c	/^static int __pyx_pw_7wulfila_5utils_9icelandic_4Line_7pagenum_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_8headword_1__get__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Line_8headword_1__get__(PyObject *__pyx_v_self) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Line_8headword_3__set__	wulfila/utils/icelandic.c	/^static int __pyx_pw_7wulfila_5utils_9icelandic_4Line_8headword_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Word_10__reduce_cython__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Word_10__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Word_12__setstate_cython__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Word_12__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Word_1__init__	wulfila/utils/icelandic.c	/^static int __pyx_pw_7wulfila_5utils_9icelandic_4Word_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Word_3add	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Word_3add(PyObject *__pyx_v_self, PyObject *__pyx_v_line) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Word_5process	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Word_5process(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {$/;"	f	file:
+__pyx_pw_7wulfila_5utils_9icelandic_4Word_7__iter__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_pw_7wulfila_5utils_9icelandic_4Word_7__iter__(PyObject *__pyx_v_self) {$/;"	f	file:
+__pyx_pyframe_localsplus_offset	wulfila/utils/icelandic.c	/^  static size_t __pyx_pyframe_localsplus_offset = 0;$/;"	v	file:
+__pyx_setprop_7wulfila_5utils_9icelandic_4Line_headword	wulfila/utils/icelandic.c	/^static int __pyx_setprop_7wulfila_5utils_9icelandic_4Line_headword(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {$/;"	f	file:
+__pyx_setprop_7wulfila_5utils_9icelandic_4Line_line	wulfila/utils/icelandic.c	/^static int __pyx_setprop_7wulfila_5utils_9icelandic_4Line_line(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {$/;"	f	file:
+__pyx_setprop_7wulfila_5utils_9icelandic_4Line_pagenum	wulfila/utils/icelandic.c	/^static int __pyx_setprop_7wulfila_5utils_9icelandic_4Line_pagenum(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {$/;"	f	file:
+__pyx_string_tab	wulfila/utils/__init__.c	/^static __Pyx_StringTabEntry __pyx_string_tab[] = {$/;"	v	file:
+__pyx_string_tab	wulfila/utils/icelandic.c	/^static __Pyx_StringTabEntry __pyx_string_tab[] = {$/;"	v	file:
+__pyx_tp_clear_7wulfila_5utils_9icelandic_Word	wulfila/utils/icelandic.c	/^static int __pyx_tp_clear_7wulfila_5utils_9icelandic_Word(PyObject *o) {$/;"	f	file:
+__pyx_tp_dealloc_7wulfila_5utils_9icelandic_Line	wulfila/utils/icelandic.c	/^static void __pyx_tp_dealloc_7wulfila_5utils_9icelandic_Line(PyObject *o) {$/;"	f	file:
+__pyx_tp_dealloc_7wulfila_5utils_9icelandic_Word	wulfila/utils/icelandic.c	/^static void __pyx_tp_dealloc_7wulfila_5utils_9icelandic_Word(PyObject *o) {$/;"	f	file:
+__pyx_tp_dealloc_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	wulfila/utils/icelandic.c	/^static void __pyx_tp_dealloc_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__(PyObject *o) {$/;"	f	file:
+__pyx_tp_new_7wulfila_5utils_9icelandic_Line	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tp_new_7wulfila_5utils_9icelandic_Line(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {$/;"	f	file:
+__pyx_tp_new_7wulfila_5utils_9icelandic_Word	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tp_new_7wulfila_5utils_9icelandic_Word(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {$/;"	f	file:
+__pyx_tp_new_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tp_new_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {$/;"	f	file:
+__pyx_tp_traverse_7wulfila_5utils_9icelandic_Word	wulfila/utils/icelandic.c	/^static int __pyx_tp_traverse_7wulfila_5utils_9icelandic_Word(PyObject *o, visitproc v, void *a) {$/;"	f	file:
+__pyx_tp_traverse_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	wulfila/utils/icelandic.c	/^static int __pyx_tp_traverse_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__(PyObject *o, visitproc v, void *a) {$/;"	f	file:
+__pyx_tuple__10	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__10;$/;"	v	file:
+__pyx_tuple__11	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__11;$/;"	v	file:
+__pyx_tuple__12	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__12;$/;"	v	file:
+__pyx_tuple__13	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__13;$/;"	v	file:
+__pyx_tuple__15	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__15;$/;"	v	file:
+__pyx_tuple__17	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__17;$/;"	v	file:
+__pyx_tuple__19	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__19;$/;"	v	file:
+__pyx_tuple__21	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__21;$/;"	v	file:
+__pyx_tuple__23	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__23;$/;"	v	file:
+__pyx_tuple__25	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__25;$/;"	v	file:
+__pyx_tuple__27	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__27;$/;"	v	file:
+__pyx_tuple__29	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__29;$/;"	v	file:
+__pyx_tuple__31	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__31;$/;"	v	file:
+__pyx_tuple__33	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__33;$/;"	v	file:
+__pyx_tuple__35	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__35;$/;"	v	file:
+__pyx_tuple__37	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__37;$/;"	v	file:
+__pyx_tuple__39	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__39;$/;"	v	file:
+__pyx_tuple__4	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__4;$/;"	v	file:
+__pyx_tuple__41	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__41;$/;"	v	file:
+__pyx_tuple__43	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__43;$/;"	v	file:
+__pyx_tuple__45	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__45;$/;"	v	file:
+__pyx_tuple__47	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__47;$/;"	v	file:
+__pyx_tuple__49	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__49;$/;"	v	file:
+__pyx_tuple__5	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__5;$/;"	v	file:
+__pyx_tuple__51	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__51;$/;"	v	file:
+__pyx_tuple__53	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__53;$/;"	v	file:
+__pyx_tuple__55	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__55;$/;"	v	file:
+__pyx_tuple__57	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__57;$/;"	v	file:
+__pyx_tuple__59	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__59;$/;"	v	file:
+__pyx_tuple__6	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__6;$/;"	v	file:
+__pyx_tuple__61	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__61;$/;"	v	file:
+__pyx_tuple__63	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__63;$/;"	v	file:
+__pyx_tuple__65	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__65;$/;"	v	file:
+__pyx_tuple__67	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__67;$/;"	v	file:
+__pyx_tuple__68	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__68;$/;"	v	file:
+__pyx_tuple__69	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__69;$/;"	v	file:
+__pyx_tuple__7	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__7;$/;"	v	file:
+__pyx_tuple__70	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__70;$/;"	v	file:
+__pyx_tuple__71	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__71;$/;"	v	file:
+__pyx_tuple__72	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__72;$/;"	v	file:
+__pyx_tuple__74	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__74;$/;"	v	file:
+__pyx_tuple__75	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__75;$/;"	v	file:
+__pyx_tuple__77	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__77;$/;"	v	file:
+__pyx_tuple__79	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__79;$/;"	v	file:
+__pyx_tuple__8	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__8;$/;"	v	file:
+__pyx_tuple__80	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__80;$/;"	v	file:
+__pyx_tuple__81	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__81;$/;"	v	file:
+__pyx_tuple__82	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__82;$/;"	v	file:
+__pyx_tuple__83	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__83;$/;"	v	file:
+__pyx_tuple__84	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__84;$/;"	v	file:
+__pyx_tuple__85	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__85;$/;"	v	file:
+__pyx_tuple__86	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__86;$/;"	v	file:
+__pyx_tuple__87	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__87;$/;"	v	file:
+__pyx_tuple__88	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__88;$/;"	v	file:
+__pyx_tuple__89	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__89;$/;"	v	file:
+__pyx_tuple__9	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__9;$/;"	v	file:
+__pyx_tuple__90	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__90;$/;"	v	file:
+__pyx_tuple__91	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__91;$/;"	v	file:
+__pyx_tuple__92	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__92;$/;"	v	file:
+__pyx_tuple__93	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__93;$/;"	v	file:
+__pyx_tuple__95	wulfila/utils/icelandic.c	/^static PyObject *__pyx_tuple__95;$/;"	v	file:
+__pyx_type_7wulfila_5utils_9icelandic_Line	wulfila/utils/icelandic.c	/^static PyTypeObject __pyx_type_7wulfila_5utils_9icelandic_Line = {$/;"	v	file:
+__pyx_type_7wulfila_5utils_9icelandic_Word	wulfila/utils/icelandic.c	/^static PyTypeObject __pyx_type_7wulfila_5utils_9icelandic_Word = {$/;"	v	file:
+__pyx_type_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	wulfila/utils/icelandic.c	/^static PyTypeObject __pyx_type_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__ = {$/;"	v	file:
+__pyx_umethod_PyUnicode_Type_strip	wulfila/utils/icelandic.c	/^static __Pyx_CachedCFunction __pyx_umethod_PyUnicode_Type_strip = {0, &__pyx_n_s_strip, 0, 0, 0};$/;"	v	file:
+__pyx_v_7wulfila_5utils_9icelandic_bold	wulfila/utils/icelandic.c	/^static PyObject *__pyx_v_7wulfila_5utils_9icelandic_bold = 0;$/;"	v	file:
+__pyx_v_7wulfila_5utils_9icelandic_clear	wulfila/utils/icelandic.c	/^static PyObject *__pyx_v_7wulfila_5utils_9icelandic_clear = 0;$/;"	v	file:
+__pyx_v_7wulfila_5utils_9icelandic_datafile_url	wulfila/utils/icelandic.c	/^static PyObject *__pyx_v_7wulfila_5utils_9icelandic_datafile_url = 0;$/;"	v	file:
+__pyx_v_7wulfila_5utils_9icelandic_italic	wulfila/utils/icelandic.c	/^static PyObject *__pyx_v_7wulfila_5utils_9icelandic_italic = 0;$/;"	v	file:
+__pyx_v_7wulfila_5utils_9icelandic_pattern_sub	wulfila/utils/icelandic.c	/^static PyObject *__pyx_v_7wulfila_5utils_9icelandic_pattern_sub = 0;$/;"	v	file:
+__pyx_v_7wulfila_5utils_9icelandic_subs	wulfila/utils/icelandic.c	/^static PyObject *__pyx_v_7wulfila_5utils_9icelandic_subs = 0;$/;"	v	file:
+__pyx_v_self	wulfila/utils/icelandic.c	/^  struct __pyx_obj_7wulfila_5utils_9icelandic_Word *__pyx_v_self;$/;"	m	struct:__pyx_obj_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__	typeref:struct:__pyx_obj_7wulfila_5utils_9icelandic___pyx_scope_struct____iter__::__pyx_obj_7wulfila_5utils_9icelandic_Word	file:
+__repr__	wulfila/lang/lang.py	/^    def __repr__(self):$/;"	m	class:Language	file:
+__repr__	wulfila/lang/lang.py	/^    def __repr__(self):$/;"	m	class:Registry	file:
+__repr__	wulfila/lang/letter.py	/^    def __repr__(self):$/;"	m	class:Letter	file:
+__repr__	wulfila/lang/lex.py	/^    def __repr__(self):$/;"	m	class:Lexicon	file:
+__repr__	wulfila/lang/lex.py	/^    def __repr__(self):$/;"	m	class:Term	file:
+__repr__	wulfila/lang/phono.py	/^    def __repr__(self):$/;"	m	class:Phonology	file:
+__repr__	wulfila/lang/word.py	/^    def __repr__(self):$/;"	m	class:Word	file:
+__stdcall	wulfila/utils/__init__.c	31;"	d	file:
+__stdcall	wulfila/utils/icelandic.c	31;"	d	file:
+am_aiter	wulfila/utils/__init__.c	/^        unaryfunc am_aiter;$/;"	m	struct:__anon10	file:
+am_aiter	wulfila/utils/icelandic.c	/^        unaryfunc am_aiter;$/;"	m	struct:__anon2	file:
+am_anext	wulfila/utils/__init__.c	/^        unaryfunc am_anext;$/;"	m	struct:__anon10	file:
+am_anext	wulfila/utils/icelandic.c	/^        unaryfunc am_anext;$/;"	m	struct:__anon2	file:
+am_await	wulfila/utils/__init__.c	/^        unaryfunc am_await;$/;"	m	struct:__anon10	file:
+am_await	wulfila/utils/icelandic.c	/^        unaryfunc am_await;$/;"	m	struct:__anon2	file:
+append	wulfila/lang/lex.py	/^    def append(self, entry):$/;"	m	class:Lexicon
+append	wulfila/lang/word.py	/^    def append(self, syllable):$/;"	m	class:Word
+body	wulfila/utils/icelandic.c	/^    __pyx_coroutine_body_t body;$/;"	m	struct:__anon8	file:
+classobj	wulfila/utils/icelandic.c	/^    PyObject *classobj;$/;"	m	struct:__anon8	file:
+closure	wulfila/utils/icelandic.c	/^    PyObject *closure;$/;"	m	struct:__anon8	file:
+code_line	wulfila/utils/__init__.c	/^    int code_line;$/;"	m	struct:__anon13	file:
+code_line	wulfila/utils/icelandic.c	/^    int code_line;$/;"	m	struct:__anon6	file:
+code_object	wulfila/utils/__init__.c	/^    PyCodeObject* code_object;$/;"	m	struct:__anon13	file:
+code_object	wulfila/utils/icelandic.c	/^    PyCodeObject* code_object;$/;"	m	struct:__anon6	file:
+count	wulfila/utils/__init__.c	/^    int count;$/;"	m	struct:__Pyx_CodeObjectCache	file:
+count	wulfila/utils/icelandic.c	/^    int count;$/;"	m	struct:__Pyx_CodeObjectCache	file:
+definition	wulfila/utils/icelandic.c	/^  PyObject *definition;$/;"	m	struct:__pyx_obj_7wulfila_5utils_9icelandic_Word	file:
+empty	wulfila/lang/phono.py	/^    def empty(self):$/;"	m	class:Phonology
+encoding	wulfila/utils/__init__.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon11	file:
+encoding	wulfila/utils/icelandic.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon3	file:
+entries	wulfila/utils/__init__.c	/^    __Pyx_CodeObjectCacheEntry* entries;$/;"	m	struct:__Pyx_CodeObjectCache	file:
+entries	wulfila/utils/icelandic.c	/^    __Pyx_CodeObjectCacheEntry* entries;$/;"	m	struct:__Pyx_CodeObjectCache	file:
+exc_traceback	wulfila/utils/icelandic.c	/^    PyObject *exc_traceback;$/;"	m	struct:__anon7	file:
+exc_type	wulfila/utils/icelandic.c	/^    PyObject *exc_type;$/;"	m	struct:__anon7	file:
+exc_value	wulfila/utils/icelandic.c	/^    PyObject *exc_value;$/;"	m	struct:__anon7	file:
+flag	wulfila/utils/icelandic.c	/^    int flag;$/;"	m	struct:__anon5	file:
+form_syllable	wulfila/lang/phono.py	/^    def form_syllable(self, word, pattern):$/;"	m	class:Phonology
+func	wulfila/utils/icelandic.c	/^    PyCFunction func;$/;"	m	struct:__anon5	file:
+generate_words	wulfila/lang/phono.py	/^    def generate_words(self, num_words, min=2, max=5):$/;"	m	class:Phonology
+get_letter	wulfila/lang/letter.py	/^def get_letter(key):$/;"	f
+gi_code	wulfila/utils/icelandic.c	/^    PyObject *gi_code;$/;"	m	struct:__anon8	file:
+gi_exc_state	wulfila/utils/icelandic.c	/^    __Pyx_ExcInfoStruct gi_exc_state;$/;"	m	struct:__anon8	file:
+gi_modulename	wulfila/utils/icelandic.c	/^    PyObject *gi_modulename;$/;"	m	struct:__anon8	file:
+gi_name	wulfila/utils/icelandic.c	/^    PyObject *gi_name;$/;"	m	struct:__anon8	file:
+gi_qualname	wulfila/utils/icelandic.c	/^    PyObject *gi_qualname;$/;"	m	struct:__anon8	file:
+gi_weakreflist	wulfila/utils/icelandic.c	/^    PyObject *gi_weakreflist;$/;"	m	struct:__anon8	file:
+headword	wulfila/utils/icelandic.c	/^  int headword;$/;"	m	struct:__pyx_obj_7wulfila_5utils_9icelandic_Line	file:
+initicelandic	wulfila/utils/icelandic.c	/^__Pyx_PyMODINIT_FUNC initicelandic(void)$/;"	f
+initutils	wulfila/utils/__init__.c	/^__Pyx_PyMODINIT_FUNC initutils(void)$/;"	f
+intern	wulfila/utils/__init__.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	m	struct:__anon11	file:
+intern	wulfila/utils/icelandic.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	m	struct:__anon3	file:
+is_running	wulfila/utils/icelandic.c	/^    char is_running;$/;"	m	struct:__anon8	file:
+is_str	wulfila/utils/__init__.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	m	struct:__anon11	file:
+is_str	wulfila/utils/icelandic.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	m	struct:__anon3	file:
+is_unicode	wulfila/utils/__init__.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	m	struct:__anon11	file:
+is_unicode	wulfila/utils/icelandic.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	m	struct:__anon3	file:
+latex	wulfila/lang/letter.py	/^    latex = "__NONE__"$/;"	v	class:Letter
+latex	wulfila/lang/word.py	/^    def latex(self):$/;"	m	class:Word
+likely	wulfila/utils/__init__.c	806;"	d	file:
+likely	wulfila/utils/__init__.c	809;"	d	file:
+likely	wulfila/utils/icelandic.c	806;"	d	file:
+likely	wulfila/utils/icelandic.c	809;"	d	file:
+line	wulfila/utils/icelandic.c	/^  PyObject *line;$/;"	m	struct:__pyx_obj_7wulfila_5utils_9icelandic_Line	file:
+lines	wulfila/utils/icelandic.c	/^  PyObject *lines;$/;"	m	struct:__pyx_obj_7wulfila_5utils_9icelandic_Word	file:
+logger	wulfila/commands/generate.py	/^logger = getLogger()$/;"	v
+logger	wulfila/commands/info.py	/^logger = getLogger()$/;"	v
+logger	wulfila/lang/__init__.py	/^logger = getLogger()$/;"	v
+logger	wulfila/lang/lang.py	/^logger = getLogger()$/;"	v
+logger	wulfila/lang/letter.py	/^logger = getLogger()$/;"	v
+logger	wulfila/lang/lex.py	/^logger = getLogger()$/;"	v
+logger	wulfila/lang/phono.py	/^logger = getLogger()$/;"	v
+logger	wulfila/lang/word.py	/^logger = getLogger()$/;"	v
+max_count	wulfila/utils/__init__.c	/^    int max_count;$/;"	m	struct:__Pyx_CodeObjectCache	file:
+max_count	wulfila/utils/icelandic.c	/^    int max_count;$/;"	m	struct:__Pyx_CodeObjectCache	file:
+method	wulfila/utils/icelandic.c	/^    PyObject *method;$/;"	m	struct:__anon5	file:
+method_name	wulfila/utils/icelandic.c	/^    PyObject **method_name;$/;"	m	struct:__anon5	file:
+n	wulfila/utils/__init__.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon11	file:
+n	wulfila/utils/icelandic.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon3	file:
+offsetof	wulfila/utils/__init__.c	27;"	d	file:
+offsetof	wulfila/utils/icelandic.c	27;"	d	file:
+p	wulfila/utils/__init__.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon11	file:
+p	wulfila/utils/icelandic.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon3	file:
+pagenum	wulfila/utils/icelandic.c	/^  int pagenum;$/;"	m	struct:__pyx_obj_7wulfila_5utils_9icelandic_Line	file:
+registry	wulfila/lang/letter.py	/^registry = {$/;"	v
+resume_label	wulfila/utils/icelandic.c	/^    int resume_label;$/;"	m	struct:__anon8	file:
+run	wulfila/commands/generate.py	/^def run(args):$/;"	f
+run	wulfila/commands/info.py	/^def run(args):$/;"	f
+s	wulfila/utils/__init__.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon11	file:
+s	wulfila/utils/icelandic.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon3	file:
+spec_lexicon	wulfila/lang/lex.py	/^def spec_lexicon(lang, terms):$/;"	f
+spec_phonology	wulfila/lang/phono.py	/^def spec_phonology(lang, data):$/;"	f
+string	wulfila/lang/letter.py	/^    string = "__NONE__"$/;"	v	class:Letter
+term	wulfila/utils/icelandic.c	/^  PyObject *term;$/;"	m	struct:__pyx_obj_7wulfila_5utils_9icelandic_Word	file:
+type	wulfila/utils/icelandic.c	/^    PyObject *type;$/;"	m	struct:__anon5	file:
+uint16_t	wulfila/utils/icelandic.c	/^           typedef unsigned __int16  uint16_t;$/;"	t	file:
+uint16_t	wulfila/utils/icelandic.c	/^           typedef unsigned short    uint16_t;$/;"	t	file:
+uint32_t	wulfila/utils/__init__.c	/^           typedef unsigned __int32  uint32_t;$/;"	t	file:
+uint32_t	wulfila/utils/__init__.c	/^           typedef unsigned int      uint32_t;$/;"	t	file:
+uint32_t	wulfila/utils/icelandic.c	/^           typedef unsigned __int32  uint32_t;$/;"	t	file:
+uint32_t	wulfila/utils/icelandic.c	/^           typedef unsigned int      uint32_t;$/;"	t	file:
+uint8_t	wulfila/utils/__init__.c	/^           typedef unsigned __int8   uint8_t;$/;"	t	file:
+uint8_t	wulfila/utils/__init__.c	/^           typedef unsigned char     uint8_t;$/;"	t	file:
+uint8_t	wulfila/utils/icelandic.c	/^           typedef unsigned __int8   uint8_t;$/;"	t	file:
+uint8_t	wulfila/utils/icelandic.c	/^           typedef unsigned char     uint8_t;$/;"	t	file:
+unlikely	wulfila/utils/__init__.c	807;"	d	file:
+unlikely	wulfila/utils/__init__.c	810;"	d	file:
+unlikely	wulfila/utils/icelandic.c	807;"	d	file:
+unlikely	wulfila/utils/icelandic.c	810;"	d	file:
+update	wulfila/lang/__init__.py	/^def update(registry, data):$/;"	f
+update	wulfila/lang/lang.py	/^    def update(self, data):$/;"	m	class:Language
+update	wulfila/lang/lang.py	/^    def update(self, name, data):$/;"	m	class:Registry
+update_phonemes	wulfila/lang/phono.py	/^    def update_phonemes(self, data):$/;"	m	class:Phonology
+update_syllabary	wulfila/lang/phono.py	/^    def update_syllabary(self, data):$/;"	m	class:Phonology
+valid	wulfila/lang/word.py	/^    def valid(self):$/;"	m	class:Word
+yieldfrom	wulfila/utils/icelandic.c	/^    PyObject *yieldfrom;$/;"	m	struct:__anon8	file:

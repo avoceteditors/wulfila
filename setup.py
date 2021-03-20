@@ -7,7 +7,8 @@ import pathlib
 # Configure Packages
 packages = [
     "wulfila",
-    "wulfila.lang"
+    "wulfila.lang",
+    "wulfila.commands"
 ]
 package_dirs = {}
 exts = []
