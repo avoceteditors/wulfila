@@ -27,7 +27,7 @@ Reads the current configuration and generates a list of random words based on th
 
 .. code-block:: console
 
-   $ wulfila generate 10
+   $ wulfila --lang proto-tongue generate 10
    /ʟi.dar/
    /di.ru.d-hu.i/
    /zu.fa.mir/
