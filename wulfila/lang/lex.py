@@ -34,6 +34,16 @@ from .letter import *
 from logging import getLogger
 logger = getLogger()
 
+gender = {
+    "animate": "a.",
+    "inanimate": "ina.",
+    "masculine": "m.",
+    "feminine": "f.",
+    "neuter": "n.",
+    "bestial": "bstl.",
+    "spiritual": "s."
+}
+
 class Term:
 
     def __init__(self, data):
@@ -41,6 +51,8 @@ class Term:
         self.syllables = 0
         self.size = 0
         self.phonetic = []
+        self.gramm = ""
+        self.gender = ""
 
         try:
             self.name = data["term"]
@@ -55,10 +67,25 @@ class Term:
             self.display = data.get("entry", self.name)
             self.definition = data.get("definition", "")
             self.gender = data.get("gender", "")
+            self.gramm = data.get("gramm", "")
 
         except Exception as e:
             logger.warn(f"Invalid Term: {data}, due to {e}")
             self.valid = False
+
+    @property
+    def gender_abbrev(self):
+        return gender.get(self.gender, self.gender)
+
+
+    def latex_phono(self):
+        text = []
+        for syl in self.phonetic:
+            tex_syl = []
+            for letter in syl:
+                tex_syl.append(letter.latex)
+            text.append("".join(tex_syl))
+        return ".".join(text)
 
     def __repr__(self):
         return f"<Term: {self.name}/>"
@@ -74,11 +101,15 @@ class Lexicon:
     def append(self, entry):
         term = Term(entry)
         if term.valid:
-            if term.name in self.terms:
-                self.terms[term.name].append(term)
+            letter = term.name[0]
+            if letter in self.terms:
+                if term.name in self.terms[letter]:
+                    self.terms[letter][term.name].append(term) 
+                else:
+                    self.terms[letter][term.name] = [term]
             else:
-                self.terms[term.name] = [term]
-
+                self.terms[letter] = {}
+                self.terms[letter][term.name] = [term]
 
 def spec_lexicon(lang, terms):
 
