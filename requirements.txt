@@ -1,0 +1,7 @@
+ipapy
+markdown-full-yaml-metadata
+markdown-checklist
+markdown-emdash
+mdx-include
+pdfkit
+pymdown-extensions

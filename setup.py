@@ -1,43 +1,29 @@
-from distutils.core import setup
-from Cython.Build import cythonize
-
 import re
 import pathlib
+from distutils.core import setup
 
-# Configure Packages
-packages = [
+# Packages
+pkgs = [
     "wulfila",
-    "wulfila.lang",
-    "wulfila.commands"
 ]
-package_dirs = {}
-exts = []
-for package in packages:
-    src = re.sub("\.", "/", package)
-    package_dirs[package] = src
 
-    # Find Cython Extensions
-    path = pathlib.Path(src)
-    for i in path.rglob("*.pyx"):
-        exts.append(str(i))
+# Package Directories
+pkgdirs = {}
+dot = re.compile("\.")
+for pkg in pkgs: 
+    pkgdirs[pkg] = re.sub(dot, "/", pkg)
 
-    for i in path.rglob("*.pxd"):
-        exts.append(str(i))
+# Scripts
+bin_path = pathlib.Path("scripts")
+bins = []
 
-# Configure Scripts
-scripts_path = pathlib.Path("scripts")
-scripts = []
-for i in scripts_path.glob('*'):
-    if i.is_file():
-        scripts.append(str(i))
-
+for bin in bin_path.glob("*"):
+    bins.append(bin)
 
 setup(
     name="wulfila",
-    version="2021.1",
-    scripts=scripts,
-    package_dir=package_dirs,
-    packages=packages,
-    #package_data={"wulfila": ['data/*.db']},
+    version="21.02",
+    packages=pkgs,
+    package_dir=pkgdirs,
+    scripts=bins
 )
-
