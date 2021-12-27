@@ -19,8 +19,14 @@ defmodule Wulfila.Cache do
 
   def get_cache_data(cache) do
     if File.exists?(cache) do
-      {:ok, content} = File.read(cache)
-      Poison.decode(content)
+      case File.read(cache) do
+        {:ok, content} ->
+          case Poison.decode(content) do
+            {:ok, data} -> data
+            _ -> %{}
+          end
+        _ -> %{}
+      end
     else
       %{}
     end
@@ -32,25 +38,38 @@ defmodule Wulfila.Cache do
     path = get_cache_path(cache)
     data = get_cache_data(path)
 
-    data
-    |> Map.keys
-
-    {:ok, {path, data, %{}}}
+    {:ok, {path, data}}
   end
 
-
   @impl true
-  def handle_cast({:close}, {path, index, data}) do
+  def handle_call(:close, _from, {path, index}) do
     IO.inspect index
     File.mkdir_p(Path.dirname(path))
-    File.write(path, Poison.encode(index))
-    {:noreply, {path, index, data}}
+    {:ok, json} = Poison.encode(index)
+    File.write(path, json)
+    {:reply, :ok, {path, index} }
   end
 
   @impl true
-  def handle_cast({:add, lang, path}, {cache, index, data}) do
-    {:noreply, {cache, Map.put(index, lang, path), data}}
+  def handle_call(:keys, _from, {path, index}) do
+    {:reply, Map.keys(index), {path, index}}
   end
+
+  @impl true
+  def handle_call({:read, key}, _from, {path, index}) do
+    {:reply, Map.get(index, key), {path, index}}
+  end
+
+  @impl true
+  def handle_cast({:add, lang, path}, {cache, index}) do
+    {:noreply,
+      {cache, Map.put(index, lang,
+        %{
+          "project" => Path.expand("./.wulfila.yml"),
+          "source" => Path.expand("./#{path}")
+        })}}
+  end
+
 
   ############################# CLIENT FUNCTIONS ##############################
   def start_link(cache) do
@@ -61,13 +80,16 @@ defmodule Wulfila.Cache do
     GenServer.cast(:wulfila, {:add, lang, path})
   end
 
-  def close do
-    GenServer.cast(:wulfila, {:close})
+  def read() do
+    GenServer.call(:wulfila, :keys)
   end
 
-  #def add(lang, path) do
-  #  GenServer.cast(:wulfila, {:add, lang, path})
-  #end
+  def read(key) do
+    GenServer.call(:wulfila, {:read, key})
+  end
 
+  def close do
+    GenServer.call(:wulfila, :close)
+  end
 
 end

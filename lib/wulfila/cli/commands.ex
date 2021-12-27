@@ -7,8 +7,10 @@ defmodule Wulfila.CLI.Commands do
 
   def process({opts, args, []}) do
     case args do
-      ["add", lang, src | _] -> Wulfila.Add.run(opts[:source], lang, src)
-      ["update" | _] -> Wulfila.Update.run(opts[:source])
+      ["add", lang, src] -> Wulfila.Add.run(opts[:source], lang, src)
+      ["add" | _] -> Logger.info("Help text for add not yet written.")
+      ["phono", lang] -> Wulfila.Phonology.run(opts[:source], lang)
+      ["update" | langs] -> Wulfila.Update.run(opts[:source], opts[:force], langs)
       _ -> process({[], [], args})
     end
   end

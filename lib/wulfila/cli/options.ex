@@ -13,12 +13,14 @@ defmodule Wulfila.CLI.Options do
       args,
       [
         switches: [
-          all: :bool,
+          all: :boolean,
+          force: :boolean,
           source: :string,
-          verbose: :bool
+          verbose: :boolean
         ],
         aliases: [
           a: :all,
+          f: :force,
           s: :source,
           v: :verbose
         ]
