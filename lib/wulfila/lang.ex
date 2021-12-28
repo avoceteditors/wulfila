@@ -51,6 +51,7 @@ defmodule Wulfila.Lang do
     |> Enum.max
 
     atom = String.to_atom(lang)
+    IO.inspect atom
     GenServer.start_link(Wulfila.Lang, cache, name: atom)
     if cache_mtime < files_max or force or not File.exists?(cache) do
       files
@@ -61,6 +62,7 @@ defmodule Wulfila.Lang do
   end
 
   def close(atom) do
+    IO.inspect("Test")
     GenServer.call(atom, :close)
   end
 

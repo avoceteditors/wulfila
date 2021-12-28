@@ -64,7 +64,7 @@ defmodule Wulfila.Cache do
     {:noreply,
       {cache, Map.put(index, lang,
         %{
-          "project" => Path.expand("./.wulfila.yml"),
+          "project" => Path.expand("./.wulfila.json"),
           "source" => Path.expand("./#{path}")
         })}}
   end
@@ -95,7 +95,9 @@ defmodule Wulfila.Cache do
     |> Enum.map(&Task.await(&1))
   end
 
+  @spec close_language(atom | pid | {atom, any} | {:via, atom, any}) :: any
   def close_language(key) do
+    IO.inspect key
     Wulfila.Lang.close(key)
   end
 
