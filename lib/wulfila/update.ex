@@ -11,6 +11,8 @@ defmodule Wulfila.Update do
       [] -> update_langs(Wulfila.Cache.read, force)
       _ -> update_langs(langs, force)
     end
+
+    Wulfila.Cache.close()
   end
 
   def update_langs(langs, force) do

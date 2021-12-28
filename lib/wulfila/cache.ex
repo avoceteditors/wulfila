@@ -43,7 +43,6 @@ defmodule Wulfila.Cache do
 
   @impl true
   def handle_call(:close, _from, {path, index}) do
-    IO.inspect index
     File.mkdir_p(Path.dirname(path))
     {:ok, json} = Poison.encode(index)
     File.write(path, json)
@@ -90,6 +89,14 @@ defmodule Wulfila.Cache do
 
   def close do
     GenServer.call(:wulfila, :close)
+
+    read()
+    |> Stream.map(&Task.async(Wulfila.Cache, :close_language, [&1]))
+    |> Enum.map(&Task.await(&1))
+  end
+
+  def close_language(key) do
+    Wulfila.Lang.close(key)
   end
 
 end
