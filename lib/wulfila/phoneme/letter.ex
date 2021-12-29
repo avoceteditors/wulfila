@@ -1,13 +1,77 @@
 defmodule Wulfila.Phoneme.Letter do
 
+  ################################ NEAR-CLOSE VOWELS ###############################
+
+  # Near-Clos Front Unroundd Vowel
+  def parse("ɪ") do
+    %Wulfila.Phoneme{letter: "ɪ" , type: [:vowel, :nearclose, :front, :unround, :short]}
+  end
+
+  def parse("ɪː") do
+    %Wulfila.Phoneme{letter: "ɪː" , type: [:vowel, :nearclose, :front, :unround, :long]}
+  end
+
+  def parse("ɪ") do
+    parse("ɪː")
+  end
+
+
+  # Near-Close Front Rounded Vowel
+  def parse("ʏ") do
+    %Wulfila.Phoneme{letter: "ʏ" , type: [:vowel, :nearclose, :front, :round, :short]}
+  end
+
+  def parse("ʏː") do
+    %Wulfila.Phoneme{letter: "ʏː" , type: [:vowel, :nearclose, :front, :round, :long]}
+  end
+
+  def parse("ʏ;") do
+    parse("ʏː")
+  end
+
+
+  # Near-Close Back Rounded Vowel
+  def parse("ʊ") do
+    %Wulfila.Phoneme{letter: "ʊ" , type: [:vowel, :nearclose, :back, :round, :short]}
+  end
+
+  def parse("ʊː") do
+    %Wulfila.Phoneme{letter: "ʊː" , type: [:vowel, :nearclose, :back, :round, :long]}
+  end
+
+  def parse("ʊ;") do
+    parse("ʊː")
+  end
+
+
+  ################################### CLOSE-MID VOWELS #################################
+
+  # Close-Mid Unrounded Vowel
+  def parse("e") do
+    %Wulfila.Phoneme{letter: "e" , type: [:vowel, :closemid, :front, :unround, :short]}
+  end
+
+  def parse("eː") do
+    %Wulfila.Phoneme{letter: "eː" , type: [:vowel, :closemid, :front, :unround, :long]}
+  end
+
+  def parse("e;") do
+    parse("eː")
+  end
+
+
+  # Close-Mid Front Rounded Vowel
 
   def parse("ø") do
     %Wulfila.Phoneme{letter: "ø", type: [:vowel, :closemid, :front, :round, :short]}
   end
-  def parse("ø") do
-    %Wulfila.Phoneme{letter: "ø", type: [:vowel, :closemid, :front, :round, :short]}
+
+  def parse("øː") do
+    %Wulfila.Phoneme{letter: "øː", type: [:vowel, :closemid, :front, :round, :long]}
   end
-  def parse("ø") do
+
+  def parse("ø;") do
+    parse("øː")
   end
 
 

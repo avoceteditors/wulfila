@@ -2,7 +2,6 @@ defmodule Wulfila.Phoneme do
   defstruct letter: nil, type: []
 
 
-
   # Close Vowels
   def parse("i") do
     %Wulfila.Phoneme{letter: "i" , type: [:vowel, :front, :central, :unround, :short]}
@@ -32,25 +31,6 @@ defmodule Wulfila.Phoneme do
 
 
   # Near-close Vowels
-  def parse("ɪ") do
-    %Wulfila.Phoneme{letter: "ɪ" , type: [:vowel, :nearclose, :front, :unround, :short]}
-  end
-
-
-  def parse("ʏ") do
-    %Wulfila.Phoneme{letter: "ʏ" , type: [:vowel, :nearclose, :front, :round, :short]}
-  end
-
-
-  def parse("ʊ") do
-    %Wulfila.Phoneme{letter: "ʊ" , type: [:vowel, :nearclose, :back, :round, :short]}
-  end
-
-  # Close-mid Vowels
-  def parse("e") do
-    %Wulfila.Phoneme{letter: "e" , type: [:vowel, :closemid, :front, :unround, :short]}
-  end
-
 
 
 
