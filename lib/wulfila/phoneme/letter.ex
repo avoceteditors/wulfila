@@ -9,7 +9,7 @@ defmodule Wulfila.Phoneme.Letter do
   # Bilabial Nasal Consonant
 
   def parse("m̥") do
-    Wulfila.Phoneme.init{letter: "m", type: [ :consonant, :sonorant, :nasal, :bilabial, :voiceless]}
+    %Wulfila.Phoneme{letter: "m", type: [:consonant, :sonorant, :nasal, :bilabial, :voiceless]}
   end
 
   def parse("mo*") do
@@ -122,6 +122,447 @@ defmodule Wulfila.Phoneme.Letter do
 
   def parse("N") do
     parse("ɴ")
+  end
+
+  ############################ PLOSIVE CONSONANTS #################################
+
+  # Plosive Bilabial Consonants
+
+  def parse("p") do
+    %Wulfila.Phoneme{letter: "p", type: [:consonant, :obstruent, :plosive, :bilabial, :voiceless]}
+  end
+
+  def parse("b") do
+    %Wulfila.Phoneme{letter: "b", type: [:consonant, :obstruent, :plosive, :bilabial, :voiced]}
+  end
+
+
+  # Plosive Labio-Dental Consonant
+
+  def parse("p̪") do
+    %Wulfila.Phoneme{letter: "p̪", type: [:consonant, :obstruent, :plosive, :labiodental, :voiceless]}
+  end
+
+  def parse("p~*") do
+    parse("p̪")
+  end
+
+  def parse("b̪") do
+    %Wulfila.Phoneme{letter: "b̪", type: [:consonant, :obstruent, :plosive, :labiodental, :voiced]}
+  end
+
+  def parse("b~*") do
+    parse("b̪")
+  end
+
+  # Plosive Linguo-Labial Consonant
+
+  def parse("t̼") do
+    %Wulfila.Phoneme{letter: "t̼", type: [:consonant, :obstruent, :plosive, :linguolabial, :voiceless]}
+  end
+
+  def parse("t~*") do
+    parse("t̼")
+  end
+
+  def parse("d̼") do
+    %Wulfila.Phoneme{letter: "d̼", type: [:consonant, :obstruent, :plosive, :linguolabial, :voiced]}
+  end
+
+  def parse("d~*") do
+    parse("d̼")
+  end
+
+  # Plosive Alveolar Consonant
+
+  def parse("t") do
+    %Wulfila.Phoneme{letter: "t", type: [:consonant, :obstruent, :plosive, :alveolar, :voiceless]}
+  end
+
+  def parse("d") do
+    %Wulfila.Phoneme{letter: "d", type: [:consonant, :obstruent, :plosive, :alveolar, :voiced]}
+  end
+
+  # Plosive Retroflex Consonant
+
+  def parse("ʈ") do
+    %Wulfila.Phoneme{letter: "ʈ", type: [:consonant, :obstruent, :plosive, :retroflex, :voiceless]}
+  end
+
+  def parse("t-*") do
+    parse("ʈ")
+  end
+
+  def parse("ɖ") do
+    %Wulfila.Phoneme{letter: "ɖ", type: [:consonant, :obstrunt, :plosive, :retroflex, :voiced]}
+  end
+
+  def parse("d-*") do
+    parse("ɖ")
+  end
+
+
+  # Plosive Palatal Consonants
+
+  def parse("c") do
+    %Wulfila.Phoneme{letter: "c", type: [:consonant, :obstruent, :plosive, :palatal, :voiceless]}
+  end
+
+  def parse("ɟ") do
+    %Wulfila.Phoneme{letter: "ɟ", type: [:consonant, :obstruent, :plosive, :palatal, :voiced]}
+  end
+
+  def parse("fi*") do
+    parse("ɟ")
+  end
+
+
+  # Plosive Velar Consonants
+
+  def parse("k") do
+    %Wulfila.Phoneme{letter: "k", type: [:consonant, :obstruent, :plosive, :velar, :voiceless]}
+  end
+
+  def parse("g") do
+    %Wulfila.Phoneme{letter: "g", type: [:consonant, :obstruent, :plosive, :velar, :voiced]}
+  end
+
+  # Plosive Uvular Consonants
+
+  def parse("q") do
+    %Wulfila.Phoneme{letter: "q", type: [:consonant, :obstruent, :plosive, :uvular, :voiceless]}
+  end
+
+  def parse("ɢ") do
+    %Wulfila.Phoneme{letter: "ɢ", type: [:consonant, :obstruent, :plosive, :uvular, :voiced]}
+  end
+
+  def parse("G") do
+    parse("ɢ")
+  end
+
+  # Epiglottal Plosive
+
+  def parse("ʡ") do
+    %Wulfila.Phoneme{letter: "ʡ", type: [:consonant, :obstruent, :plosive, :epiglottal]}
+  end
+
+  def parse("cr+*") do
+    parse("ʡ")
+  end
+
+  # Glottal Plosive
+  def parse("ʔ") do
+    %Wulfila.Phoneme{letter: "ʔ", type: [:consonant, :obstruent, :plosive, :glottal]}
+  end
+
+  def parse("cr-*") do
+    parse("ʔ")
+  end
+
+  ######################### SIBILANT FRICATIVES ####################################
+
+  # Alveolar Sibilant Consonants
+  def parse("s") do
+    %Wulfila.Phoneme{letter: "s", type: [:consonant, :obstruent, :fricative, :sibilant, :strident, :alveolar, :voiceless]}
+  end
+
+  def parse("z") do
+    %Wulfila.Phoneme{letter: "z", type: [:consonant, :obstruent, :fricative, :sibilant, :strident, :alveolar, :voiced]}
+  end
+
+
+  # Post-Alveolar Sibilant Consonant
+
+  def parse("ʃ") do
+    %Wulfila.Phoneme{letter: "ʃ", type: [:consonant, :obstruent, :fricative, :sibilant, :strident, :postalveolar, :voiceless]}
+  end
+
+  def parse("sh") do
+    parse("ʃ")
+  end
+
+  def parse("ʒ") do
+    %Wulfila.Phoneme{letter: "ʒ", type: [:consonant, :obstruent, :fricative, :sibilant, :strident, :postalveolar, :voiced]}
+  end
+
+  def parse("zh") do
+    parse("ʒ")
+  end
+
+  # Retroflex Sibilant Consonants
+  def parse("ʂ") do
+    %Wulfila.Phoneme{letter: "ʂ", type: [:consonant, :obstruent, :fricative, :sibilant, :strident, :retroflex, :voiceless]}
+  end
+
+  def parse("s,*") do
+    parse("ʂ")
+  end
+
+  def parse("ʐ") do
+    %Wulfila.Phoneme{letter: "ʐ", type: [:consonant, :obstruent, :fricative, :sibilant, :strident, :retroflex, :voiced]}
+  end
+
+  def parse("z,*") do
+    parse("ʐ")
+  end
+
+  # Palatal Sibilant Consonants
+  def parse("ɕ") do
+    %Wulfila.Phoneme{letter: "ɕ", type: [:consonant, :obstruent, :fricative, :sibilant, :strident, :palatal, :voiceless]}
+  end
+
+  def parse("co*") do
+    parse("ɕ")
+  end
+
+  def parse("ʑ") do
+    %Wulfila.Phoneme{letter: "ʑ", type: [:consonant, :obstruent, :fricative, :sibilant, :stridnt, :palatal, :voiced]}
+  end
+
+  def parse("zo*") do
+    parse("ʑ")
+  end
+
+  ############################# NON-SIBILANT FRICATIVES ###########################
+
+  # Bilabial Fricative Consonant
+  def parse("ɸ") do
+    %Wulfila.Phoneme{letter: "ɸ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :bilabial, :voiceless]}
+  end
+
+  def parse("φ") do
+    parse("ɸ")
+  end
+
+  def parse("ff") do
+    parse("ɸ")
+  end
+
+  def parse("β") do
+    %Wulfila.Phoneme{letter: "β", type: [:consonant, :obstruent, :fricative, :nonsibilant, :bilabial, :voiced]}
+  end
+
+  def parse("B") do
+    parse("β")
+  end
+
+  # Labio-Dental Fricative Consonant
+  def parse("f") do
+    %Wulfila.Phoneme{letter: "f", type: [:consonant, :obstruent, :fricative, :nonsibilant, :strident, :labiodental, :voiceless]}
+  end
+
+  def parse("v") do
+    %Wulfila.Phoneme{letter: "v", type: [:consonant, :obstruent, :fricative, :nonsibilant, :strident, :labiodental, :voiced]}
+  end
+
+  # Linguo-Labial Fricative Consonant
+
+  def parse("θ̼ ") do
+    %Wulfila.Phoneme{letter: "θ̼ ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :linguolabial, :voiceless]}
+  end
+
+  def parse("th_*") do
+    parse("θ̼ ")
+  end
+
+  def parse("ð̼") do
+    %Wulfila.Phoneme{letter: "ð̼", type: [:consonant, :obstruent, :fricative, :nonsibilant, :linguolabial, :voiced]}
+  end
+
+  def parse("dh_*") do
+    parse("ð̼")
+  end
+
+  # Dental Fricative
+  def parse("θ") do
+    %Wulfila.Phoneme{letter: "θ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :dental, :voiceless]}
+  end
+
+  def parse("th") do
+    parse("θ")
+  end
+
+  def parse("ð") do
+    %Wulfila.Phoneme{letter: "ð", type: [:consonant, :obstruent, :fricative, :nonsibilant, :dental, :voiced]}
+  end
+
+  def parse("dh") do
+    parse("ð")
+  end
+
+  # Alveolar Fricative Consonant
+  def parse("θ̠") do
+    %Wulfila.Phoneme{letter: "θ̠", type: [:consonant, :obstruent, :fricative, :nonsibilant, :alveolar, :voiceless]}
+  end
+
+  def parse("th-*") do
+    parse("θ̠")
+  end
+
+  def parse("ð̠") do
+    %Wulfila.Phoneme{letter: "ð̠", type: [:consonant, :obstruent, :fricative, :nonsibilant, :alveolar, :voiced]}
+  end
+
+  def parse("dh-*") do
+    parse("ð̠")
+  end
+
+  # Post-Alveolar Fricative Consonant
+  def parse("ɹ̠̊˔") do
+    %Wulfila.Phoneme{letter: "ɹ̠̊˔", type: [:consonant, :obstruent, :fricative, :nonsibilant, :postalveolar, :voiceless]}
+  end
+
+  def parse("dho") do
+    parse("ɹ̠̊˔")
+  end
+
+  def parse("ɹ̠˔") do
+    %Wulfila.Phoneme{letter: "ɹ̠˔", type: [:consonant, :obstruent, :fricative, :nonsibilant, :postalveolar, :voiced]}
+  end
+
+  def parse("tho") do
+    parse("ɹ̠˔")
+  end
+
+  # Retroflex Fricative
+
+  def parse("ɻ˔") do
+    %Wulfila.Phoneme{letter: "ɻ˔", type: [:consonant, :obstruent, :fricative, :nonsibilant, :retroflex]}
+  end
+
+  def parse("thr") do
+    parse("ɻ˔")
+  end
+
+  # Palatal Fricative Consonant
+  def parse("ç") do
+    %Wulfila.Phoneme{letter: "ç", type: [:consonant, :obstruent, :fricative, :nonsibilant, :palatal, :voiceless]}
+  end
+
+  def parse("c,*") do
+    parse("ç")
+  end
+
+  def parse("ʝ") do
+    %Wulfila.Phoneme{letter: "ʝ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :palatal, :voiced]}
+  end
+
+  def parse("j_*") do
+    parse("ʝ")
+  end
+
+  # Velar Fricative Consonant
+  def parse("x") do
+    %Wulfila.Phoneme{letter: "x", type: [:consonant, :obstruent, :fricative, :nonsibilant, :velar, :voiceless]}
+  end
+
+  def parse("ɣ") do
+    %Wulfila.Phoneme{letter: "ɣ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :velar, :voiced]}
+  end
+
+  def parse("bg") do
+    parse("ɣ")
+  end
+
+  # Uvular Fricative
+  def parse("χ") do
+    %Wulfila.Phoneme{letter: "χ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :uvular, :voiceless]}
+  end
+
+  def parse("X") do
+    parse("χ")
+  end
+
+  def parse("ʁ") do
+    %Wulfila.Phoneme{letter: "ʁ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :uvular, :voiced]}
+  end
+
+  def parse("Ri") do
+    parse("ʁ")
+  end
+
+  # Pharyngeal Fricative Consonants
+
+  def parse("ħ") do
+    %Wulfila.Phoneme{letter: "ħ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :pharyngeal, :voiceless]}
+  end
+
+  def parse("h-") do
+    parse("ħ")
+  end
+
+  def parse("ʕ") do
+    %Wulfila.Phoneme{letter: "ʕ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :pharyngeal, :voiced]}
+  end
+
+  def parse("c-") do
+    parse("ʕ")
+  end
+
+  # Glottal Fricative Consonants
+  def parse("h") do
+    %Wulfila.Phoneme{letter: "h", type: [:consonant, :obstruent, :fricative, :nonsibilant, :glottal, :voiceless]}
+  end
+
+  def parse("ɦ") do
+    %Wulfila.Phoneme{letter: "ɦ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :glottal, :voiced]}
+  end
+
+  def parse("h~") do
+    parse("ɦ")
+  end
+
+  ################################### APPROXIMANTS #################################
+
+  # Labio-Dental Approximant
+  def parse("ʋ") do
+    %Wulfila.Phoneme{letter: "ʋ", type: [:consonant, :approximant, :labiodental, :voiced]}
+  end
+
+  def parse("υ-") do
+    parse("ʋ")
+  end
+
+  # Alveolar Approximant
+  def parse("ɹ") do
+    %Wulfila.Phoneme{letter: "ɹ", type: [:consonant, :approximant, :rhotic, :alveolar, :voiced]}
+  end
+
+  def parse("ri") do
+    parse("ɹ")
+  end
+
+  # Retroflex Approximant
+  def parse("ɻ") do
+    %Wulfila.Phoneme{letter: "ɻ", type: [:consonant, :approximant, :rhotic, :retroflex, :voiced]}
+  end
+
+  def parse("rit") do
+    parse("ɻ")
+  end
+
+  # Palatal Approximant
+  def parse("j") do
+    %Wulfila.Phoneme{letter: "j", type: [:consonant, :approximant, :semivowel, :palatal, :voiced]}
+  end
+
+  # Velar Approximant
+  def parse("ɰ") do
+    %Wulfila.Phoneme{letter: "ɰ", type: [:cosonant, :approximant, :semivowel, :velar, :voiced]}
+  end
+
+  def parse("w,") do
+    parse("ɰ")
+  end
+
+  # Glottal Approximant
+  def parse("ʔ̞") do
+    %Wulfila.Phoneme{letter: "ʔ̞", type: [:consonant, :approximant]}
+  end
+
+  def parse("?*") do
+    parse("ʔ̞")
   end
 
   ##################################################################################
@@ -363,7 +804,7 @@ defmodule Wulfila.Phoneme.Letter do
   end
 
   def parse("o;") do
-    parse("oː"
+    parse("oː")
   end
 
 
@@ -547,7 +988,7 @@ defmodule Wulfila.Phoneme.Letter do
   end
 
   def parse("æ;") do
-    parse("æ"ː)
+    parse("æː")
   end
 
 

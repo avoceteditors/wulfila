@@ -10,7 +10,7 @@ defmodule Wulfila.Generate do
 
     phonemes = find_phonemes(data)
 
-    IO.inspect phonemes
+    #IO.inspect phonemes
 
   end
 
@@ -19,10 +19,12 @@ defmodule Wulfila.Generate do
     |> find("phonemes")
     |> Enum.map(
       fn x ->
-        Regex.split(~r/ +/, x)
-        |> Enum.map(fn letter ->
-          Wulfila.Phoneme.parse(letter)
-        end)
+        Wulfila.Phoneme.parse(x)
+      end
+    )
+    |> Enum.filter(
+      fn x ->
+        x != nil
       end
     )
   end
