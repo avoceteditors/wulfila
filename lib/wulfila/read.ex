@@ -41,7 +41,7 @@ defmodule Wulfila.Read do
   def load_yaml(path) do
     case YamlElixir.read_from_file(path) do
       {:ok, data} -> data
-      reason -> path
+      reason -> %{}
     end
   end
 

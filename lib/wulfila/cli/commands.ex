@@ -4,6 +4,7 @@ defmodule Wulfila.CLI.Commands do
 
   def process({opts, args, []}) do
     case args do
+      ["paradigm" | words] -> Wulfila.Paradigm.run(opts[:source], words)
       ["gen" | spec] -> Wulfila.Generate.run(opts[:source], spec)
       _ -> process({[], [], args})
     end
