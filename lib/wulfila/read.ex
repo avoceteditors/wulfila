@@ -7,6 +7,7 @@ defmodule Wulfila.Read do
     |> Stream.map(&Task.async(Wulfila.Read, :load_yaml, [&1]))
     |> Enum.map(&Task.await(&1))
   end
+
   @spec read_yaml_files([
           binary
           | maybe_improper_list(
@@ -41,7 +42,10 @@ defmodule Wulfila.Read do
   def load_yaml(path) do
     case YamlElixir.read_from_file(path) do
       {:ok, data} -> data
-      reason -> %{}
+      reason ->
+        IO.inspect path
+        IO.inspect reason
+        %{}
     end
   end
 

@@ -1,0 +1,10 @@
+phonemes:
+  - a
+  - ph
+  - x
+  - i
+syllabary:
+  - pattern:
+      - consonant
+      - vowel
+    freq: 4

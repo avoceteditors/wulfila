@@ -1,0 +1,14 @@
+syllabary:
+  - pattern:
+    - obstruent
+    - sonorant
+    - vowel
+terms:
+  - term: ara
+    gramm:
+      category: noun
+      gender: animate
+      class: XV
+    short: man, person.
+    long: 
+      - People in the generic sense.  Compare to `ghin` "woman".
