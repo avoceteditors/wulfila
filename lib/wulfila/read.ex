@@ -3,19 +3,13 @@ defmodule Wulfila.Read do
 
   def read_yaml(sources) do
     sources
-    |> read_yaml_files
+    |> read_files([".yml", ".yaml"])
     |> Stream.map(&Task.async(Wulfila.Read, :load_yaml, [&1]))
     |> Enum.map(&Task.await(&1))
   end
 
-  @spec read_yaml_files([
-          binary
-          | maybe_improper_list(
-              binary | maybe_improper_list(any, binary | []) | char,
-              binary | []
-            )
-        ]) :: maybe_improper_list
-  def read_yaml_files(sources) do
+
+  def read_files(sources, search_pattern) do
     case sources do
       [source | rest] ->
         if File.dir?(source) do
@@ -27,12 +21,12 @@ defmodule Wulfila.Read do
               Path.join(source, x)
             end
           )
-          Enum.concat(read_yaml(fpaths), read_yaml(rest))
+          Enum.concat(read_files(fpaths, search_pattern), read_files(rest, search_pattern))
         else
-          if Path.extname(source) in [".yml", ".yaml"] do
-            [source | read_yaml(rest)]
+          if Path.extname(source) in search_pattern do
+            [source | read_files(rest, search_pattern)]
           else
-            read_yaml(rest)
+            read_files(rest, search_pattern)
           end
         end
       [] -> []
@@ -42,10 +36,7 @@ defmodule Wulfila.Read do
   def load_yaml(path) do
     case YamlElixir.read_from_file(path) do
       {:ok, data} -> data
-      reason ->
-        IO.inspect path
-        IO.inspect reason
-        %{}
+      reason -> %{}
     end
   end
 
