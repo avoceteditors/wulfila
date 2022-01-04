@@ -1,15 +1,8 @@
 defmodule Wulfila.Generate do
-  def run(source, spec) do
-    data = Wulfila.Read.read_yaml([
-      if source == nil do
-        Path.expand("./src")
-      else
-        Path.expand(source)
-      end
-    ])
+  def run(spec) do
 
-    phonemes = find_phonemes(data)
-    syllabary = find_syllabary(data, phonemes)
+    phonemes = find_phonemes
+    syllabary = find_syllabary(phonemes)
 
     generate(phonemes, syllabary, spec)
     |> Enum.join("\n")
@@ -78,10 +71,8 @@ defmodule Wulfila.Generate do
     |> Enum.sort
   end
 
-  def find_syllabary(data, phonemes) do
-    data
-    |> find("syllabary")
-    |> List.flatten
+  def find_syllabary(phonemes) do
+    Wulfila.Database.get("syllabary")
     |> Enum.map(
       fn syl ->
         freq = Map.get(syl, "freq", 1)
@@ -115,26 +106,13 @@ defmodule Wulfila.Generate do
   end
 
 
-  def find_phonemes(data) do
-    data
-    |> find("phonemes")
-    |> List.flatten
+  def find_phonemes do
+    Wulfila.Database.get("phonemes")
     |> Enum.map(
       fn x ->
         Wulfila.Phoneme.parse(x)
       end
     )
-    |> Enum.filter(
-      fn x ->
-        x != nil
-      end
-    )
-  end
-
-  def find(data, key) do
-    data
-    |> Stream.map(&Task.async(Wulfila.Read, :get_data, [&1, key]))
-    |> Enum.map(&Task.await(&1))
     |> Enum.filter(
       fn x ->
         x != nil

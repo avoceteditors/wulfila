@@ -5,8 +5,8 @@ defmodule Wulfila.CLI.Commands do
   def process({opts, args, []}) do
     Wulfila.Database.start_link(opts[:source])
     case args do
-      #["paradigm" | words] -> Wulfila.Paradigm.run(opts[:source], words)
-      #["gen" | spec] -> Wulfila.Generate.run(opts[:source], spec)
+      ["gen" | spec] -> Wulfila.Generate.run(spec)
+      ["lex" | output] -> Wulfila.Lexicon.run(output)
       _ -> process({[], [], args})
     end
   end
