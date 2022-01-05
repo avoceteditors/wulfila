@@ -29,8 +29,7 @@ defmodule Wulfila.Lexicon do
       "\\entry{#{Map.get(term, "roman")}}",
       "{#{
           Map.get(term, "term")
-          |> Enum.filter(fn x -> x != nil end)
-          |> Enum.map(fn x -> Map.get(x, "letter", "") end)
+          |> Enum.map(fn x -> Map.get(x, "letter") end)
           |> Enum.join("")
         }}",
       "{#{format_gramm(Map.get(term, "gramm"), :tex)}}",
