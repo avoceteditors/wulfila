@@ -3,6 +3,7 @@ defmodule Wulfila.Generate do
 
     phonemes = find_phonemes
     syllabary = find_syllabary(phonemes)
+    IO.inspect syllabary
 
     generate(phonemes, syllabary, spec)
     |> Enum.join("\n")

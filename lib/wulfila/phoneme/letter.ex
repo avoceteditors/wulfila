@@ -1,5 +1,9 @@
 defmodule Wulfila.Phoneme.Letter do
 
+  def parse(".") do
+    %Wulfila.Phoneme{letter: ".", type: [:syllable]}
+  end
+
   ##################################################################################
   ################################### CONSONANT ####################################
   ##################################################################################
@@ -566,9 +570,23 @@ defmodule Wulfila.Phoneme.Letter do
   end
 
   ##################################################################################
+  ##################################### RHOTICS ####################################
+  ##################################################################################
+
+  # Alveolar Trill
+  def parse("r") do
+    %Wulfila.Phoneme{letter: "r", type: [:consonant, :sonorant, :trill, :rhotic, :alveolar, :voiced]}
+  end
+
+
+
+  ##################################################################################
   #################################### LATERALS ####################################
   ##################################################################################
 
+  def parse("l") do
+    %Wulfila.Phoneme{letter: "l", type: [:consonant, :lateral, :liquid, :approximant, :alveolar, :voiced]}
+  end
 
 
   ##################################################################################
@@ -590,10 +608,13 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "iː" , type: [:vowel, :close, :front, :unrounded, :short]}
   end
 
-  def parse("i;") do
+  def parse("i-") do
     parse("iː")
   end
 
+  def parse("ī") do
+    parse("iː")
+  end
 
   # Close Front Rounded Vowel
 
@@ -605,7 +626,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "yː" , type: [:vowel, :front, :rounded, :long]}
   end
 
-  def parse("y;") do
+  def parse("y-") do
     parse("yː")
   end
 
@@ -621,7 +642,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɨː" , type: [:vowel, :close, :central, :unrounded, :long]}
   end
 
-  def parse("ɨ;") do
+  def parse("ɨ-") do
     parse("ɨː")
   end
 
@@ -637,7 +658,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ʉː" , type: [:vowel, :close, :central, :rounded, :long]}
   end
 
-  def parse("ʉ;") do
+  def parse("ʉ-") do
     parse("ʉː")
   end
 
@@ -652,7 +673,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɯː" , type: [:vowel, :close, :back, :unrounded, :long]}
   end
 
-  def parse("ɯ;") do
+  def parse("ɯ-") do
     parse("ɯː")
   end
 
@@ -667,7 +688,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "uː" , type: [:vowel, :close, :back, :rounded, :long]}
   end
 
-  def parse("u;") do
+  def parse("u-") do
     parse("uː")
   end
 
@@ -684,7 +705,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɪː" , type: [:vowel, :nearclose, :front, :unrounded, :long]}
   end
 
-  def parse("ɪ;") do
+  def parse("ɪ-") do
     parse("ɪː")
   end
 
@@ -698,7 +719,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ʏː" , type: [:vowel, :nearclose, :front, :rounded, :long]}
   end
 
-  def parse("ʏ;") do
+  def parse("ʏ-") do
     parse("ʏː")
   end
 
@@ -712,7 +733,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ʊː" , type: [:vowel, :nearclose, :back, :rounded, :long]}
   end
 
-  def parse("ʊ;") do
+  def parse("ʊ-") do
     parse("ʊː")
   end
 
@@ -728,7 +749,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "eː" , type: [:vowel, :closemid, :front, :unrounded, :long]}
   end
 
-  def parse("e;") do
+  def parse("e-") do
     parse("eː")
   end
 
@@ -743,7 +764,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "øː", type: [:vowel, :closemid, :front, :rounded, :long]}
   end
 
-  def parse("ø;") do
+  def parse("ø-") do
     parse("øː")
   end
 
@@ -758,7 +779,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɘː", type: [:vowel, :closemid, :central, :unrounded, :long]}
   end
 
-  def parse("ɘ;") do
+  def parse("ɘ-") do
     parse("ɘː")
   end
 
@@ -773,7 +794,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɵː", type: [:vowel, :closemid, :central, :rounded, :long]}
   end
 
-  def parse("ɵ;") do
+  def parse("ɵ-") do
     parse("ɵː")
   end
 
@@ -788,7 +809,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɤː", type: [:vowel, :closemid, :back, :unrounded, :long]}
   end
 
-  def parse("ɤ;") do
+  def parse("ɤ-") do
     parse("ɤː")
   end
 
@@ -803,7 +824,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "oː", type: [:vowel, :closemid, :back, :rounded, :long]}
   end
 
-  def parse("o;") do
+  def parse("o-") do
     parse("oː")
   end
 
@@ -820,7 +841,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "e̞ː", type: [:vowel, :mid, :front, :unrounded, :long]}
   end
 
-  def parse("e̞;") do
+  def parse("e̞-") do
     parse("e̞ː")
   end
 
@@ -835,7 +856,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "øː̞", type: [:vowel, :mid, :front, :rounded, :long]}
   end
 
-  def parse("ø;̞") do
+  def parse("ø-̞") do
     parse("ø̞ː")
   end
 
@@ -850,7 +871,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "əː", type: [:vowel, :mid, :central, :long]}
   end
 
-  def parse("ə;") do
+  def parse("ə-") do
     parse("əː")
   end
 
@@ -865,7 +886,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɤ̞ː", type: [:vowel, :mid, :back, :unrounded, :long]}
   end
 
-  def parse("ɤ;̞") do
+  def parse("ɤ-̞") do
     parse("ɤ̞ː")
   end
 
@@ -880,7 +901,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "o̞ː", type: [:vowel, :mid, :back, :rounded, :long]}
   end
 
-  def parse("o̞;") do
+  def parse("o̞-") do
     parse("o̞ː")
   end
 
@@ -897,7 +918,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɛː", type: [:vowel, :openmid, :front, :unrounded, :long]}
   end
 
-  def parse("ɛ;") do
+  def parse("ɛ-") do
     parse("ɛː")
   end
 
@@ -911,7 +932,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "œː", type: [:vowel, :openmid, :front, :rounded, :long]}
   end
 
-  def parse("œ;") do
+  def parse("œ-") do
     parse("œː")
   end
 
@@ -926,7 +947,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɜː", type: [:vowel, :openmid, :central, :unrounded, :long]}
   end
 
-  def parse("ɜ;") do
+  def parse("ɜ-") do
     parse("ɜː")
   end
 
@@ -941,7 +962,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɞː", type: [:vowel, :openmid, :central, :rounded, :long]}
   end
 
-  def parse("ɞ;") do
+  def parse("ɞ-") do
     parse("ɞː")
   end
 
@@ -956,7 +977,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ʌː", type: [:vowel, :openmid, :back, :unrounded, :long]}
   end
 
-  def parse("ʌ;") do
+  def parse("ʌ-") do
     parse("ʌː")
   end
 
@@ -971,9 +992,14 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɔː", type: [:vowel, :openmid, :back, :rounded, :long]}
   end
 
-  def parse("ɔ;") do
+  def parse("ɔ-") do
     parse("ɔː")
   end
+
+  def parse("cr") do
+    parse("ɔ")
+  end
+
 
 
   ################################ NEAR OPEN VOWELS ############################################
@@ -987,7 +1013,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "æː", type: [:vowel, :nearopen, :front, :unrounded, :long]}
   end
 
-  def parse("æ;") do
+  def parse("æ-") do
     parse("æː")
   end
 
@@ -1001,7 +1027,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɐː", type: [:vowel, :nearopen, :central, :unrounded, :long]}
   end
 
-  def parse("ɐ;") do
+  def parse("ɐ-") do
     parse("ɐː")
   end
 
@@ -1013,10 +1039,10 @@ defmodule Wulfila.Phoneme.Letter do
   end
 
   def parse("aː") do
-    %Wulfila.Phoneme{letter: "aː", type: [:vowel, :open, :front, :unrounded, :short]}
+    %Wulfila.Phoneme{letter: "aː", type: [:vowel, :open, :front, :unrounded, :long]}
   end
 
-  def parse("a;") do
+  def parse("a-") do
     parse("aː")
   end
 
@@ -1029,7 +1055,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɶː", type: [:vowel, :open, :front, :rounded, :long]}
   end
 
-  def parse("ɶ;") do
+  def parse("ɶ-") do
     parse("ɶː")
   end
 
@@ -1043,7 +1069,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "äː", type: [:vowel, :open, :central, :unrounded, :long]}
   end
 
-  def parse("ä;") do
+  def parse("ä-") do
     parse("äː")
   end
 
@@ -1055,7 +1081,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɑː", type: [:vowel, :open, :back, :unrounded, :long]}
   end
 
-  def parse("ɑ;") do
+  def parse("ɑ-") do
     parse("ɑː")
   end
 
@@ -1068,7 +1094,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɒː", type: [:vowel, :open, :back, :rounded, :long]}
   end
 
-  def parse("ɒ;") do
+  def parse("ɒ-") do
     parse("ɒː")
   end
 

@@ -1,6 +1,24 @@
 defmodule Wulfila.Read do
   require Logger
 
+  def get_files(sources, exts) do
+    case sources do
+      [source | rest] ->
+        if File.dir?(source) do
+          {:ok, files} = File.ls(source)
+          fpaths = Enum.map(files, fn x -> Path.join(source, x) end)
+          Enum.concat(fpaths, get_files(rest, exts))
+        else
+          if Path.extname(source) in exts do
+            [source | get_files(rest, exts)]
+          else
+            get_files(rest, exts)
+          end
+        end
+      [] -> []
+    end
+  end
+
   def read_yaml(sources) do
     sources
     |> read_files([".yml", ".yaml"])
