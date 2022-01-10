@@ -465,7 +465,7 @@ defmodule Wulfila.Phoneme.Letter do
     %Wulfila.Phoneme{letter: "ɣ", type: [:consonant, :obstruent, :fricative, :nonsibilant, :velar, :voiced]}
   end
 
-  def parse("bg") do
+  def parse("gh") do
     parse("ɣ")
   end
 
@@ -996,7 +996,7 @@ defmodule Wulfila.Phoneme.Letter do
     parse("ɔː")
   end
 
-  def parse("cr") do
+  def parse("oo") do
     parse("ɔ")
   end
 

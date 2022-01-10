@@ -43,6 +43,23 @@ defmodule Wulfila.Lexicon do
     "v. #{format_transitivity(trans)} #{conj}"
   end
 
+  def format_gramm(%{"category" => "adjective"}, :tex) do
+    "adj."
+  end
+
+  def format_gramm(%{"category" => "adverb"}, :tex) do
+    "adv."
+  end
+
+  def format_gramm(%{"category" => "preposition"}, :tex) do
+    "prep."
+  end
+
+  def format_gramm(%{"category" => "postposition"}, :tex) do
+    "postp.."
+  end
+
+
   def format_transitivity(trans) do
     case trans do
       "transitive" -> "trans."
@@ -53,6 +70,11 @@ defmodule Wulfila.Lexicon do
   def format_gramm(%{"category" => "measure"}, :tex) do
     "measure"
   end
+  def format_gramm(%{"category" => "root"}, :tex) do
+    "r."
+  end
+
+
   def format_gramm(%{"category" => "measure", "gender" => gender}, :tex) do
     "measure #{format_gender(gender)}"
   end
